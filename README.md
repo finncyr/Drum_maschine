@@ -25,6 +25,6 @@ Bsp: hw_Step_Counter wäre ein gültiger Name für einen in der Hardware impleme
 4. Die Lösung grob auf Fehler testen
 5. Die Branch "hw_Step_Counter" in GitHub *pushen*
 6. Einen *Pull Request* von "hw_Step_Counter" nach "master" erstellen
-7a. Wenn alles gut aussieht wird der Pull Request *gemerged* - heißt die Änderung ist nun im Hauptprogramm. Jetzt zu Schritt 8.
-7b. Wenn ein Fehler zu sehen ist geht der Pull Request zurück mit weiteren Informationen. Zurück zu Schritt 3.
+  - Wenn alles gut aussieht wird der Pull Request *gemerged* - heißt die Änderung ist nun im Hauptprogramm. Jetzt zu Schritt 8.
+  - Wenn ein Fehler zu sehen ist geht der Pull Request zurück mit weiteren Informationen. Zurück zu Schritt 3.
 8. Im Project die Karte nun auf "Done" verschieben. Fertig!
