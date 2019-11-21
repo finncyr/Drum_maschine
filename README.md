@@ -12,7 +12,9 @@ Bei der zweiten Beprechung sollten wir diese ToDo-Listen grob gefüllt haben. Zu
 Bitte benennt alle Projektrelevanten Branches mit einem jeweilig passenden Präfix, die ich hier aufliste:
 
 Hardware: hw_*
+
 Software: sw_*
+
 Schnittstelle: ss_*
 
 Bsp: hw_Step_Counter wäre ein gültiger Name für einen in der Hardware implementierten Step Counter usw.
