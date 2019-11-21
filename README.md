@@ -3,8 +3,8 @@ Drum Maschine implemented for an FPGA in VHDL and C. Students Project for the DT
 
 ## wichtige Links
 
-[ILIAS-Gruppe](https://ilias.th-koeln.de/goto.php?target=grp_1384088&client_id=ILIAS_FH_Koeln)
-[Etherpad "Besprechungen"](https://ilias.th-koeln.de/goto.php?target=xpdl_1411113&client_id=ILIAS_FH_Koeln)
+- [ILIAS-Gruppe](https://ilias.th-koeln.de/goto.php?target=grp_1384088&client_id=ILIAS_FH_Koeln)
+- [Etherpad "Besprechungen"](https://ilias.th-koeln.de/goto.php?target=xpdl_1411113&client_id=ILIAS_FH_Koeln)
 
 ## Organisation
 
