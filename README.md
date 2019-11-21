@@ -1,6 +1,11 @@
 # Drum Maschine
 Drum Maschine implemented for an FPGA in VHDL and C. Students Project for the DTS Course of WS 19/20
 
+## wichtige Links
+
+[ILIAS-Gruppe](https://ilias.th-koeln.de/goto.php?target=grp_1384088&client_id=ILIAS_FH_Koeln)
+[Etherpad "Besprechungen"](https://ilias.th-koeln.de/goto.php?target=xpdl_1411113&client_id=ILIAS_FH_Koeln)
+
 ## Organisation
 
 Im Reiter *Projects* findet Ihr die einzelnen Projekte zu Hardware, Software und der Schnittstelle. Dort könnt ihr Dinge auf die ToDo-Liste setzen, Sachen als "in Bearbeitung durch euch" markieren und euren Fortschritt für alle Sichtbar machen. 
@@ -11,11 +16,9 @@ Bei der zweiten Beprechung sollten wir diese ToDo-Listen grob gefüllt haben. Zu
 
 Bitte benennt alle Projektrelevanten Branches mit einem jeweilig passenden Präfix, die ich hier aufliste:
 
-Hardware: hw_*
-
-Software: sw_*
-
-Schnittstelle: ss_*
+- Hardware: hw_*
+- Software: sw_*
+- Schnittstelle: ss_*
 
 Bsp: hw_Step_Counter wäre ein gültiger Name für einen in der Hardware implementierten Step Counter usw.
 
