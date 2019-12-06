@@ -1,0 +1,1125 @@
+Archive member included because of file (symbol)
+
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                              obj/default/count_binary.o (__udivsi3)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_register.o)
+                              obj/default/count_binary.o (alt_irq_register)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_register.o) (alt_irq_active)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_load.o)
+                              D:/DT-Lab/Drum_maschine_bsp//obj/HAL/src/crt0.o (alt_load)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_main.o)
+                              D:/DT-Lab/Drum_maschine_bsp//obj/HAL/src/crt0.o (alt_main)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_tick.o)
+                              obj/default/count_binary.o (_alt_tick_rate)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_avalon_jtag_uart_read_fd)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_avalon_jtag_uart_init)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_ioctl)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_read)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_write)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_avalon_timer_sc_init)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_up_rs232_read_fd)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_alarm_start.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o) (alt_alarm_start)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_close.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_main.o) (close)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_dev_list)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_dev_llist_insert)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_ctors.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_main.o) (_do_ctors)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_dtors.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_main.o) (_do_dtors)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_errno.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_close.o) (alt_errno)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_dev.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o) (alt_find_dev)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_main.o) (alt_io_redirect)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_register.o) (alt_irq_entry)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_register.o) (alt_irq_handler)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_open.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_io_redirect.o) (open)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_release_fd.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_close.o) (alt_release_fd)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_qsys_irq_init)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_entry.o) (alt_exception)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_file.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_open.o) (alt_find_file)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_get_fd.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_open.o) (alt_get_fd)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_main.o) (atexit)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_main.o) (exit)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+                              c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o) (_global_impure_ptr)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_close.o) (errno)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_dev.o) (memcmp)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o) (memcpy)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_dev.o) (strlen)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+                              c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o) (__register_exitproc)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+                              c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o) (__call_exitprocs)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+                              D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_close.o) (__mulsi3)
+D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exit.o)
+                              c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o) (_exit)
+
+Allocating common symbols
+Common symbol       size              file
+
+alt_irq             0x100             D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_handler.o)
+errno               0x4               c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+_atexit0            0x190             c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+reset            0x00000000         0x00000020
+SDRAM            0x00000020         0x07ffffe0
+Onchip_memory    0x09000000         0x00002000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD D:/DT-Lab/Drum_maschine_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/count_binary.o
+LOAD c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libstdc++.a
+LOAD c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libm.a
+LOAD c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a
+START GROUP
+LOAD c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a
+LOAD c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a
+LOAD D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a
+END GROUP
+LOAD c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a
+                0x00000000                __alt_mem_SDRAM = 0x0
+                0x09000000                __alt_mem_Onchip_memory = 0x9000000
+
+.entry          0x00000000       0x20
+ *(.entry)
+ .entry         0x00000000       0x20 D:/DT-Lab/Drum_maschine_bsp//obj/HAL/src/crt0.o
+                0x00000000                __reset
+
+.exceptions     0x00000020      0x198
+                0x00000020                PROVIDE (__ram_exceptions_start, ABSOLUTE (.))
+                0x00000020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ .exceptions.entry.label
+                0x00000020        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                0x00000020                alt_irq_entry
+ .exceptions.entry.label
+                0x00000020        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                0x00000020                alt_exception
+ *(.exceptions.entry.user)
+ *(.exceptions.entry)
+ .exceptions.entry
+                0x00000020       0x54 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ .exceptions.irqtest
+                0x00000074       0x10 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ .exceptions.irqhandler
+                0x00000084        0x4 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ .exceptions.irqreturn
+                0x00000088        0x4 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.label)
+ .exceptions.notirq.label
+                0x0000008c        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ .exceptions.notirq
+                0x0000008c        0x8 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ .exceptions.unknown
+                0x00000094        0x4 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.label)
+ .exceptions.exit.label
+                0x00000098        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .exceptions.exit.label
+                0x00000098        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ .exceptions.exit
+                0x00000098       0x54 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions)
+ .exceptions    0x000000ec       0xcc D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x000000ec                alt_irq_handler
+                0x000001b8                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
+                0x00000020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.text           0x000001b8     0x2be8
+                0x000001b8                PROVIDE (stext, ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x000001b8       0x3c D:/DT-Lab/Drum_maschine_bsp//obj/HAL/src/crt0.o
+                0x000001b8                _start
+ .text          0x000001f4      0x3a4 obj/default/count_binary.o
+                0x000001f4                gcd
+                0x00000314                clockCnt
+                0x00000394                displayTime
+                0x0000049c                task2
+                0x00000518                task3
+                0x00000558                main
+ .text          0x00000598      0x14c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                0x00000614                __divsi3
+                0x00000674                __modsi3
+                0x000006d4                __udivsi3
+                0x000006dc                __umodsi3
+ .text          0x000006e4      0x1c0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_register.o)
+                0x000006e4                alt_irq_register
+ .text          0x000008a4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .text          0x000008a4       0xec D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_load.o)
+                0x000008a4                alt_load
+ .text          0x00000990       0x6c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_main.o)
+                0x00000990                alt_main
+ .text          0x000009fc      0x1a4 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_tick.o)
+                0x000009fc                alt_alarm_stop
+                0x00000a94                alt_tick
+ .text          0x00000ba0      0x128 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x00000ba0                alt_irq_init
+                0x00000bd4                alt_sys_init
+ .text          0x00000cc8      0x148 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                0x00000cc8                altera_avalon_jtag_uart_read_fd
+                0x00000d20                altera_avalon_jtag_uart_write_fd
+                0x00000d78                altera_avalon_jtag_uart_close_fd
+                0x00000dc0                altera_avalon_jtag_uart_ioctl_fd
+ .text          0x00000e10      0x408 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+                0x00000e10                altera_avalon_jtag_uart_init
+                0x000011a4                altera_avalon_jtag_uart_close
+ .text          0x00001218       0xf4 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+                0x00001218                altera_avalon_jtag_uart_ioctl
+ .text          0x0000130c      0x224 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                0x0000130c                altera_avalon_jtag_uart_read
+ .text          0x00001530      0x240 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x00001530                altera_avalon_jtag_uart_write
+ .text          0x00001770       0xfc D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+                0x000017e4                alt_avalon_timer_sc_init
+ .text          0x0000186c      0x398 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+                0x0000186c                alt_up_rs232_enable_read_interrupt
+                0x000018c0                alt_up_rs232_disable_read_interrupt
+                0x00001918                alt_up_rs232_get_used_space_in_read_FIFO
+                0x00001954                alt_up_rs232_get_available_space_in_write_FIFO
+                0x00001994                alt_up_rs232_check_parity
+                0x000019e4                alt_up_rs232_write_data
+                0x00001a2c                alt_up_rs232_read_data
+                0x00001aa0                alt_up_rs232_read_fd
+                0x00001b30                alt_up_rs232_write_fd
+                0x00001bc4                alt_up_rs232_open_dev
+ .text          0x00001c04      0x154 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_alarm_start.o)
+                0x00001c04                alt_alarm_start
+ .text          0x00001d58      0x160 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_close.o)
+                0x00001d58                close
+ .text          0x00001eb8       0x1c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x00001eb8                alt_dcache_flush_all
+ .text          0x00001ed4       0x2c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev.o)
+ .text          0x00001f00      0x114 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                0x00001f00                alt_dev_llist_insert
+ .text          0x00002014       0x64 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_ctors.o)
+                0x00002014                _do_ctors
+ .text          0x00002078       0x64 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_dtors.o)
+                0x00002078                _do_dtors
+ .text          0x000020dc        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_errno.o)
+ .text          0x000020dc       0x94 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_dev.o)
+                0x000020dc                alt_find_dev
+ .text          0x00002170       0x1c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x00002170                alt_icache_flush_all
+ .text          0x0000218c      0x150 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                0x00002264                alt_io_redirect
+ .text          0x000022dc        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .text          0x000022dc        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .text          0x000022dc      0x2e4 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_open.o)
+                0x000023d4                open
+ .text          0x000025c0       0x78 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_release_fd.o)
+                0x000025c0                alt_release_fd
+ .text          0x00002638       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x00002638                altera_nios2_qsys_irq_init
+ .text          0x00002658        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .text          0x00002658      0x120 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_file.o)
+                0x00002658                alt_find_file
+ .text          0x00002778       0xd0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_get_fd.o)
+                0x00002778                alt_get_fd
+ .text          0x00002848       0x14 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+                0x00002848                atexit
+ .text          0x0000285c       0x38 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+                0x0000285c                exit
+ .text          0x00002894        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .text          0x00002894        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .text          0x00002894       0x74 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+                0x00002894                memcmp
+ .text          0x00002908       0xa0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+                0x00002908                memcpy
+ .text          0x000029a8       0x74 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+                0x000029a8                strlen
+ .text          0x00002a1c      0x134 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+                0x00002a1c                __register_exitproc
+ .text          0x00002b50      0x1b4 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+                0x00002b54                __call_exitprocs
+ .text          0x00002d04       0x38 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+                0x00002d04                __mulsi3
+ .text          0x00002d3c       0x60 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exit.o)
+                0x00002d7c                _exit
+ *(.gnu.warning.*)
+ *(.fini)
+                0x00002d9c                PROVIDE (__etext, ABSOLUTE (.))
+                0x00002d9c                PROVIDE (_etext, ABSOLUTE (.))
+                0x00002d9c                PROVIDE (etext, ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x00002d9c                . = ALIGN (0x4)
+                0x00002d9c                PROVIDE (__preinit_array_start, ABSOLUTE (.))
+ *(.preinit_array)
+                0x00002d9c                PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                0x00002d9c                PROVIDE (__init_array_start, ABSOLUTE (.))
+ *(.init_array)
+                0x00002d9c                PROVIDE (__init_array_end, ABSOLUTE (.))
+                0x00002d9c                PROVIDE (__fini_array_start, ABSOLUTE (.))
+ *(.fini_array)
+                0x00002d9c                PROVIDE (__fini_array_end, ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table)
+ *(.dynamic)
+                0x00002d9c                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+ .ctors.65535   0x00002d9c        0x4 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+                0x00002da0                PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                0x00002da0                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                0x00002da0                PROVIDE (__DTOR_END__, ABSOLUTE (.))
+ *(.jcr)
+                0x00002da0                . = ALIGN (0x4)
+
+.rodata         0x00002da0       0xd4
+                0x00002da0                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x00002da0                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00002da0       0x10 obj/default/count_binary.o
+ .rodata        0x00002db0       0x10 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_main.o)
+ .rodata        0x00002dc0       0xa4 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .rodata        0x00002e64        0xc D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev.o)
+ .rodata.str1.4
+                0x00002e70        0x4 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ *(.rodata1)
+                0x00002e74                . = ALIGN (0x4)
+                0x00002e74                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x00002da0                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x00002e74     0x17a8 load address 0x0000461c
+                0x00002e74                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x00002e74                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00002e74        0x0 D:/DT-Lab/Drum_maschine_bsp//obj/HAL/src/crt0.o
+ .data          0x00002e74        0x0 obj/default/count_binary.o
+ .data          0x00002e74        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .data          0x00002e74        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .data          0x00002e74        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .data          0x00002e74        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x00002e74        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x00002e74        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_tick.o)
+ .data          0x00002e74     0x11c0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x00004034        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .data          0x00004034        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .data          0x00004034        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .data          0x00004034        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .data          0x00004034        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .data          0x00004034        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .data          0x00004034        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .data          0x00004034        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .data          0x00004034        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_close.o)
+ .data          0x00004034        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x00004034      0x1a8 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev.o)
+                0x00004034                alt_dev_null
+                0x0000405c                alt_fd_list
+ .data          0x000041dc        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .data          0x000041dc        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .data          0x000041dc        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .data          0x000041dc        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_errno.o)
+ .data          0x000041dc        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .data          0x000041dc        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x000041dc        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .data          0x000041dc        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .data          0x000041dc        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .data          0x000041dc        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_open.o)
+ .data          0x000041dc        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .data          0x000041dc        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .data          0x000041dc        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .data          0x000041dc        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_file.o)
+ .data          0x000041dc        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .data          0x000041dc        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .data          0x000041dc        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .data          0x000041dc      0x400 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .data          0x000045dc        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .data          0x000045dc        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+ .data          0x000045dc        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+ .data          0x000045dc        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+ .data          0x000045dc        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .data          0x000045dc        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .data          0x000045dc        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .data          0x000045dc        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exit.o)
+                0x0000c5dc                _gp = ABSOLUTE ((. + 0x8000))
+                0x0000c5dc                PROVIDE (gp, _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x000045dc       0x14 obj/default/count_binary.o
+ .sdata         0x000045f0        0x4 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x000045f0                alt_priority_mask
+ .sdata         0x000045f4        0x8 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_tick.o)
+                0x000045f4                alt_alarm_list
+ .sdata         0x000045fc       0x14 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev.o)
+                0x000045fc                alt_fs_list
+                0x00004604                alt_dev_list
+                0x0000460c                alt_max_fd
+ .sdata         0x00004610        0x4 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_errno.o)
+                0x00004610                alt_errno
+ .sdata         0x00004614        0x8 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+                0x00004614                _impure_ptr
+                0x00004618                _global_impure_ptr
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x0000461c                . = ALIGN (0x4)
+                0x0000461c                _edata = ABSOLUTE (.)
+                0x0000461c                PROVIDE (edata, ABSOLUTE (.))
+                0x0000461c                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x0000461c                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x00005dc4      0x2b0
+                0x00005dc4                __bss_start = ABSOLUTE (.)
+                0x00005dc4                PROVIDE (__sbss_start, ABSOLUTE (.))
+                0x00005dc4                PROVIDE (___sbss_start, ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x00005dc4        0x4 obj/default/count_binary.o
+ .sbss          0x00005dc8        0x4 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x00005dc8                alt_irq_active
+ .sbss          0x00005dcc        0xc D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_main.o)
+                0x00005dcc                alt_argc
+                0x00005dd0                alt_argv
+                0x00005dd4                alt_envp
+ .sbss          0x00005dd8        0x8 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_tick.o)
+                0x00005dd8                _alt_tick_rate
+                0x00005ddc                _alt_nticks
+ .sbss          0x00005de0        0x4 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+                0x00005de0                errno
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                0x00005de4                PROVIDE (__sbss_end, ABSOLUTE (.))
+                0x00005de4                PROVIDE (___sbss_end, ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp//obj/HAL/src/crt0.o
+ .bss           0x00005de4        0x0 obj/default/count_binary.o
+ .bss           0x00005de4        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_tick.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_close.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_errno.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_open.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_file.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .bss           0x00005de4        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .bss           0x00005de4        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .bss           0x00005de4        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .bss           0x00005de4        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .bss           0x00005de4        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+ .bss           0x00005de4        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+ .bss           0x00005de4        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+ .bss           0x00005de4        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .bss           0x00005de4        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .bss           0x00005de4        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .bss           0x00005de4        0x0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exit.o)
+ *(COMMON)
+ COMMON         0x00005de4      0x100 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x00005de4                alt_irq
+ COMMON         0x00005ee4      0x190 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+                0x00005ee4                _atexit0
+                0x00006074                . = ALIGN (0x4)
+                0x00006074                __bss_end = ABSOLUTE (.)
+
+.SDRAM          0x00006074        0x0
+                0x00006074                PROVIDE (_alt_partition_SDRAM_start, ABSOLUTE (.))
+ *(.SDRAM. SDRAM.*)
+                0x00006074                . = ALIGN (0x4)
+                0x00006074                PROVIDE (_alt_partition_SDRAM_end, ABSOLUTE (.))
+                0x00006074                _end = ABSOLUTE (.)
+                0x00006074                end = ABSOLUTE (.)
+                0x00006074                __alt_stack_base = ABSOLUTE (.)
+                0x00006074                PROVIDE (_alt_partition_SDRAM_load_addr, LOADADDR (.SDRAM))
+
+.Onchip_memory  0x09000000        0x0 load address 0x00006074
+                0x09000000                PROVIDE (_alt_partition_Onchip_memory_start, ABSOLUTE (.))
+ *(.Onchip_memory. Onchip_memory.*)
+                0x09000000                . = ALIGN (0x4)
+                0x09000000                PROVIDE (_alt_partition_Onchip_memory_end, ABSOLUTE (.))
+                0x00006074                PROVIDE (_alt_partition_Onchip_memory_load_addr, LOADADDR (.Onchip_memory))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x26
+ *(.comment)
+ .comment       0x00000000       0x26 obj/default/count_binary.o
+                                 0x27 (size before relaxing)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_load.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_tick.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_close.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_errno.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_open.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_file.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .comment       0x00000000       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x578
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 D:/DT-Lab/Drum_maschine_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x00000028       0x20 obj/default/count_binary.o
+ .debug_aranges
+                0x00000048       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_aranges
+                0x00000068       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_aranges
+                0x00000088       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x000000a8       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x000000c8       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_aranges
+                0x000000e8       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x00000108       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_aranges
+                0x00000128       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_aranges
+                0x00000148       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_aranges
+                0x00000168       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_aranges
+                0x00000188       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_aranges
+                0x000001a8       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_aranges
+                0x000001c8       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .debug_aranges
+                0x000001e8       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_aranges
+                0x00000208       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_aranges
+                0x00000228       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x00000248       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_aranges
+                0x00000268       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_aranges
+                0x00000288       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_aranges
+                0x000002a8       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_aranges
+                0x000002c8       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_aranges
+                0x000002e8       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x00000308       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_aranges
+                0x00000328       0x30 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_aranges
+                0x00000358       0x28 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_aranges
+                0x00000380       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_aranges
+                0x000003a0       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_aranges
+                0x000003c0       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_aranges
+                0x000003e0       0x38 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_aranges
+                0x00000418       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_aranges
+                0x00000438       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_aranges
+                0x00000458       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .debug_aranges
+                0x00000478       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .debug_aranges
+                0x00000498       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+ .debug_aranges
+                0x000004b8       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+ .debug_aranges
+                0x000004d8       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+ .debug_aranges
+                0x000004f8       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .debug_aranges
+                0x00000518       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .debug_aranges
+                0x00000538       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_aranges
+                0x00000558       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_pubnames
+                0x00000000      0x95a
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x54 obj/default/count_binary.o
+ .debug_pubnames
+                0x00000054       0x48 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_pubnames
+                0x0000009c       0x27 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_pubnames
+                0x000000c3       0x3b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_pubnames
+                0x000000fe       0x1f D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_pubnames
+                0x0000011d       0x46 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_pubnames
+                0x00000163       0x68 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_pubnames
+                0x000001cb       0x34 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_pubnames
+                0x000001ff       0xa5 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_pubnames
+                0x000002a4       0x55 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_pubnames
+                0x000002f9       0x34 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_pubnames
+                0x0000032d       0x33 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_pubnames
+                0x00000360       0x34 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_pubnames
+                0x00000394       0x2f D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_pubnames
+                0x000003c3      0x163 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .debug_pubnames
+                0x00000526       0x26 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_pubnames
+                0x0000054c       0x1c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_pubnames
+                0x00000568       0x2b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_pubnames
+                0x00000593       0x63 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_pubnames
+                0x000005f6       0x2b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_pubnames
+                0x00000621       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_pubnames
+                0x00000641       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_pubnames
+                0x00000661       0x20 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_pubnames
+                0x00000681       0x23 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_pubnames
+                0x000006a4       0x2b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_pubnames
+                0x000006cf       0x26 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_pubnames
+                0x000006f5       0x32 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_pubnames
+                0x00000727       0x1b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_pubnames
+                0x00000742       0x25 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_pubnames
+                0x00000767       0x31 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_pubnames
+                0x00000798       0x24 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_pubnames
+                0x000007bc       0x21 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_pubnames
+                0x000007dd       0x2a c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .debug_pubnames
+                0x00000807       0x1b c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .debug_pubnames
+                0x00000822       0x39 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .debug_pubnames
+                0x0000085b       0x1c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .debug_pubnames
+                0x00000877       0x1d c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+ .debug_pubnames
+                0x00000894       0x1d c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+ .debug_pubnames
+                0x000008b1       0x1d c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+ .debug_pubnames
+                0x000008ce       0x2a c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .debug_pubnames
+                0x000008f8       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .debug_pubnames
+                0x0000091f       0x1f c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_pubnames
+                0x0000093e       0x1c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_info     0x00000000     0xa895
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000       0x4d D:/DT-Lab/Drum_maschine_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x0000004d      0x426 obj/default/count_binary.o
+ .debug_info    0x00000473      0x21c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_info    0x0000068f      0x401 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_info    0x00000a90      0x139 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x00000bc9      0x25f D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x00000e28      0x23e D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x00001066      0x403 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_info    0x00001469      0x855 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x00001cbe      0x7ab D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_info    0x00002469      0x613 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_info    0x00002a7c      0x415 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_info    0x00002e91      0x54b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_info    0x000033dc      0x543 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x0000391f      0x39d D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_info    0x00003cbc      0x7b1 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .debug_info    0x0000446d      0x447 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_info    0x000048b4      0x439 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_info    0x00004ced      0x12e D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x00004e1b      0x651 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_info    0x0000546c      0x289 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_info    0x000056f5       0xe1 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_info    0x000057d6       0xe0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_info    0x000058b6      0x136 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_info    0x000059ec      0x3ea D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_info    0x00005dd6      0x12e D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x00005f04      0x667 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_info    0x0000656b       0x56 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x000065c1      0x284 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x00006845      0x4f7 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_info    0x00006d3c      0x3c4 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_info    0x00007100      0x17c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_info    0x0000727c       0x5c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x000072d8      0x3f1 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_info    0x000076c9      0x432 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_info    0x00007afb      0x181 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .debug_info    0x00007c7c      0x93f c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .debug_info    0x000085bb      0x93d c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .debug_info    0x00008ef8       0x8c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .debug_info    0x00008f84      0x115 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+ .debug_info    0x00009099      0x106 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+ .debug_info    0x0000919f       0xdb c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+ .debug_info    0x0000927a      0x99c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .debug_info    0x00009c16      0x9e2 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .debug_info    0x0000a5f8       0xf3 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_info    0x0000a6eb      0x1aa D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_abbrev   0x00000000     0x27e1
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x12 D:/DT-Lab/Drum_maschine_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x00000012      0x141 obj/default/count_binary.o
+ .debug_abbrev  0x00000153       0xe0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_abbrev  0x00000233      0x180 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_abbrev  0x000003b3       0x44 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x000003f7       0x88 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x0000047f       0xbe D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x0000053d      0x161 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_abbrev  0x0000069e      0x15e D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x000007fc       0xf7 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_abbrev  0x000008f3      0x17c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_abbrev  0x00000a6f       0xf0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_abbrev  0x00000b5f      0x191 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_abbrev  0x00000cf0      0x18d D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_abbrev  0x00000e7d      0x137 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_abbrev  0x00000fb4      0x120 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .debug_abbrev  0x000010d4      0x172 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_abbrev  0x00001246       0xfb D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_abbrev  0x00001341       0x3f D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x00001380       0xc7 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_abbrev  0x00001447       0xf6 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_abbrev  0x0000153d       0x76 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_abbrev  0x000015b3       0x76 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_abbrev  0x00001629       0x5e D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_abbrev  0x00001687       0xcf D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_abbrev  0x00001756       0x3f D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x00001795       0xf0 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_abbrev  0x00001885       0x12 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x00001897      0x124 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x000019bb      0x112 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_abbrev  0x00001acd       0xc1 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_abbrev  0x00001b8e       0x64 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_abbrev  0x00001bf2       0x12 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x00001c04       0xcf D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_abbrev  0x00001cd3       0xfb D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_abbrev  0x00001dce       0xb7 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .debug_abbrev  0x00001e85      0x16e c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .debug_abbrev  0x00001ff3      0x157 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .debug_abbrev  0x0000214a       0x3b c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .debug_abbrev  0x00002185       0x7c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+ .debug_abbrev  0x00002201       0xb5 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+ .debug_abbrev  0x000022b6       0x8b c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+ .debug_abbrev  0x00002341      0x1ae c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .debug_abbrev  0x000024ef      0x1de c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .debug_abbrev  0x000026cd       0x7b c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_abbrev  0x00002748       0x99 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_line     0x00000000     0x6a81
+ *(.debug_line)
+ .debug_line    0x00000000       0x66 D:/DT-Lab/Drum_maschine_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x00000066      0x3ad obj/default/count_binary.o
+ .debug_line    0x00000413      0x24f c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_line    0x00000662      0x303 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_line    0x00000965       0x72 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x000009d7      0x217 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x00000bee      0x2de D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x00000ecc      0x2f5 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_line    0x000011c1      0x360 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x00001521      0x217 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_line    0x00001738      0x4bf D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_line    0x00001bf7      0x317 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_line    0x00001f0e      0x40b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_line    0x00002319      0x419 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x00002732      0x2ca D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_line    0x000029fc      0x3e9 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .debug_line    0x00002de5      0x2f5 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_line    0x000030da      0x299 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_line    0x00003373      0x1b5 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x00003528      0x254 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_line    0x0000377c      0x25a D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_line    0x000039d6       0x83 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_line    0x00003a59       0x83 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_line    0x00003adc      0x1aa D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_line    0x00003c86      0x26b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_line    0x00003ef1      0x1b5 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x000040a6      0x2b4 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_line    0x0000435a       0x6b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x000043c5      0x261 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x00004626      0x2ff D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_line    0x00004925       0xed D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_line    0x00004a12      0x1e7 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_line    0x00004bf9       0xab D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x00004ca4      0x27c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_line    0x00004f20      0x297 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_line    0x000051b7      0x203 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .debug_line    0x000053ba      0x23b c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .debug_line    0x000055f5      0x230 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .debug_line    0x00005825      0x1e2 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .debug_line    0x00005a07      0x2a2 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+ .debug_line    0x00005ca9      0x1af c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+ .debug_line    0x00005e58      0x270 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+ .debug_line    0x000060c8      0x316 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .debug_line    0x000063de      0x36a c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .debug_line    0x00006748      0x11a c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_line    0x00006862      0x21f D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_frame    0x00000000      0xa70
+ *(.debug_frame)
+ .debug_frame   0x00000000       0xd4 obj/default/count_binary.o
+ .debug_frame   0x000000d4       0x70 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_frame   0x00000144       0x2c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_frame   0x00000170       0x48 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x000001b8       0x2c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x000001e4       0x48 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_frame   0x0000022c       0x64 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x00000290       0x80 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_frame   0x00000310       0x80 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_frame   0x00000390       0x2c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_frame   0x000003bc       0x2c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_frame   0x000003e8       0x2c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_frame   0x00000414       0x48 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_frame   0x0000045c      0x128 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .debug_frame   0x00000584       0x2c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_frame   0x000005b0       0x48 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_frame   0x000005f8       0x2c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x00000624       0x2c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_frame   0x00000650       0x48 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_frame   0x00000698       0x2c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_frame   0x000006c4       0x2c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_frame   0x000006f0       0x2c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_frame   0x0000071c       0x2c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x00000748       0x4c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_frame   0x00000794       0x2c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_frame   0x000007c0       0x68 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_frame   0x00000828       0x30 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_frame   0x00000858       0x2c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_frame   0x00000884       0x2c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_frame   0x000008b0       0x30 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_frame   0x000008e0       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .debug_frame   0x00000900       0x28 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .debug_frame   0x00000928       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+ .debug_frame   0x00000948       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+ .debug_frame   0x00000968       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+ .debug_frame   0x00000988       0x34 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .debug_frame   0x000009bc       0x4c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00000a08       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_frame   0x00000a28       0x48 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_str      0x00000000      0xc84
+ *(.debug_str)
+ .debug_str     0x00000000       0x12 obj/default/count_binary.o
+ .debug_str     0x00000012      0x167 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                                0x1b4 (size before relaxing)
+ .debug_str     0x00000179       0x21 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_str     0x0000019a       0x12 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_str     0x000001ac       0x12 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_str     0x000001be       0x1a D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_str     0x000001d8       0x3c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_str     0x00000214       0x12 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_str     0x00000226       0x1a D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_str     0x00000240       0x12 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_str     0x00000252       0x1a D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_str     0x0000026c       0x1a D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_str     0x00000286       0x12 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_str     0x00000298       0x48 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .debug_str     0x000002e0       0x23 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_str     0x00000303       0x12 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_str     0x00000315       0x12 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_str     0x00000327       0x12 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_str     0x00000339       0x12 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_str     0x0000034b       0x12 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_str     0x0000035d       0x12 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_str     0x0000036f       0x12 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_str     0x00000381       0x12 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_str     0x00000393       0x12 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_str     0x000003a5       0x12 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_str     0x000003b7       0x12 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_str     0x000003c9       0x12 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_str     0x000003db       0x12 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_str     0x000003ed      0x12b c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+                                0x1cd (size before relaxing)
+ .debug_str     0x00000518      0x387 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+                                0x51a (size before relaxing)
+ .debug_str     0x0000089f       0xdf c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+                                0x528 (size before relaxing)
+ .debug_str     0x0000097e       0x40 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+                                0x171 (size before relaxing)
+ .debug_str     0x000009be       0xe3 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+                                0x178 (size before relaxing)
+ .debug_str     0x00000aa1       0x6c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+                                0x136 (size before relaxing)
+ .debug_str     0x00000b0d       0x52 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+                                0x18b (size before relaxing)
+ .debug_str     0x00000b5f       0x54 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+                                0x532 (size before relaxing)
+ .debug_str     0x00000bb3       0x7e c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+                                0x55c (size before relaxing)
+ .debug_str     0x00000c31       0x37 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+                                0x175 (size before relaxing)
+ .debug_str     0x00000c68       0x1c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_loc      0x00000000     0x11ec
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x12d obj/default/count_binary.o
+ .debug_loc     0x0000012d      0x1d2 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_loc     0x000002ff       0x2c D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_loc     0x0000032b       0x56 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_loc     0x00000381       0x2b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_loc     0x000003ac       0x56 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_loc     0x00000402       0x81 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x00000483       0xac D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_loc     0x0000052f       0xac D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_loc     0x000005db       0x2b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_loc     0x00000606       0x2b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_loc     0x00000631       0x2b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_loc     0x0000065c       0x56 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_loc     0x000006b2      0x1ae D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .debug_loc     0x00000860       0x2b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_loc     0x0000088b       0x56 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_loc     0x000008e1       0x2b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_loc     0x0000090c       0x2b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_loc     0x00000937       0x56 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_loc     0x0000098d       0x2b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_loc     0x000009b8       0x2b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_loc     0x000009e3       0x2b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_loc     0x00000a0e       0x2b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_loc     0x00000a39       0x56 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_loc     0x00000a8f       0x2b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_loc     0x00000aba       0x81 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_loc     0x00000b3b       0x2b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_loc     0x00000b66       0x2b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_loc     0x00000b91       0x2b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_loc     0x00000bbc       0x2b D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_loc     0x00000be7       0x1e c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .debug_loc     0x00000c05       0x3d c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .debug_loc     0x00000c42      0x114 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+ .debug_loc     0x00000d56       0xca c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+ .debug_loc     0x00000e20       0x3c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+ .debug_loc     0x00000e5c      0x120 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .debug_loc     0x00000f7c      0x1cb c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .debug_loc     0x00001147       0x4f c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_loc     0x00001196       0x56 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x00000000       0x10
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x00000000       0x10 D:/DT-Lab/Drum_maschine_bsp//obj/HAL/src/crt0.o
+                0x08000000                __alt_data_end = 0x8000000
+                0x08000000                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                0x00006074                PROVIDE (__alt_stack_limit, __alt_stack_base)
+                0x00006074                PROVIDE (__alt_heap_start, end)
+                0x08000000                PROVIDE (__alt_heap_limit, 0x8000000)
+OUTPUT(Drum_maschine.elf elf32-littlenios2)
+
+.debug_ranges   0x00000000       0x90
+ .debug_ranges  0x00000000       0x20 D:/DT-Lab/Drum_maschine_bsp//obj/HAL/src/crt0.o
+ .debug_ranges  0x00000020       0x28 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_ranges  0x00000048       0x30 D:/DT-Lab/Drum_maschine_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_ranges  0x00000078       0x18 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
