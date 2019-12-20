@@ -19,6 +19,9 @@
 
 // Defines
 
+#define ADDR_LENGTH 32
+#define BIT_RES 24
 
+#define STEPSIZE 16 // 1/STEPSIZE = smallest beat div
 
 #endif /* DM_IO_H_ */
