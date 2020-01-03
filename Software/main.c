@@ -1,0 +1,82 @@
+/*
+ * DM_IO.c
+ *
+ *  This is the Main IO Functions of the Drum Maschine
+ * 
+ *  
+ * 
+ *  Created on: 14.12.2019
+ *      Author: Finn Cyriax
+ */
+
+#include "main.h"
+
+
+void init() {
+
+
+}
+
+
+int main(void) {
+    alt_up_parallel_port_dev *greenLEDs, *redLEDs;
+
+    static int currentBank = 0;
+    static int currentBPM = 120;
+    alt_u8 keys = 0;
+    alt_u32 switches = 0;
+    alt_u16 pattern[4];
+
+    greenLEDs = alt_up_parallel_port_open_dev(GREEN_LEDS_NAME);
+    redLEDs = alt_up_parallel_port_open_dev(RED_LEDS_NAME);
+    
+    
+    
+
+    // MAIN LOOP
+
+    while(1){
+        check_KEYs(&keys);
+        check_SWITCHs(&switches);
+
+        /// TODO: Process Bank Change
+
+        //Save current pattern
+        pattern[currentBank] = switches<<16;
+
+        //Output to RAM
+        for(int i = 0; i<=3; i++){
+            IOWR_ALT_UP_PARALLEL_PORT_DATA(SRAM_BASE + OFFSET_PATTERN + (i*16), pattern[i]);
+        }
+        
+    }
+}
+
+
+// Subroutine to check Pushbuttons
+
+void check_KEYs(alt_u8 *keys) {
+	int KEY_value = 0;
+
+	keys = IORD_ALT_UP_PARALLEL_PORT_EDGE_CAPTURE(PUSHBUTTONS_BASE); 				// read the pushbutton KEY values
+}
+
+// Subroutine to check Switches
+
+void check_SWITCHs(alt_u32 *switches) {
+    // switches[0] => SW17 ; switches[1] => SW16 ...
+    switches = IORD_ALT_UP_PARALLEL_PORT_EDGE_CAPTURE(SLIDER_SWITCHES_BASE);
+}
+
+// Subroutine Converts Number to 7Seg Data
+
+unsigned char varTo7Seg(int *input){
+    static unsigned char digit_data = {
+        0x01, 0x4f, 0x12, 0x06, 0x4c, 0x24, 0x20, 0x0f, 0x00, 0x04, // 0-9
+        0x08, 0x60, 0x72, 0x42, 0x30, 0x38 }; // a-f
+    
+
+    if (input >= 0 && input <= 9){
+        return digit_data[input];
+    }
+}
