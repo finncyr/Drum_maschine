@@ -5,6 +5,12 @@
  * 
  *  
  * 
+ *  Buttons from Left to Right: [1] [2] [3] [4]
+ *  1: 
+ *  2:
+ *  3: Bank Change 1-4
+ *  4: Reset
+ * 
  *  Created on: 14.12.2019
  *      Author: Finn Cyriax
  */
@@ -36,18 +42,28 @@ int main(void) {
     // MAIN LOOP
 
     while(1){
+        //Grab Inputs
         check_KEYs(&keys);
         check_SWITCHs(&switches);
 
-        /// TODO: Process Bank Change
+        //Process Bank Change
+        if(keys & (1<<3)){
+            currentBank++;
+            if (currentBank > 3) currentBank = 0;
+        }
 
         //Save current pattern
-        pattern[currentBank] = switches<<16;
+        if(keys & (1<<2)){
+            pattern[currentBank] = switches<<16;
+        }
 
         //Output to RAM
         for(int i = 0; i<=3; i++){
             IOWR_ALT_UP_PARALLEL_PORT_DATA(SRAM_BASE + OFFSET_PATTERN + (i*16), pattern[i]);
         }
+
+        //Output to red LEDs
+        IOWR_ALT_UP_PARALLEL_PORT_DATA(RED_LEDS_BASE, pattern[currentBank]);
         
     }
 }
