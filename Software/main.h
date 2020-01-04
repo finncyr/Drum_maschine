@@ -23,6 +23,11 @@
 
 #define STEPSIZE 16 // 1/STEPSIZE = smallest beat div
 
+// Offsets
 #define OFFSET_PATTERN 0
+#define LENGTH_PATTERN 32
+
+#define OFFSET_BPM 32
+#define LENGTH_BPM 8
 
 #endif /* DM_IO_H_ */
