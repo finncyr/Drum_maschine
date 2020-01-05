@@ -3,7 +3,13 @@
  *
  *  This is the Header File for the Main IO of the Drum Maschine.
  *  It contains all includes and defines.
+ * 
+ *  The SRAM is defined as follows:
  *  
+ *  SRAM_BASE -> |    patterns    |    BPM    |  Play/Pause  |    SD Files    |
+ *               |     64 bit     |   16 bit  |     8 bit    |      TBD       |
+ *               |    16bit [4]   |   ushort  |   0    255   |       ?        | 
+ * 
  *  Created on: 14.12.2019
  *      Author: Finn Cyriax
  */
@@ -24,10 +30,14 @@
 #define STEPSIZE 16 // 1/STEPSIZE = smallest beat div
 
 // Offsets
+// starting at SRAM_BASE, for R/W in SRAM use Address SRAM_BASE + OFFSET_X
 #define OFFSET_PATTERN 0
-#define LENGTH_PATTERN 32
+#define LENGTH_PATTERN 64
 
-#define OFFSET_BPM 32
-#define LENGTH_BPM 8
+#define OFFSET_BPM 64
+#define LENGTH_BPM 16
+
+#define OFFSET_PLAYPAUSE 80
+#define LENGTH_PLAYPAUSE 8
 
 #endif /* DM_IO_H_ */

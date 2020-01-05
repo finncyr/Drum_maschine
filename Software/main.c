@@ -9,7 +9,7 @@
  *  3-0: BPM
  * 
  *  Buttons from Left to Right: [1] [2] [3] [4]
- *  1: 
+ *  1: Play/Pause
  *  2: BPM up/down in Steps of 10 (Range: 60-240)
  *  3: Bank Change 1-4 and save pattern
  *  4: Reset
@@ -31,7 +31,8 @@ int main(void) {
     alt_up_parallel_port_dev *greenLEDs, *redLEDs;
 
     static int currentBank = 0;
-    static alt_u8 currentBPM = 120;
+    static alt_u16 currentBPM = 120;
+    static alt_u8 playState = 0; // 0: pause, 255: play
     alt_u8 keys = 0;
     alt_u32 switches = 0;
     alt_u16 pattern[4];
@@ -48,14 +49,13 @@ int main(void) {
         check_KEYs(&keys);
         check_SWITCHs(&switches);
 
-        //Process Bank Change and save pattern
-        if(keys & (1<<3)){
-            pattern[currentBank] = switches<<16;
-            currentBank++;
-            if (currentBank > 3) currentBank = 0;
+        //Play/Pause Button
+        if(keys & (1<<1)){
+            if(playState != 0) playState = 0;
+            else playState = 255;
         }
 
-        ///BPM Up/Down
+        //BPM Up/Down
         if(keys & (1<<2)){
             if(switches & (1<<18)){
                 currentBPM = currentBPM + 10;
@@ -68,11 +68,19 @@ int main(void) {
             if(currentBPM <= 50)  currentBPM = 60;
         }
 
+        //Process Bank Change and save pattern
+        if(keys & (1<<3)){
+            pattern[currentBank] = switches<<16;
+            currentBank++;
+            if (currentBank > 3) currentBank = 0;
+        }
+
         //Output to RAM
         for(int i = 0; i<=3; i++){
             IOWR_ALT_UP_PARALLEL_PORT_DATA(SRAM_BASE + OFFSET_PATTERN + (i*16), pattern[i]);
         }
         IOWR_ALT_UP_PARALLEL_PORT_DATA(SRAM_BASE + OFFSET_BPM, currentBPM);
+        IOWR_ALT_UP_PARALLEL_PORT_DATA(SRAM_BASE + OFFSET_PLAYPAUSE, playState);
 
         //Output to red LEDs
         IOWR_ALT_UP_PARALLEL_PORT_DATA(RED_LEDS_BASE, pattern[currentBank]);
