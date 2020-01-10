@@ -21,14 +21,18 @@
 #include "main.h"
 
 
-void init() {
+void init(
+    alt_up_parallel_port_dev *greenLEDs,
+    alt_up_parallel_port_dev *redLEDs,
+    alt_up_parallel_port_dev *hex3to0,
+    alt_up_parallel_port_dev *hex7to4) {
 
-
+        
 }
 
 
 int main(void) {
-    alt_up_parallel_port_dev *greenLEDs, *redLEDs;
+    alt_up_parallel_port_dev *greenLEDs, *redLEDs, *hex3to0, *hex7to4;
 
     static int currentBank = 0;
     static alt_u16 currentBPM = 120;
@@ -39,7 +43,10 @@ int main(void) {
 
     greenLEDs = alt_up_parallel_port_open_dev(GREEN_LEDS_NAME);
     redLEDs = alt_up_parallel_port_open_dev(RED_LEDS_NAME);
+    hex3to0 = alt_up_parallel_port_open_dev(HEX3_HEX0_NAME);
+    hex7to4 = alt_up_parallel_port_open_dev(HEX7_HEX4_NAME);
 
+    init(greenLEDs, redLEDs, hex3to0, hex7to4);
     ///////////////
     // MAIN LOOP //
     ///////////////
