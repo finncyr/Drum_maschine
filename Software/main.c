@@ -27,7 +27,7 @@ void init(
     alt_up_parallel_port_dev *hex3to0,
     alt_up_parallel_port_dev *hex7to4) {
 
-        
+        IOWR_ALT_UP_PARALLEL_PORT_DATA(GREEN_LEDS_BASE, (1<<0));
 }
 
 
@@ -40,6 +40,7 @@ int main(void) {
     alt_u8 keys = 0;
     alt_u32 switches = 0;
     alt_u16 pattern[4];
+    static alt_u32 BPM_data = 0xffffffff;
 
     greenLEDs = alt_up_parallel_port_open_dev(GREEN_LEDS_NAME);
     redLEDs = alt_up_parallel_port_open_dev(RED_LEDS_NAME);
@@ -94,7 +95,9 @@ int main(void) {
 
         ///TODO: 7 Segment Display Data
         
-        
+        hexTo7Seg(currentBPM / 100)<<16;
+        hexTo7Seg((currentBPM % 100) / 10)<<8;
+        hexTo7Seg(((currentBPM % 100) % 10))<<0;
     }
 }
 
@@ -111,7 +114,7 @@ void check_KEYs(alt_u8 *keys) {
 
 void check_SWITCHs(alt_u32 *switches) {
     // switches[0] => SW17 ; switches[1] => SW16 ...
-    switches = IORD_ALT_UP_PARALLEL_PORT_EDGE_CAPTURE(SLIDER_SWITCHES_BASE);
+    switches = IORD_ALT_UP_PARALLEL_PORT_DATA(SLIDER_SWITCHES_BASE);
 }
 
 // Subroutine Converts Number to 7Seg Data
