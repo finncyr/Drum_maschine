@@ -19,7 +19,7 @@
 
 // Includes
 
-#include <system.h>
+#include "Drum_maschine_sw_bsp\system.h"
 #include <alt_types.h>
 #include <altera_up_avalon_parallel_port.h>
 // Defines

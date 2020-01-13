@@ -125,4 +125,5 @@ unsigned char hexTo7Seg(int *input){
     if (input >= 0 && input <= 16){
         return digit_data[input];
     }
+    else return 0;
 }

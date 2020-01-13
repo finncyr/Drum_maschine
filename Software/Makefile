@@ -142,7 +142,8 @@ ACDS_VERSION := 13.0sp1
 ELF := Drum_maschine_sw.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS := DM_IO.c
+C_SRCS += DM_IO.c
+C_SRCS += main.c
 CXX_SRCS :=
 ASM_SRCS :=
 
