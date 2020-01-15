@@ -7,6 +7,7 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.std_logic_signed.all;
 use ieee.numeric_std.all;
+use work.sine_package.all;
 --use ieee.std_logic_arith.all;
 
 ENTITY CopySamples IS
@@ -46,6 +47,7 @@ ARCHITECTURE Struct OF CopySamples IS
                    readdata_left, readdata_right               :OUT STD_LOGIC_VECTOR(23 DOWNTO 0);
                    AUD_DACDAT                                  :OUT STD_LOGIC);
       END COMPONENT;
+		
       component copy_module is
 				port(clk, reset: in std_logic;
 					  read_ready, write_ready: in STD_LOGIC;
@@ -53,7 +55,13 @@ ARCHITECTURE Struct OF CopySamples IS
 					  writedata_left, writedata_right, audio_input_l, audio_input_r:  out STD_LOGIC_VECTOR(23 DOWNTO 0);
 					  read_s, write_s: out STD_LOGIC);
       end component;
-      signal read_s, write_s, read_ready, write_ready: std_LOGIC;
+		
+		component sine_wave is
+			port( clock, reset, enable: in std_logic;
+					wave_out: out sine_vector_type);
+		end component;
+		
+      signal read_s, write_s, read_ready, write_ready, enable: std_LOGIC;
       signal writedata_left, writedata_right, readdata_left, readdata_right, audio_output_l_s, audio_output_r_s, audio_input_l_s, audio_input_r_s: STD_LOGIC_VECTOR(23 DOWNTO 0); --audio_output_r_s und audio_output_l_s sind die Signale die mit Samples zum ausgegeben gefüttert werden müssen
       signal reset: std_logic;
 BEGIN
@@ -68,12 +76,17 @@ BEGIN
                     readdata_left, readdata_right               ,
                     AUD_DACDAT);
         processing: copy_module 
-          port map(clock_50, reset, read_ready, write_ready, 
+          port map(CLOCK_50, reset, read_ready, write_ready, 
                    readdata_left, readdata_right,
 						 audio_output_l_s, audio_output_r_s,
                    writedata_left, writedata_right,
 						 audio_input_l_s, audio_input_r_s,
                    read_s, write_s);
+						 
+		  synth: sine_wave
+		     port map(clock_50, reset, enable,audio_output_l_s);
+			  
         reset <= not key(0);
+		  enable <= '1';
 
 END Struct;
