@@ -1,5 +1,5 @@
 /*
- * DM_IO.c
+ * main.c
  *
  *  This is the Main IO Functions of the Drum Maschine
  * 
@@ -39,7 +39,8 @@ int main(void) {
     static alt_u8 playState = 0; // 0: pause, 255: play
     alt_u8 keys = 0;
     alt_u32 switches = 0;
-    alt_u16 pattern[4] = {0};
+    alt_u32 pattern[4] = {0};
+    alt_u32 BPMData = 0;
     static unsigned char digit1 = 0, digit2 = 0, digit3 = 0;
     static unsigned char digit_data[10] = {191, 134, 219, 207, 230, 237, 253, 135, 255, 239}; // 0-9
 
@@ -96,11 +97,11 @@ int main(void) {
         IOWR_ALT_UP_PARALLEL_PORT_DATA(SRAM_BASE + OFFSET_PLAYPAUSE, playState);
 
         //Output to red LEDs
-        //IOWR_ALT_UP_PARALLEL_PORT_DATA(RED_LEDS_BASE, pattern[currentBank]);
-        IOWR_ALT_UP_PARALLEL_PORT_DATA(RED_LEDS_BASE, switches);
+        IOWR_ALT_UP_PARALLEL_PORT_DATA(RED_LEDS_BASE, pattern[currentBank]);
+
 
         //Output to green LEDs
-        IOWR_ALT_UP_PARALLEL_PORT_DATA(GREEN_LEDS_BASE, keys);
+        IOWR_ALT_UP_PARALLEL_PORT_DATA(GREEN_LEDS_BASE, playState);
 
         ///7 Segment Display Data
         
@@ -108,10 +109,14 @@ int main(void) {
         digit2 = (currentBPM % 100) / 10;
         digit3 = ((currentBPM % 100) % 10);
 
-        IOWR_ALT_UP_PARALLEL_PORT_DATA(HEX3_HEX0_BASE,digit_data[digit1]<<16);
-        IOWR_ALT_UP_PARALLEL_PORT_DATA(HEX3_HEX0_BASE,digit_data[digit2]<<8);
-        IOWR_ALT_UP_PARALLEL_PORT_DATA(HEX3_HEX0_BASE,digit_data[digit3]<<0);
+        BPMData = (digit_data[digit1]<<16) + (digit_data[digit2]<<8) + (digit_data[digit3]<<0);
+
+        //IOWR_ALT_UP_PARALLEL_PORT_DATA(HEX3_HEX0_BASE,digit_data[digit1]<<16);
+        //IOWR_ALT_UP_PARALLEL_PORT_DATA(HEX3_HEX0_BASE,digit_data[digit2]<<8);
+        //IOWR_ALT_UP_PARALLEL_PORT_DATA(HEX3_HEX0_BASE,digit_data[digit3]<<0);
+        IOWR_ALT_UP_PARALLEL_PORT_DATA(HEX3_HEX0_BASE,BPMData);
 
         IOWR_ALT_UP_PARALLEL_PORT_DATA(HEX7_HEX4_BASE,digit_data[currentBank]<<0);
     }
 }
+
