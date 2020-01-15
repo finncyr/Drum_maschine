@@ -1,5 +1,5 @@
 /*
- * DM_IO.c
+ * main.c
  *
  *  This is the Main IO Functions of the Drum Maschine
  * 
@@ -39,8 +39,10 @@ int main(void) {
     static alt_u8 playState = 0; // 0: pause, 255: play
     alt_u8 keys = 0;
     alt_u32 switches = 0;
-    alt_u16 pattern[4];
-    static alt_u32 BPM_data = 0xffffffff;
+    alt_u32 pattern[4] = {0};
+    alt_u32 BPMData = 0;
+    static unsigned char digit1 = 0, digit2 = 0, digit3 = 0;
+    static unsigned char digit_data[10] = {191, 134, 219, 207, 230, 237, 253, 135, 255, 239}; // 0-9
 
     greenLEDs = alt_up_parallel_port_open_dev(GREEN_LEDS_NAME);
     redLEDs = alt_up_parallel_port_open_dev(RED_LEDS_NAME);
@@ -54,18 +56,19 @@ int main(void) {
 
     while(1){
         //Grab Inputs
-        check_KEYs(&keys);
-        check_SWITCHs(&switches);
+    	keys = IORD_ALT_UP_PARALLEL_PORT_DATA(PUSHBUTTONS_BASE);
+        switches = IORD_ALT_UP_PARALLEL_PORT_DATA(SLIDER_SWITCHES_BASE);
 
         //Play/Pause Button
-        if(keys & (1<<1)){
+        if(keys & (1<<1)){ // ^ => XOR
             if(playState != 0) playState = 0;
             else playState = 255;
+            while(keys & (1<<1)){keys = IORD_ALT_UP_PARALLEL_PORT_DATA(PUSHBUTTONS_BASE);}
         }
 
         //BPM Up/Down
-        if(keys & (1<<2)){
-            if(switches & (1<<18)){
+        if (keys & (1<<2)){
+            if(switches & (1<<0)){
                 currentBPM = currentBPM + 10;
             }
             else{
@@ -74,17 +77,20 @@ int main(void) {
 
             if(currentBPM >= 250) currentBPM = 240;
             if(currentBPM <= 50)  currentBPM = 60;
+            while(keys & (1<<2)){keys = IORD_ALT_UP_PARALLEL_PORT_DATA(PUSHBUTTONS_BASE);}
         }
 
         //Process Bank Change and save pattern
         if(keys & (1<<3)){
-            pattern[currentBank] = switches<<16;
+            pattern[currentBank] = switches;
             currentBank++;
             if (currentBank > 3) currentBank = 0;
+            while(keys & (1<<3)){keys = IORD_ALT_UP_PARALLEL_PORT_DATA(PUSHBUTTONS_BASE);}
         }
 
         //Output to RAM
-        for(int i = 0; i<=3; i++){
+        int i = 0;
+        for(i = 0; i<=3; i++){
             IOWR_ALT_UP_PARALLEL_PORT_DATA(SRAM_BASE + OFFSET_PATTERN + (i*16), pattern[i]);
         }
         IOWR_ALT_UP_PARALLEL_PORT_DATA(SRAM_BASE + OFFSET_BPM, currentBPM);
@@ -93,40 +99,24 @@ int main(void) {
         //Output to red LEDs
         IOWR_ALT_UP_PARALLEL_PORT_DATA(RED_LEDS_BASE, pattern[currentBank]);
 
-        ///TODO: 7 Segment Display Data
+
+        //Output to green LEDs
+        IOWR_ALT_UP_PARALLEL_PORT_DATA(GREEN_LEDS_BASE, playState);
+
+        ///7 Segment Display Data
         
-        hexTo7Seg(currentBPM / 100)<<16;
-        hexTo7Seg((currentBPM % 100) / 10)<<8;
-        hexTo7Seg(((currentBPM % 100) % 10))<<0;
+        digit1 = currentBPM / 100;
+        digit2 = (currentBPM % 100) / 10;
+        digit3 = ((currentBPM % 100) % 10);
+
+        BPMData = (digit_data[digit1]<<16) + (digit_data[digit2]<<8) + (digit_data[digit3]<<0);
+
+        //IOWR_ALT_UP_PARALLEL_PORT_DATA(HEX3_HEX0_BASE,digit_data[digit1]<<16);
+        //IOWR_ALT_UP_PARALLEL_PORT_DATA(HEX3_HEX0_BASE,digit_data[digit2]<<8);
+        //IOWR_ALT_UP_PARALLEL_PORT_DATA(HEX3_HEX0_BASE,digit_data[digit3]<<0);
+        IOWR_ALT_UP_PARALLEL_PORT_DATA(HEX3_HEX0_BASE,BPMData);
+
+        IOWR_ALT_UP_PARALLEL_PORT_DATA(HEX7_HEX4_BASE,digit_data[currentBank]<<0);
     }
 }
 
-
-// Subroutine to check Pushbuttons
-
-void check_KEYs(alt_u8 *keys) {
-	int KEY_value = 0;
-
-	keys = IORD_ALT_UP_PARALLEL_PORT_EDGE_CAPTURE(PUSHBUTTONS_BASE); 				// read the pushbutton KEY values
-}
-
-// Subroutine to check Switches
-
-void check_SWITCHs(alt_u32 *switches) {
-    // switches[0] => SW17 ; switches[1] => SW16 ...
-    switches = IORD_ALT_UP_PARALLEL_PORT_DATA(SLIDER_SWITCHES_BASE);
-}
-
-// Subroutine Converts Number to 7Seg Data
-
-unsigned char hexTo7Seg(int *input){
-    static unsigned char digit_data = {
-        0x01, 0x4f, 0x12, 0x06, 0x4c, 0x24, 0x20, 0x0f, 0x00, 0x04, // 0-9
-        0x08, 0x60, 0x72, 0x42, 0x30, 0x38 }; // a-f
-    
-
-    if (input >= 0 && input <= 16){
-        return digit_data[input];
-    }
-    else return 0;
-}
