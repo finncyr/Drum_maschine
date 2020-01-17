@@ -24,10 +24,11 @@
 #include <altera_up_avalon_parallel_port.h>
 // Defines
 
-#define ADDR_LENGTH 32
-#define BIT_RES 24
+#define MIN_BPM 60
+#define MAX_BPM 240
+#define STEP_BPM 10
 
-#define STEPSIZE 16 // 1/STEPSIZE = smallest beat div
+#define HIGHEST_BANK = 3
 
 // Offsets
 // starting at SRAM_BASE, for R/W in SRAM use Address SRAM_BASE + OFFSET_X

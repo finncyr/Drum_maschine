@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "main.h": "c",
-        "system.h": "c"
+        "system.h": "c",
+        "altera_up_avalon_parallel_port.h": "c"
     }
 }

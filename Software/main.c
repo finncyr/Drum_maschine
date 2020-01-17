@@ -36,19 +36,21 @@ int main(void) {
 
     static int currentBank = 0;
     static alt_u16 currentBPM = 120;
-    static alt_u8 playState = 0; // 0: pause, 255: play
-    alt_u8 keys = 0;
-    alt_u32 switches = 0;
-    alt_u32 pattern[4] = {0};
-    alt_u32 BPMData = 0;
-    static unsigned char digit1 = 0, digit2 = 0, digit3 = 0;
-    static unsigned char digit_data[10] = {191, 134, 219, 207, 230, 237, 253, 135, 255, 239}; // 0-9
+    static alt_u8 playState = 0; // Data which indicates if the maschine is generating an output signal
+    alt_u8 keys = 0; // Data that contains the current loops pushbutton setting
+    alt_u32 switches = 0; // Data that contains the current loops switch setting 
+    alt_u32 pattern[4] = {0}; // Data which contains all Patterns, created from switches
+    alt_u32 BPMData = 0; // Data that will be written to HEX3to0
+    static unsigned char digit1 = 0, digit2 = 0, digit3 = 0; // Variables for computing Digit by Digit of the BPM Value
+    static unsigned char digit_data[10] = {191, 134, 219, 207, 230, 237, 253, 135, 255, 239}; // Bit-Data for 7-Segment Digits
 
+    // Initialization of HAL Ports
     greenLEDs = alt_up_parallel_port_open_dev(GREEN_LEDS_NAME);
     redLEDs = alt_up_parallel_port_open_dev(RED_LEDS_NAME);
     hex3to0 = alt_up_parallel_port_open_dev(HEX3_HEX0_NAME);
     hex7to4 = alt_up_parallel_port_open_dev(HEX7_HEX4_NAME);
 
+    //Initiating functions
     init(greenLEDs, redLEDs, hex3to0, hex7to4);
     ///////////////
     // MAIN LOOP //
@@ -69,14 +71,14 @@ int main(void) {
         //BPM Up/Down
         if (keys & (1<<2)){
             if(switches & (1<<0)){
-                currentBPM = currentBPM + 10;
+                currentBPM = currentBPM + STEP_BPM;
             }
             else{
-                currentBPM = currentBPM - 10;
+                currentBPM = currentBPM - STEP_BPM;
             }
 
-            if(currentBPM >= 250) currentBPM = 240;
-            if(currentBPM <= 50)  currentBPM = 60;
+            if(currentBPM >= (MAX_BPM + STEP_BPM)) currentBPM = MAX_BPM;
+            if(currentBPM <= (MIN_BPM - STEP_BPM))  currentBPM = MIN_BPM;
             while(keys & (1<<2)){keys = IORD_ALT_UP_PARALLEL_PORT_DATA(PUSHBUTTONS_BASE);}
         }
 
@@ -84,11 +86,14 @@ int main(void) {
         if(keys & (1<<3)){
             pattern[currentBank] = switches;
             currentBank++;
-            if (currentBank > 3) currentBank = 0;
+            if (currentBank > HIGHEST_BANK) currentBank = 0;
             while(keys & (1<<3)){keys = IORD_ALT_UP_PARALLEL_PORT_DATA(PUSHBUTTONS_BASE);}
         }
 
-        //Output to RAM
+        /////////////////////////
+        //    Output to RAM    //
+        /////////////////////////
+
         int i = 0;
         for(i = 0; i<=3; i++){
             IOWR_ALT_UP_PARALLEL_PORT_DATA(SRAM_BASE + OFFSET_PATTERN + (i*16), pattern[i]);
@@ -103,17 +108,12 @@ int main(void) {
         //Output to green LEDs
         IOWR_ALT_UP_PARALLEL_PORT_DATA(GREEN_LEDS_BASE, playState);
 
-        ///7 Segment Display Data
-        
+        //Output to 7Segment Display
         digit1 = currentBPM / 100;
         digit2 = (currentBPM % 100) / 10;
         digit3 = ((currentBPM % 100) % 10);
 
         BPMData = (digit_data[digit1]<<16) + (digit_data[digit2]<<8) + (digit_data[digit3]<<0);
-
-        //IOWR_ALT_UP_PARALLEL_PORT_DATA(HEX3_HEX0_BASE,digit_data[digit1]<<16);
-        //IOWR_ALT_UP_PARALLEL_PORT_DATA(HEX3_HEX0_BASE,digit_data[digit2]<<8);
-        //IOWR_ALT_UP_PARALLEL_PORT_DATA(HEX3_HEX0_BASE,digit_data[digit3]<<0);
         IOWR_ALT_UP_PARALLEL_PORT_DATA(HEX3_HEX0_BASE,BPMData);
 
         IOWR_ALT_UP_PARALLEL_PORT_DATA(HEX7_HEX4_BASE,digit_data[currentBank]<<0);
