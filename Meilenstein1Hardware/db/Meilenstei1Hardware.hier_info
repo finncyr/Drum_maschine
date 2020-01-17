@@ -550,14 +550,12 @@ AUD_DACDAT <= audio_codec:b2v_inst1.AUD_DACDAT
 |TopLvlEnt|Meilenstei1Hardware:b2v_DtFlw|copy_module:b2v_inst
 clk => reg:inputbufferL.clk
 clk => write_s~reg0.CLK
-clk => writeout.CLK
 clk => reg:inputbufferR.clk
 clk => reg:outputbufferL.clk
 clk => reg:outputbufferR.clk
 clk => \controlread:state~1.DATAIN
 reset => reg:inputbufferL.reset
 reset => write_s~reg0.PRESET
-reset => writeout.ACLR
 reset => reg:inputbufferR.reset
 reset => reg:outputbufferL.reset
 reset => reg:outputbufferR.reset

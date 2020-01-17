@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CopySamples
-Wed Jan 15 23:08:02 2020
+Fri Jan 17 16:00:14 2020
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -85,7 +85,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jan 15 23:08:02 2020           ;
+; Analysis & Synthesis Status        ; Successful - Fri Jan 17 16:00:14 2020           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; CopySamples                                     ;
 ; Top-level Entity Name              ; CopySamples                                     ;
@@ -1339,7 +1339,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -1349,7 +1349,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Jan 15 23:07:51 2020
+    Info: Processing started: Fri Jan 17 16:00:10 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CopySamplesDE2 -c CopySamples
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file pwm.vhd
@@ -1396,6 +1396,9 @@ Info (12021): Found 2 design units, including 0 entities, in source file sine_pa
 Info (12021): Found 2 design units, including 1 entities, in source file sine_wave.vhd
     Info (12022): Found design unit 1: sine_wave-arch1
     Info (12023): Found entity 1: sine_wave
+Info (12021): Found 2 design units, including 1 entities, in source file rythmcontroller.vhd
+    Info (12022): Found design unit 1: RythmController-Arch
+    Info (12023): Found entity 1: RythmController
 Info (12127): Elaborating entity "CopySamples" for the top level hierarchy
 Warning (10541): VHDL Signal Declaration warning at CopySamples.vhd(20): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10541): VHDL Signal Declaration warning at CopySamples.vhd(65): used implicit default value for signal "audio_output_r_s" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
@@ -1625,8 +1628,8 @@ Info (21057): Implemented 502 device resources after synthesis - the final resou
     Info (21065): Implemented 1 PLLs
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 105 warnings
     Info: Peak virtual memory: 4685 megabytes
-    Info: Processing ended: Wed Jan 15 23:08:02 2020
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Processing ended: Fri Jan 17 16:00:14 2020
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
 
 

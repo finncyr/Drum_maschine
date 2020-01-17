@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Meilenstei1Hardware
-Mon Jan 06 12:20:50 2020
+Fri Jan 17 13:52:18 2020
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -59,11 +59,13 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  51. altpll Parameter Settings by Entity Instance
  52. scfifo Parameter Settings by Entity Instance
  53. altsyncram Parameter Settings by Entity Instance
- 54. Port Connectivity Checks: "audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller"
- 55. Port Connectivity Checks: "audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize"
- 56. Port Connectivity Checks: "audio_and_video_config:avIntf|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz"
- 57. Elapsed Time Per Partition
- 58. Analysis & Synthesis Messages
+ 54. Port Connectivity Checks: "Meilenstei1Hardware:b2v_DtFlw|copy_module:b2v_inst|reg:outputbufferR"
+ 55. Port Connectivity Checks: "Meilenstei1Hardware:b2v_DtFlw|copy_module:b2v_inst|reg:outputbufferL"
+ 56. Port Connectivity Checks: "audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller"
+ 57. Port Connectivity Checks: "audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize"
+ 58. Port Connectivity Checks: "audio_and_video_config:avIntf|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz"
+ 59. Elapsed Time Per Partition
+ 60. Analysis & Synthesis Messages
 
 
 
@@ -89,15 +91,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jan 06 12:20:50 2020           ;
+; Analysis & Synthesis Status        ; Successful - Fri Jan 17 13:52:17 2020           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Meilenstei1Hardware                             ;
 ; Top-level Entity Name              ; TopLvlEnt                                       ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 722                                             ;
-;     Total combinational functions  ; 607                                             ;
-;     Dedicated logic registers      ; 443                                             ;
-; Total registers                    ; 443                                             ;
+; Total logic elements               ; 719                                             ;
+;     Total combinational functions  ; 604                                             ;
+;     Dedicated logic registers      ; 442                                             ;
+; Total registers                    ; 442                                             ;
 ; Total pins                         ; 13                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 208,896                                         ;
@@ -263,20 +265,20 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 722            ;
+; Estimated Total logic elements              ; 719            ;
 ;                                             ;                ;
-; Total combinational functions               ; 607            ;
+; Total combinational functions               ; 604            ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 233            ;
-;     -- 3 input functions                    ; 154            ;
-;     -- <=2 input functions                  ; 220            ;
+;     -- 4 input functions                    ; 234            ;
+;     -- 3 input functions                    ; 152            ;
+;     -- <=2 input functions                  ; 218            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 476            ;
+;     -- normal mode                          ; 473            ;
 ;     -- arithmetic mode                      ; 131            ;
 ;                                             ;                ;
-; Total registers                             ; 443            ;
-;     -- Dedicated logic registers            ; 443            ;
+; Total registers                             ; 442            ;
+;     -- Dedicated logic registers            ; 442            ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 13             ;
@@ -286,9 +288,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- PLLs                                 ; 1              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 587            ;
-; Total fan-out                               ; 5816           ;
-; Average fan-out                             ; 4.76           ;
+; Maximum fan-out                             ; 586            ;
+; Total fan-out                               ; 5759           ;
+; Average fan-out                             ; 4.73           ;
 +---------------------------------------------+----------------+
 
 
@@ -297,9 +299,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                           ; Library Name ;
 +------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |TopLvlEnt                                                       ; 607 (1)           ; 443 (0)      ; 208896      ; 0            ; 0       ; 0         ; 13   ; 0            ; |TopLvlEnt                                                                                                                                                                                                                                                    ; work         ;
-;    |CtlFlw:b2v_CtlFlw|                                           ; 82 (82)           ; 37 (37)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLvlEnt|CtlFlw:b2v_CtlFlw                                                                                                                                                                                                                                  ; work         ;
-;    |Meilenstei1Hardware:b2v_DtFlw|                               ; 334 (0)           ; 341 (0)      ; 208896      ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLvlEnt|Meilenstei1Hardware:b2v_DtFlw                                                                                                                                                                                                                      ; work         ;
+; |TopLvlEnt                                                       ; 604 (1)           ; 442 (0)      ; 208896      ; 0            ; 0       ; 0         ; 13   ; 0            ; |TopLvlEnt                                                                                                                                                                                                                                                    ; work         ;
+;    |CtlFlw:b2v_CtlFlw|                                           ; 79 (79)           ; 37 (37)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLvlEnt|CtlFlw:b2v_CtlFlw                                                                                                                                                                                                                                  ; work         ;
+;    |Meilenstei1Hardware:b2v_DtFlw|                               ; 334 (0)           ; 340 (0)      ; 208896      ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLvlEnt|Meilenstei1Hardware:b2v_DtFlw                                                                                                                                                                                                                      ; work         ;
 ;       |audio_codec:b2v_inst1|                                    ; 327 (12)          ; 228 (2)      ; 12288       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLvlEnt|Meilenstei1Hardware:b2v_DtFlw|audio_codec:b2v_inst1                                                                                                                                                                                                ; work         ;
 ;          |Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer| ; 159 (45)          ; 112 (40)     ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLvlEnt|Meilenstei1Hardware:b2v_DtFlw|audio_codec:b2v_inst1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer                                                                                                                                          ; work         ;
 ;             |Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|  ; 10 (10)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLvlEnt|Meilenstei1Hardware:b2v_DtFlw|audio_codec:b2v_inst1|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter                                                                                        ; work         ;
@@ -339,7 +341,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |Altera_UP_Clock_Edge:ADC_Left_Right_Clock_Edges|       ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLvlEnt|Meilenstei1Hardware:b2v_DtFlw|audio_codec:b2v_inst1|Altera_UP_Clock_Edge:ADC_Left_Right_Clock_Edges                                                                                                                                                ; work         ;
 ;          |Altera_UP_Clock_Edge:Bit_Clock_Edges|                  ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLvlEnt|Meilenstei1Hardware:b2v_DtFlw|audio_codec:b2v_inst1|Altera_UP_Clock_Edge:Bit_Clock_Edges                                                                                                                                                           ; work         ;
 ;          |Altera_UP_Clock_Edge:DAC_Left_Right_Clock_Edges|       ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLvlEnt|Meilenstei1Hardware:b2v_DtFlw|audio_codec:b2v_inst1|Altera_UP_Clock_Edge:DAC_Left_Right_Clock_Edges                                                                                                                                                ; work         ;
-;       |copy_module:b2v_inst|                                     ; 7 (7)             ; 101 (5)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLvlEnt|Meilenstei1Hardware:b2v_DtFlw|copy_module:b2v_inst                                                                                                                                                                                                 ; work         ;
+;       |copy_module:b2v_inst|                                     ; 7 (7)             ; 100 (4)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLvlEnt|Meilenstei1Hardware:b2v_DtFlw|copy_module:b2v_inst                                                                                                                                                                                                 ; work         ;
 ;          |reg:inputbufferL|                                      ; 0 (0)             ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLvlEnt|Meilenstei1Hardware:b2v_DtFlw|copy_module:b2v_inst|reg:inputbufferL                                                                                                                                                                                ; work         ;
 ;          |reg:inputbufferR|                                      ; 0 (0)             ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLvlEnt|Meilenstei1Hardware:b2v_DtFlw|copy_module:b2v_inst|reg:inputbufferR                                                                                                                                                                                ; work         ;
 ;          |reg:outputbufferL|                                     ; 0 (0)             ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLvlEnt|Meilenstei1Hardware:b2v_DtFlw|copy_module:b2v_inst|reg:outputbufferL                                                                                                                                                                               ; work         ;
@@ -494,12 +496,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 443   ;
+; Total registers                              ; 442   ;
 ; Number of registers using Synchronous Clear  ; 91    ;
 ; Number of registers using Synchronous Load   ; 108   ;
-; Number of registers using Asynchronous Clear ; 118   ;
+; Number of registers using Asynchronous Clear ; 117   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 319   ;
+; Number of registers using Clock Enable       ; 271   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -1514,6 +1516,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+-----------------------------------------------------------------------------------------+
 
 
++--------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Meilenstei1Hardware:b2v_DtFlw|copy_module:b2v_inst|reg:outputbufferR" ;
++------+-------+----------+------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                ;
++------+-------+----------+------------------------------------------------------------------------+
+; w    ; Input ; Info     ; Stuck at VCC                                                           ;
++------+-------+----------+------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Meilenstei1Hardware:b2v_DtFlw|copy_module:b2v_inst|reg:outputbufferL" ;
++------+-------+----------+------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                ;
++------+-------+----------+------------------------------------------------------------------------+
+; w    ; Input ; Info     ; Stuck at VCC                                                           ;
++------+-------+----------+------------------------------------------------------------------------+
+
+
 +-------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller"                                  ;
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -1561,7 +1581,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Jan 06 12:20:41 2020
+    Info: Processing started: Fri Jan 17 13:52:10 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Meilenstei1Hardware -c Meilenstei1Hardware
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file toplvlent.vhd
@@ -1696,6 +1716,8 @@ Info (12128): Elaborating entity "Meilenstei1Hardware" for hierarchy "Meilenstei
 Info (12128): Elaborating entity "copy_module" for hierarchy "Meilenstei1Hardware:b2v_DtFlw|copy_module:b2v_inst"
 Warning (10631): VHDL Process Statement warning at copy_module_LSG.vhd(45): inferring latch(es) for signal or variable "readIn", which holds its previous value in one or more paths through the process
 Warning (10631): VHDL Process Statement warning at copy_module_LSG.vhd(45): inferring latch(es) for signal or variable "read_s", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at copy_module_LSG.vhd(79): inferring latch(es) for signal or variable "writeout", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "writeout" at copy_module_LSG.vhd(79)
 Info (10041): Inferred latch for "read_s" at copy_module_LSG.vhd(45)
 Info (10041): Inferred latch for "readIn" at copy_module_LSG.vhd(45)
 Info (12128): Elaborating entity "reg" for hierarchy "Meilenstei1Hardware:b2v_DtFlw|copy_module:b2v_inst|reg:inputbufferL"
@@ -1783,17 +1805,17 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 6 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 886 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 882 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 5 output pins
     Info (21060): Implemented 1 bidirectional pins
-    Info (21061): Implemented 728 logic cells
+    Info (21061): Implemented 724 logic cells
     Info (21064): Implemented 144 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4678 megabytes
-    Info: Processing ended: Mon Jan 06 12:20:50 2020
-    Info: Elapsed time: 00:00:09
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4688 megabytes
+    Info: Processing ended: Fri Jan 17 13:52:18 2020
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:07
 
 
