@@ -42,16 +42,16 @@ begin
             case STATE is
                 when REC =>
                     addr := std_logic_vector( unsigned(addr) + 1 ); -- variable assignment
-                    if(ADDR<"00000000000000111010100110000000") then                   --3*48000 = 240000 = 0x3A980 -> 3 Sekunden Aufnahme
+                    if(ADDR<"11111111111111111111111111111111") then                   --3*48000 = 240000 = 0x3A980 -> 3 Sekunden Aufnahme
                         STATE := REC;
-                    elsif(ADDR>="00000000000000111010100110000000") then               
+                    elsif(ADDR>="11111111111111111111111111111111") then               
                         STATE := INITPLAY;
                     end if;
                 when PLAY =>
                     addr := std_logic_vector( unsigned(addr) + 1 ); -- variable assignment
-                    if(ADDR<"00000000000000111010100110000000") then                   --3*48000 = 240000 = 0x3A980 -> 3 Sekunden Wiedergabe
+                    if(ADDR<"11111111111111111111111111111111") then                   --3*48000 = 240000 = 0x3A980 -> 3 Sekunden Wiedergabe
                         STATE := PLAY;
-                    elsif(ADDR>="00000000000000111010100110000000") then
+                    elsif(ADDR>="11111111111111111111111111111111") then
                         STATE := IDLE;
                     end if;
                 when INITREC =>
