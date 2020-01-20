@@ -1,0 +1,187 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do CopySamples_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Sciebo/THK/DTS/Drum_maschine/CodecTest {C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/clock_generator.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock_generator
+# 
+# Top level modules:
+# 	clock_generator
+# vlog -vlog01compat -work work +incdir+C:/Sciebo/THK/DTS/Drum_maschine/CodecTest {C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/audio_codec.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_codec
+# 
+# Top level modules:
+# 	audio_codec
+# vlog -vlog01compat -work work +incdir+C:/Sciebo/THK/DTS/Drum_maschine/CodecTest {C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/audio_and_video_config.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_and_video_config
+# 
+# Top level modules:
+# 	audio_and_video_config
+# vlog -vlog01compat -work work +incdir+C:/Sciebo/THK/DTS/Drum_maschine/CodecTest {C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_SYNC_FIFO.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Altera_UP_SYNC_FIFO
+# 
+# Top level modules:
+# 	Altera_UP_SYNC_FIFO
+# vlog -vlog01compat -work work +incdir+C:/Sciebo/THK/DTS/Drum_maschine/CodecTest {C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Slow_Clock_Generator.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Altera_UP_Slow_Clock_Generator
+# 
+# Top level modules:
+# 	Altera_UP_Slow_Clock_Generator
+# vlog -vlog01compat -work work +incdir+C:/Sciebo/THK/DTS/Drum_maschine/CodecTest {C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_I2C_AV_Auto_Initialize.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Altera_UP_I2C_AV_Auto_Initialize
+# 
+# Top level modules:
+# 	Altera_UP_I2C_AV_Auto_Initialize
+# vlog -vlog01compat -work work +incdir+C:/Sciebo/THK/DTS/Drum_maschine/CodecTest {C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_I2C.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Altera_UP_I2C
+# 
+# Top level modules:
+# 	Altera_UP_I2C
+# vlog -vlog01compat -work work +incdir+C:/Sciebo/THK/DTS/Drum_maschine/CodecTest {C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Clock_Edge.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Altera_UP_Clock_Edge
+# 
+# Top level modules:
+# 	Altera_UP_Clock_Edge
+# vlog -vlog01compat -work work +incdir+C:/Sciebo/THK/DTS/Drum_maschine/CodecTest {C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Audio_Out_Serializer.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Altera_UP_Audio_Out_Serializer
+# 
+# Top level modules:
+# 	Altera_UP_Audio_Out_Serializer
+# vlog -vlog01compat -work work +incdir+C:/Sciebo/THK/DTS/Drum_maschine/CodecTest {C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Audio_In_Deserializer.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Altera_UP_Audio_In_Deserializer
+# 
+# Top level modules:
+# 	Altera_UP_Audio_In_Deserializer
+# vlog -vlog01compat -work work +incdir+C:/Sciebo/THK/DTS/Drum_maschine/CodecTest {C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Audio_Bit_Counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Altera_UP_Audio_Bit_Counter
+# 
+# Top level modules:
+# 	Altera_UP_Audio_Bit_Counter
+# vcom -93 -work work {C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/reg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg
+# -- Compiling architecture behv of reg
+# vcom -93 -work work {C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/copy_module.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity copy_module
+# -- Compiling architecture dataflow of copy_module
+# vcom -93 -work work {C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/sine_package.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package sine_package
+# -- Compiling package body sine_package
+# -- Loading package sine_package
+# vcom -93 -work work {C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/rythmcontroller.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RythmController
+# -- Compiling architecture Arch of RythmController
+# vcom -93 -work work {C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/sampleMixer.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sampleMixer
+# -- Compiling architecture arch of sampleMixer
+# vcom -93 -work work {C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/CopySamples.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package sine_package
+# -- Compiling entity CopySamples
+# -- Compiling architecture Struct of CopySamples
+# vcom -93 -work work {C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/sine_wave.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package sine_package
+# -- Compiling entity sine_wave
+# -- Compiling architecture arch1 of sine_wave
+# 
+# vcom -93 -work work {C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/simulation/modelsim/rythmControllerTB.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package std_logic_textio
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity rythmControllerTB
+# -- Compiling architecture rythmControllerTB_arch of rythmControllerTB
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  rathmControllerTB
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=\"+acc\" -t 1ps rathmControllerTB 
+# ** Error: (vsim-3170) Could not find 'C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/simulation/modelsim/rtl_work.rathmControllerTB'.
+# 
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./CopySamples_run_msim_rtl_vhdl.do PAUSED at line 29
+vsim work.rythmcontrollertb
+# vsim work.rythmcontrollertb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.rythmcontrollertb(rythmcontrollertb_arch)
+# Loading work.rythmcontroller(arch)
+vsim work.rythmcontrollertb
+# vsim work.rythmcontrollertb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.rythmcontrollertb(rythmcontrollertb_arch)
+# Loading work.rythmcontroller(arch)

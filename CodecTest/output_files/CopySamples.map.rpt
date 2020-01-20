@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CopySamples
-Fri Jan 17 16:00:14 2020
+Mon Jan 20 20:00:27 2020
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -14,52 +14,56 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
-  9. State Machine - |CopySamples|sine_wave:synth|state
- 10. State Machine - |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller|s_i2c_transceiver
- 11. State Machine - |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|s_i2c_auto_init
- 12. Registers Removed During Synthesis
- 13. Removed Registers Triggering Further Register Optimizations
- 14. General Register Statistics
- 15. Inverted Register Statistics
- 16. Multiplexer Restructuring Statistics (Restructuring Performed)
- 17. Source assignments for audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_fh81:FIFOram
- 18. Source assignments for audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_fh81:FIFOram
- 19. Source assignments for audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_fh81:FIFOram
- 20. Source assignments for audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_fh81:FIFOram
- 21. Parameter Settings for User Entity Instance: Top-level Entity: |CopySamples
- 22. Parameter Settings for User Entity Instance: clock_generator:cgen
- 23. Parameter Settings for User Entity Instance: clock_generator:cgen|altpll:DE_Clock_Generator_Audio
- 24. Parameter Settings for User Entity Instance: audio_and_video_config:avIntf
- 25. Parameter Settings for User Entity Instance: audio_and_video_config:avIntf|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz
- 26. Parameter Settings for User Entity Instance: audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize
- 27. Parameter Settings for User Entity Instance: audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller
- 28. Parameter Settings for User Entity Instance: audio_codec:audio
- 29. Parameter Settings for User Entity Instance: audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer
- 30. Parameter Settings for User Entity Instance: audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter
- 31. Parameter Settings for User Entity Instance: audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO
- 32. Parameter Settings for User Entity Instance: audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO
- 33. Parameter Settings for User Entity Instance: audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO
- 34. Parameter Settings for User Entity Instance: audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO
- 35. Parameter Settings for User Entity Instance: audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer
- 36. Parameter Settings for User Entity Instance: audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO
- 37. Parameter Settings for User Entity Instance: audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO
- 38. Parameter Settings for User Entity Instance: audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO
- 39. Parameter Settings for User Entity Instance: audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO
- 40. Parameter Settings for User Entity Instance: copy_module:processing|reg:inputbufferL
- 41. Parameter Settings for User Entity Instance: copy_module:processing|reg:inputbufferR
- 42. Parameter Settings for User Entity Instance: copy_module:processing|reg:outputbufferL
- 43. Parameter Settings for User Entity Instance: copy_module:processing|reg:outputbufferR
- 44. altpll Parameter Settings by Entity Instance
- 45. scfifo Parameter Settings by Entity Instance
- 46. Port Connectivity Checks: "sine_wave:synth"
- 47. Port Connectivity Checks: "copy_module:processing|reg:outputbufferR"
- 48. Port Connectivity Checks: "copy_module:processing|reg:outputbufferL"
- 49. Port Connectivity Checks: "copy_module:processing"
- 50. Port Connectivity Checks: "audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller"
- 51. Port Connectivity Checks: "audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize"
- 52. Port Connectivity Checks: "audio_and_video_config:avIntf|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz"
- 53. Elapsed Time Per Partition
- 54. Analysis & Synthesis Messages
+  9. State Machine - |CopySamples|sine_wave:synth4|state
+ 10. State Machine - |CopySamples|sine_wave:synth3|state
+ 11. State Machine - |CopySamples|sine_wave:synth2|state
+ 12. State Machine - |CopySamples|sine_wave:synth1|state
+ 13. State Machine - |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller|s_i2c_transceiver
+ 14. State Machine - |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|s_i2c_auto_init
+ 15. Registers Removed During Synthesis
+ 16. Removed Registers Triggering Further Register Optimizations
+ 17. General Register Statistics
+ 18. Inverted Register Statistics
+ 19. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 20. Source assignments for audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_fh81:FIFOram
+ 21. Source assignments for audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_fh81:FIFOram
+ 22. Source assignments for audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_fh81:FIFOram
+ 23. Source assignments for audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_fh81:FIFOram
+ 24. Parameter Settings for User Entity Instance: Top-level Entity: |CopySamples
+ 25. Parameter Settings for User Entity Instance: clock_generator:cgen
+ 26. Parameter Settings for User Entity Instance: clock_generator:cgen|altpll:DE_Clock_Generator_Audio
+ 27. Parameter Settings for User Entity Instance: audio_and_video_config:avIntf
+ 28. Parameter Settings for User Entity Instance: audio_and_video_config:avIntf|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz
+ 29. Parameter Settings for User Entity Instance: audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize
+ 30. Parameter Settings for User Entity Instance: audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller
+ 31. Parameter Settings for User Entity Instance: audio_codec:audio
+ 32. Parameter Settings for User Entity Instance: audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer
+ 33. Parameter Settings for User Entity Instance: audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter
+ 34. Parameter Settings for User Entity Instance: audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO
+ 35. Parameter Settings for User Entity Instance: audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO
+ 36. Parameter Settings for User Entity Instance: audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO
+ 37. Parameter Settings for User Entity Instance: audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO
+ 38. Parameter Settings for User Entity Instance: audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer
+ 39. Parameter Settings for User Entity Instance: audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO
+ 40. Parameter Settings for User Entity Instance: audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO
+ 41. Parameter Settings for User Entity Instance: audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO
+ 42. Parameter Settings for User Entity Instance: audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO
+ 43. Parameter Settings for User Entity Instance: copy_module:processing|reg:inputbufferL
+ 44. Parameter Settings for User Entity Instance: copy_module:processing|reg:inputbufferR
+ 45. Parameter Settings for User Entity Instance: copy_module:processing|reg:outputbufferL
+ 46. Parameter Settings for User Entity Instance: copy_module:processing|reg:outputbufferR
+ 47. Parameter Settings for User Entity Instance: RythmController:rythctl
+ 48. altpll Parameter Settings by Entity Instance
+ 49. scfifo Parameter Settings by Entity Instance
+ 50. Port Connectivity Checks: "RythmController:rythctl"
+ 51. Port Connectivity Checks: "copy_module:processing|reg:outputbufferR"
+ 52. Port Connectivity Checks: "copy_module:processing|reg:outputbufferL"
+ 53. Port Connectivity Checks: "copy_module:processing"
+ 54. Port Connectivity Checks: "audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller"
+ 55. Port Connectivity Checks: "audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize"
+ 56. Port Connectivity Checks: "audio_and_video_config:avIntf|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz"
+ 57. Elapsed Time Per Partition
+ 58. Analysis & Synthesis Messages
 
 
 
@@ -85,15 +89,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jan 17 16:00:14 2020           ;
+; Analysis & Synthesis Status        ; Successful - Mon Jan 20 20:00:27 2020           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; CopySamples                                     ;
 ; Top-level Entity Name              ; CopySamples                                     ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 398                                             ;
-;     Total combinational functions  ; 394                                             ;
-;     Dedicated logic registers      ; 212                                             ;
-; Total registers                    ; 212                                             ;
+; Total logic elements               ; 356                                             ;
+;     Total combinational functions  ; 352                                             ;
+;     Dedicated logic registers      ; 179                                             ;
+; Total registers                    ; 179                                             ;
 ; Total pins                         ; 51                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 6,144                                           ;
@@ -221,6 +225,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Altera_UP_Audio_Bit_Counter.v      ; yes             ; User Verilog HDL File        ; C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Audio_Bit_Counter.v      ;         ;
 ; sine_package.vhd                   ; yes             ; User VHDL File               ; C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/sine_package.vhd                   ;         ;
 ; sine_wave.vhd                      ; yes             ; User VHDL File               ; C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/sine_wave.vhd                      ;         ;
+; rythmcontroller.vhd                ; yes             ; User VHDL File               ; C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/rythmcontroller.vhd                ;         ;
+; sampleMixer.vhd                    ; yes             ; User VHDL File               ; C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/sampleMixer.vhd                    ;         ;
 ; altpll.tdf                         ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altpll.tdf                 ;         ;
 ; aglobal130.inc                     ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc             ;         ;
 ; stratix_pll.inc                    ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_pll.inc            ;         ;
@@ -247,20 +253,20 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 398            ;
+; Estimated Total logic elements              ; 356            ;
 ;                                             ;                ;
-; Total combinational functions               ; 394            ;
+; Total combinational functions               ; 352            ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 191            ;
-;     -- 3 input functions                    ; 98             ;
-;     -- <=2 input functions                  ; 105            ;
+;     -- 4 input functions                    ; 178            ;
+;     -- 3 input functions                    ; 74             ;
+;     -- <=2 input functions                  ; 100            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 309            ;
-;     -- arithmetic mode                      ; 85             ;
+;     -- normal mode                          ; 290            ;
+;     -- arithmetic mode                      ; 62             ;
 ;                                             ;                ;
-; Total registers                             ; 212            ;
-;     -- Dedicated logic registers            ; 212            ;
+; Total registers                             ; 179            ;
+;     -- Dedicated logic registers            ; 179            ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 51             ;
@@ -270,9 +276,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- PLLs                                 ; 1              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 260            ;
-; Total fan-out                               ; 2907           ;
-; Average fan-out                             ; 3.84           ;
+; Maximum fan-out                             ; 227            ;
+; Total fan-out                               ; 2674           ;
+; Average fan-out                             ; 3.92           ;
 +---------------------------------------------+----------------+
 
 
@@ -281,21 +287,21 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                          ; Library Name ;
 +---------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |CopySamples                                                  ; 394 (1)           ; 212 (0)      ; 6144        ; 0            ; 0       ; 0         ; 51   ; 0            ; |CopySamples                                                                                                                                                                                                                 ; work         ;
-;    |audio_and_video_config:avIntf|                            ; 189 (10)          ; 65 (9)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_and_video_config:avIntf                                                                                                                                                                                   ; work         ;
+; |CopySamples                                                  ; 352 (1)           ; 179 (0)      ; 6144        ; 0            ; 0       ; 0         ; 51   ; 0            ; |CopySamples                                                                                                                                                                                                                 ; work         ;
+;    |audio_and_video_config:avIntf|                            ; 190 (10)          ; 65 (9)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_and_video_config:avIntf                                                                                                                                                                                   ; work         ;
 ;       |Altera_UP_I2C:I2C_Controller|                          ; 38 (38)           ; 18 (18)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller                                                                                                                                                      ; work         ;
-;       |Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|      ; 125 (125)         ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize                                                                                                                                  ; work         ;
+;       |Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|      ; 126 (126)         ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize                                                                                                                                  ; work         ;
 ;       |Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz| ; 16 (16)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz                                                                                                                             ; work         ;
-;    |audio_codec:audio|                                        ; 159 (6)           ; 113 (1)      ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_codec:audio                                                                                                                                                                                               ; work         ;
-;       |Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|   ; 153 (51)          ; 108 (42)     ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer                                                                                                                                           ; work         ;
-;          |Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|    ; 51 (0)            ; 33 (0)       ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO                                                                                           ; work         ;
-;             |scfifo:Sync_FIFO|                                ; 51 (0)            ; 33 (0)       ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO                                                                          ; work         ;
-;                |scfifo_o441:auto_generated|                   ; 51 (0)            ; 33 (0)       ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated                                               ; work         ;
-;                   |a_dpfifo_bs31:dpfifo|                      ; 51 (29)           ; 33 (13)      ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo                          ; work         ;
+;    |audio_codec:audio|                                        ; 161 (6)           ; 113 (1)      ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_codec:audio                                                                                                                                                                                               ; work         ;
+;       |Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|   ; 155 (51)          ; 108 (42)     ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer                                                                                                                                           ; work         ;
+;          |Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|    ; 53 (0)            ; 33 (0)       ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO                                                                                           ; work         ;
+;             |scfifo:Sync_FIFO|                                ; 53 (0)            ; 33 (0)       ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO                                                                          ; work         ;
+;                |scfifo_o441:auto_generated|                   ; 53 (0)            ; 33 (0)       ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated                                               ; work         ;
+;                   |a_dpfifo_bs31:dpfifo|                      ; 53 (30)           ; 33 (13)      ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo                          ; work         ;
 ;                      |altsyncram_fh81:FIFOram|                ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_fh81:FIFOram  ; work         ;
 ;                      |cntr_0ab:wr_ptr|                        ; 8 (8)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_0ab:wr_ptr          ; work         ;
 ;                      |cntr_ca7:usedw_counter|                 ; 7 (7)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_ca7:usedw_counter   ; work         ;
-;                      |cntr_v9b:rd_ptr_msb|                    ; 7 (7)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_v9b:rd_ptr_msb      ; work         ;
+;                      |cntr_v9b:rd_ptr_msb|                    ; 8 (8)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_v9b:rd_ptr_msb      ; work         ;
 ;          |Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|   ; 51 (0)            ; 33 (0)       ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO                                                                                          ; work         ;
 ;             |scfifo:Sync_FIFO|                                ; 51 (0)            ; 33 (0)       ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO                                                                         ; work         ;
 ;                |scfifo_o441:auto_generated|                   ; 51 (0)            ; 33 (0)       ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated                                              ; work         ;
@@ -308,9 +314,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |Altera_UP_Clock_Edge:DAC_Left_Right_Clock_Edges|       ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_codec:audio|Altera_UP_Clock_Edge:DAC_Left_Right_Clock_Edges                                                                                                                                               ; work         ;
 ;    |clock_generator:cgen|                                     ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|clock_generator:cgen                                                                                                                                                                                            ; work         ;
 ;       |altpll:DE_Clock_Generator_Audio|                       ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|clock_generator:cgen|altpll:DE_Clock_Generator_Audio                                                                                                                                                            ; work         ;
-;    |copy_module:processing|                                   ; 24 (0)            ; 25 (1)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|copy_module:processing                                                                                                                                                                                          ; work         ;
-;       |reg:outputbufferL|                                     ; 24 (24)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|copy_module:processing|reg:outputbufferL                                                                                                                                                                        ; work         ;
-;    |sine_wave:synth|                                          ; 21 (21)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|sine_wave:synth                                                                                                                                                                                                 ; work         ;
+;    |copy_module:processing|                                   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|copy_module:processing                                                                                                                                                                                          ; work         ;
 +---------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -327,7 +331,46 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 Encoding Type:  One-Hot
 +-----------------------------------------------------------------------------------------------------+
-; State Machine - |CopySamples|sine_wave:synth|state                                                  ;
+; State Machine - |CopySamples|sine_wave:synth4|state                                                 ;
++---------------------+-----------------+---------------------+-------------------+-------------------+
+; Name                ; state.change_up ; state.counting_down ; state.change_down ; state.counting_up ;
++---------------------+-----------------+---------------------+-------------------+-------------------+
+; state.counting_up   ; 0               ; 0                   ; 0                 ; 0                 ;
+; state.change_down   ; 0               ; 0                   ; 1                 ; 1                 ;
+; state.counting_down ; 0               ; 1                   ; 0                 ; 1                 ;
+; state.change_up     ; 1               ; 0                   ; 0                 ; 1                 ;
++---------------------+-----------------+---------------------+-------------------+-------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------+
+; State Machine - |CopySamples|sine_wave:synth3|state                                                 ;
++---------------------+-----------------+---------------------+-------------------+-------------------+
+; Name                ; state.change_up ; state.counting_down ; state.change_down ; state.counting_up ;
++---------------------+-----------------+---------------------+-------------------+-------------------+
+; state.counting_up   ; 0               ; 0                   ; 0                 ; 0                 ;
+; state.change_down   ; 0               ; 0                   ; 1                 ; 1                 ;
+; state.counting_down ; 0               ; 1                   ; 0                 ; 1                 ;
+; state.change_up     ; 1               ; 0                   ; 0                 ; 1                 ;
++---------------------+-----------------+---------------------+-------------------+-------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------+
+; State Machine - |CopySamples|sine_wave:synth2|state                                                 ;
++---------------------+-----------------+---------------------+-------------------+-------------------+
+; Name                ; state.change_up ; state.counting_down ; state.change_down ; state.counting_up ;
++---------------------+-----------------+---------------------+-------------------+-------------------+
+; state.counting_up   ; 0               ; 0                   ; 0                 ; 0                 ;
+; state.change_down   ; 0               ; 0                   ; 1                 ; 1                 ;
+; state.counting_down ; 0               ; 1                   ; 0                 ; 1                 ;
+; state.change_up     ; 1               ; 0                   ; 0                 ; 1                 ;
++---------------------+-----------------+---------------------+-------------------+-------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------+
+; State Machine - |CopySamples|sine_wave:synth1|state                                                 ;
 +---------------------+-----------------+---------------------+-------------------+-------------------+
 ; Name                ; state.change_up ; state.counting_down ; state.change_down ; state.counting_up ;
 +---------------------+-----------------+---------------------+-------------------+-------------------+
@@ -407,15 +450,113 @@ Encoding Type:  One-Hot
 ; audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|bit_counter[0..4]                                                                                           ; Lost fanout                                                       ;
 ; audio_codec:audio|Altera_UP_Clock_Edge:ADC_Left_Right_Clock_Edges|last_test_clk                                                                                                                                                       ; Lost fanout                                                       ;
 ; audio_codec:audio|Altera_UP_Clock_Edge:ADC_Left_Right_Clock_Edges|cur_test_clk                                                                                                                                                        ; Lost fanout                                                       ;
+; \synth3_prescaler:prescaler_counter[6]                                                                                                                                                                                                ; Merged with \synth2_prescaler:prescaler_counter[6]                ;
+; \synth4_prescaler:prescaler_counter[6]                                                                                                                                                                                                ; Merged with \synth2_prescaler:prescaler_counter[6]                ;
+; \synth3_prescaler:prescaler_counter[5]                                                                                                                                                                                                ; Merged with \synth2_prescaler:prescaler_counter[5]                ;
+; \synth4_prescaler:prescaler_counter[5]                                                                                                                                                                                                ; Merged with \synth2_prescaler:prescaler_counter[5]                ;
+; \synth3_prescaler:prescaler_counter[4]                                                                                                                                                                                                ; Merged with \synth2_prescaler:prescaler_counter[4]                ;
+; \synth4_prescaler:prescaler_counter[4]                                                                                                                                                                                                ; Merged with \synth2_prescaler:prescaler_counter[4]                ;
+; \synth3_prescaler:prescaler_counter[3]                                                                                                                                                                                                ; Merged with \synth2_prescaler:prescaler_counter[3]                ;
+; \synth4_prescaler:prescaler_counter[3]                                                                                                                                                                                                ; Merged with \synth2_prescaler:prescaler_counter[3]                ;
+; \synth3_prescaler:prescaler_counter[2]                                                                                                                                                                                                ; Merged with \synth2_prescaler:prescaler_counter[2]                ;
+; \synth4_prescaler:prescaler_counter[2]                                                                                                                                                                                                ; Merged with \synth2_prescaler:prescaler_counter[2]                ;
+; \synth3_prescaler:prescaler_counter[1]                                                                                                                                                                                                ; Merged with \synth2_prescaler:prescaler_counter[1]                ;
+; \synth4_prescaler:prescaler_counter[1]                                                                                                                                                                                                ; Merged with \synth2_prescaler:prescaler_counter[1]                ;
+; \synth3_prescaler:prescaler_counter[0]                                                                                                                                                                                                ; Merged with \synth2_prescaler:prescaler_counter[0]                ;
+; \synth4_prescaler:prescaler_counter[0]                                                                                                                                                                                                ; Merged with \synth2_prescaler:prescaler_counter[0]                ;
+; \synth3_prescaler:prescaler_counter[31]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[31]               ;
+; \synth4_prescaler:prescaler_counter[31]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[31]               ;
+; \synth3_prescaler:prescaler_counter[30]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[30]               ;
+; \synth4_prescaler:prescaler_counter[30]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[30]               ;
+; \synth3_prescaler:prescaler_counter[29]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[29]               ;
+; \synth4_prescaler:prescaler_counter[29]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[29]               ;
+; \synth3_prescaler:prescaler_counter[28]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[28]               ;
+; \synth4_prescaler:prescaler_counter[28]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[28]               ;
+; \synth3_prescaler:prescaler_counter[27]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[27]               ;
+; \synth4_prescaler:prescaler_counter[27]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[27]               ;
+; \synth3_prescaler:prescaler_counter[26]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[26]               ;
+; \synth4_prescaler:prescaler_counter[26]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[26]               ;
+; \synth3_prescaler:prescaler_counter[25]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[25]               ;
+; \synth4_prescaler:prescaler_counter[25]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[25]               ;
+; \synth3_prescaler:prescaler_counter[24]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[24]               ;
+; \synth4_prescaler:prescaler_counter[24]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[24]               ;
+; \synth3_prescaler:prescaler_counter[23]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[23]               ;
+; \synth4_prescaler:prescaler_counter[23]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[23]               ;
+; \synth3_prescaler:prescaler_counter[22]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[22]               ;
+; \synth4_prescaler:prescaler_counter[22]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[22]               ;
+; \synth3_prescaler:prescaler_counter[21]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[21]               ;
+; \synth4_prescaler:prescaler_counter[21]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[21]               ;
+; \synth3_prescaler:prescaler_counter[20]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[20]               ;
+; \synth4_prescaler:prescaler_counter[20]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[20]               ;
+; \synth3_prescaler:prescaler_counter[19]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[19]               ;
+; \synth4_prescaler:prescaler_counter[19]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[19]               ;
+; \synth3_prescaler:prescaler_counter[18]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[18]               ;
+; \synth4_prescaler:prescaler_counter[18]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[18]               ;
+; \synth3_prescaler:prescaler_counter[17]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[17]               ;
+; \synth4_prescaler:prescaler_counter[17]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[17]               ;
+; \synth3_prescaler:prescaler_counter[16]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[16]               ;
+; \synth4_prescaler:prescaler_counter[16]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[16]               ;
+; \synth3_prescaler:prescaler_counter[15]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[15]               ;
+; \synth4_prescaler:prescaler_counter[15]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[15]               ;
+; \synth3_prescaler:prescaler_counter[14]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[14]               ;
+; \synth4_prescaler:prescaler_counter[14]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[14]               ;
+; \synth3_prescaler:prescaler_counter[13]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[13]               ;
+; \synth4_prescaler:prescaler_counter[13]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[13]               ;
+; \synth3_prescaler:prescaler_counter[12]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[12]               ;
+; \synth4_prescaler:prescaler_counter[12]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[12]               ;
+; \synth3_prescaler:prescaler_counter[11]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[11]               ;
+; \synth4_prescaler:prescaler_counter[11]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[11]               ;
+; \synth3_prescaler:prescaler_counter[10]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[10]               ;
+; \synth4_prescaler:prescaler_counter[10]                                                                                                                                                                                               ; Merged with \synth2_prescaler:prescaler_counter[10]               ;
+; \synth3_prescaler:prescaler_counter[9]                                                                                                                                                                                                ; Merged with \synth2_prescaler:prescaler_counter[9]                ;
+; \synth4_prescaler:prescaler_counter[9]                                                                                                                                                                                                ; Merged with \synth2_prescaler:prescaler_counter[9]                ;
+; \synth3_prescaler:prescaler_counter[8]                                                                                                                                                                                                ; Merged with \synth2_prescaler:prescaler_counter[8]                ;
+; \synth4_prescaler:prescaler_counter[8]                                                                                                                                                                                                ; Merged with \synth2_prescaler:prescaler_counter[8]                ;
+; \synth3_prescaler:prescaler_counter[7]                                                                                                                                                                                                ; Merged with \synth2_prescaler:prescaler_counter[7]                ;
+; \synth4_prescaler:prescaler_counter[7]                                                                                                                                                                                                ; Merged with \synth2_prescaler:prescaler_counter[7]                ;
 ; audio_and_video_config:avIntf|num_bits_to_transfer[1,2]                                                                                                                                                                               ; Merged with audio_and_video_config:avIntf|num_bits_to_transfer[0] ;
 ; copy_module:processing|reg:outputbufferR|state[0..23]                                                                                                                                                                                 ; Stuck at GND due to stuck port data_in                            ;
+; copy_module:processing|reg:outputbufferL|state[0..23]                                                                                                                                                                                 ; Stuck at GND due to stuck port data_in                            ;
 ; audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller|s_i2c_transceiver~2                                                                                                                                                        ; Lost fanout                                                       ;
 ; audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller|s_i2c_transceiver~3                                                                                                                                                        ; Lost fanout                                                       ;
 ; audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller|s_i2c_transceiver~4                                                                                                                                                        ; Lost fanout                                                       ;
 ; audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|s_i2c_auto_init~2                                                                                                                                      ; Lost fanout                                                       ;
 ; audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|s_i2c_auto_init~3                                                                                                                                      ; Lost fanout                                                       ;
 ; audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|s_i2c_auto_init~4                                                                                                                                      ; Lost fanout                                                       ;
-; Total Number of Removed Registers = 147                                                                                                                                                                                               ;                                                                   ;
+; RythmController:rythctl|sample4_en                                                                                                                                                                                                    ; Lost fanout                                                       ;
+; sine_wave:synth4|table_index[0..3]                                                                                                                                                                                                    ; Lost fanout                                                       ;
+; synth4_clk                                                                                                                                                                                                                            ; Lost fanout                                                       ;
+; RythmController:rythctl|sample3_en                                                                                                                                                                                                    ; Lost fanout                                                       ;
+; sine_wave:synth3|table_index[0..3]                                                                                                                                                                                                    ; Lost fanout                                                       ;
+; synth3_clk                                                                                                                                                                                                                            ; Lost fanout                                                       ;
+; RythmController:rythctl|sample2_en                                                                                                                                                                                                    ; Lost fanout                                                       ;
+; sine_wave:synth2|table_index[0..3]                                                                                                                                                                                                    ; Lost fanout                                                       ;
+; synth2_clk                                                                                                                                                                                                                            ; Lost fanout                                                       ;
+; RythmController:rythctl|sample1_en                                                                                                                                                                                                    ; Lost fanout                                                       ;
+; sine_wave:synth1|table_index[0..3]                                                                                                                                                                                                    ; Lost fanout                                                       ;
+; synth1_clk                                                                                                                                                                                                                            ; Lost fanout                                                       ;
+; RythmController:rythctl|\enableCtl:pattern_index[0..31]                                                                                                                                                                               ; Lost fanout                                                       ;
+; RythmController:rythctl|BPM_clk                                                                                                                                                                                                       ; Lost fanout                                                       ;
+; \synth2_prescaler:prescaler_counter[0..31]                                                                                                                                                                                            ; Lost fanout                                                       ;
+; \synth1_prescaler:prescaler_counter[0..31]                                                                                                                                                                                            ; Lost fanout                                                       ;
+; RythmController:rythctl|\prescaler:prescaler_counter[0..31]                                                                                                                                                                           ; Lost fanout                                                       ;
+; sine_wave:synth4|state.counting_up                                                                                                                                                                                                    ; Lost fanout                                                       ;
+; sine_wave:synth4|state.change_down                                                                                                                                                                                                    ; Lost fanout                                                       ;
+; sine_wave:synth4|state.counting_down                                                                                                                                                                                                  ; Lost fanout                                                       ;
+; sine_wave:synth4|state.change_up                                                                                                                                                                                                      ; Lost fanout                                                       ;
+; sine_wave:synth3|state.counting_up                                                                                                                                                                                                    ; Lost fanout                                                       ;
+; sine_wave:synth3|state.change_down                                                                                                                                                                                                    ; Lost fanout                                                       ;
+; sine_wave:synth3|state.counting_down                                                                                                                                                                                                  ; Lost fanout                                                       ;
+; sine_wave:synth3|state.change_up                                                                                                                                                                                                      ; Lost fanout                                                       ;
+; sine_wave:synth2|state.counting_up                                                                                                                                                                                                    ; Lost fanout                                                       ;
+; sine_wave:synth2|state.change_down                                                                                                                                                                                                    ; Lost fanout                                                       ;
+; sine_wave:synth2|state.counting_down                                                                                                                                                                                                  ; Lost fanout                                                       ;
+; sine_wave:synth2|state.change_up                                                                                                                                                                                                      ; Lost fanout                                                       ;
+; sine_wave:synth1|state.counting_up                                                                                                                                                                                                    ; Lost fanout                                                       ;
+; sine_wave:synth1|state.change_down                                                                                                                                                                                                    ; Lost fanout                                                       ;
+; sine_wave:synth1|state.counting_down                                                                                                                                                                                                  ; Lost fanout                                                       ;
+; sine_wave:synth1|state.change_up                                                                                                                                                                                                      ; Lost fanout                                                       ;
+; Total Number of Removed Registers = 404                                                                                                                                                                                               ;                                                                   ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------+
 
 
@@ -424,6 +565,35 @@ Encoding Type:  One-Hot
 +----------------------------------------------------------------------------------------------+--------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
 ; Register name                                                                                ; Reason for Removal ; Registers Removed due to This Register                                                                                                    ;
 +----------------------------------------------------------------------------------------------+--------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; sine_wave:synth4|table_index[3]                                                              ; Lost Fanouts       ; sine_wave:synth4|table_index[2], sine_wave:synth4|table_index[1],                                                                         ;
+;                                                                                              ;                    ; sine_wave:synth4|table_index[0], synth4_clk, \synth2_prescaler:prescaler_counter[31],                                                     ;
+;                                                                                              ;                    ; \synth2_prescaler:prescaler_counter[30], \synth2_prescaler:prescaler_counter[29],                                                         ;
+;                                                                                              ;                    ; \synth2_prescaler:prescaler_counter[28], \synth2_prescaler:prescaler_counter[27],                                                         ;
+;                                                                                              ;                    ; sine_wave:synth4|state.counting_up, sine_wave:synth4|state.change_down,                                                                   ;
+;                                                                                              ;                    ; sine_wave:synth4|state.counting_down                                                                                                      ;
+; sine_wave:synth1|table_index[3]                                                              ; Lost Fanouts       ; sine_wave:synth1|table_index[2], sine_wave:synth1|table_index[1],                                                                         ;
+;                                                                                              ;                    ; sine_wave:synth1|table_index[0], synth1_clk, \synth1_prescaler:prescaler_counter[31],                                                     ;
+;                                                                                              ;                    ; \synth1_prescaler:prescaler_counter[30], \synth1_prescaler:prescaler_counter[29],                                                         ;
+;                                                                                              ;                    ; \synth1_prescaler:prescaler_counter[28], \synth1_prescaler:prescaler_counter[27],                                                         ;
+;                                                                                              ;                    ; sine_wave:synth1|state.counting_up, sine_wave:synth1|state.change_down,                                                                   ;
+;                                                                                              ;                    ; sine_wave:synth1|state.counting_down                                                                                                      ;
+; RythmController:rythctl|sample4_en                                                           ; Lost Fanouts       ; RythmController:rythctl|\enableCtl:pattern_index[31],                                                                                     ;
+;                                                                                              ;                    ; RythmController:rythctl|\enableCtl:pattern_index[30],                                                                                     ;
+;                                                                                              ;                    ; RythmController:rythctl|\enableCtl:pattern_index[29],                                                                                     ;
+;                                                                                              ;                    ; RythmController:rythctl|\enableCtl:pattern_index[28],                                                                                     ;
+;                                                                                              ;                    ; RythmController:rythctl|\enableCtl:pattern_index[27],                                                                                     ;
+;                                                                                              ;                    ; RythmController:rythctl|BPM_clk,                                                                                                          ;
+;                                                                                              ;                    ; RythmController:rythctl|\prescaler:prescaler_counter[31],                                                                                 ;
+;                                                                                              ;                    ; RythmController:rythctl|\prescaler:prescaler_counter[30],                                                                                 ;
+;                                                                                              ;                    ; RythmController:rythctl|\prescaler:prescaler_counter[29],                                                                                 ;
+;                                                                                              ;                    ; RythmController:rythctl|\prescaler:prescaler_counter[28],                                                                                 ;
+;                                                                                              ;                    ; RythmController:rythctl|\prescaler:prescaler_counter[27]                                                                                  ;
+; sine_wave:synth3|table_index[3]                                                              ; Lost Fanouts       ; sine_wave:synth3|table_index[2], sine_wave:synth3|table_index[1],                                                                         ;
+;                                                                                              ;                    ; sine_wave:synth3|table_index[0], synth3_clk, sine_wave:synth3|state.counting_up,                                                          ;
+;                                                                                              ;                    ; sine_wave:synth3|state.change_down, sine_wave:synth3|state.counting_down                                                                  ;
+; sine_wave:synth2|table_index[3]                                                              ; Lost Fanouts       ; sine_wave:synth2|table_index[2], sine_wave:synth2|table_index[1],                                                                         ;
+;                                                                                              ;                    ; sine_wave:synth2|table_index[0], synth2_clk, sine_wave:synth2|state.counting_up,                                                          ;
+;                                                                                              ;                    ; sine_wave:synth2|state.change_down, sine_wave:synth2|state.counting_down                                                                  ;
 ; audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[1] ; Lost Fanouts       ; audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|counting,       ;
 ;                                                                                              ;                    ; audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|bit_counter[3], ;
 ;                                                                                              ;                    ; audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|bit_counter[4], ;
@@ -437,10 +607,10 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 212   ;
+; Total registers                              ; 179   ;
 ; Number of registers using Synchronous Clear  ; 85    ;
 ; Number of registers using Synchronous Load   ; 63    ;
-; Number of registers using Asynchronous Clear ; 34    ;
+; Number of registers using Asynchronous Clear ; 1     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 108   ;
 ; Number of registers using Preset             ; 0     ;
@@ -453,8 +623,7 @@ Encoding Type:  One-Hot
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
 ; copy_module:processing|write_s         ; 2       ;
-; sine_wave:synth|positive_cycle         ; 26      ;
-; Total number of inverted registers = 2 ;         ;
+; Total number of inverted registers = 1 ;         ;
 +----------------------------------------+---------+
 
 
@@ -463,16 +632,22 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|rom_address_counter[3] ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller|current_byte[0]                            ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CopySamples|audio_and_video_config:avIntf|data_to_transfer[0]                                                     ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz|clk_counter[2]    ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |CopySamples|sine_wave:synth|table_index[1]                                                                        ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller|current_bit[0]                             ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|rom_address_counter[5] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller|current_byte[2]                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CopySamples|audio_and_video_config:avIntf|data_to_transfer[1]                                                     ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz|clk_counter[6]    ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |CopySamples|sine_wave:synth4|table_index[2]                                                                       ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |CopySamples|sine_wave:synth3|table_index[1]                                                                       ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |CopySamples|sine_wave:synth2|table_index[3]                                                                       ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |CopySamples|sine_wave:synth1|table_index[2]                                                                       ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller|current_bit[2]                             ;
 ; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|data_out[0]            ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|data_out[5]            ;
-; 6:1                ; 23 bits   ; 92 LEs        ; 46 LEs               ; 46 LEs                 ; Yes        ; |CopySamples|audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[17]          ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |CopySamples|sine_wave:synth|Selector0                                                                             ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|data_out[2]            ;
+; 6:1                ; 23 bits   ; 92 LEs        ; 46 LEs               ; 46 LEs                 ; Yes        ; |CopySamples|audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[22]          ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |CopySamples|sine_wave:synth4|Selector0                                                                            ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |CopySamples|sine_wave:synth3|Selector0                                                                            ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |CopySamples|sine_wave:synth2|Selector0                                                                            ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |CopySamples|sine_wave:synth1|Selector0                                                                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1215,6 +1390,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RythmController:rythctl ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; BPM_stepsize   ; 10    ; Signed Integer                              ;
+; BPM_min        ; 60    ; Signed Integer                              ;
+; BPM_max        ; 240   ; Signed Integer                              ;
+; Pattern_size   ; 16    ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +--------------------------------------------------------------------------------------+
 ; altpll Parameter Settings by Entity Instance                                         ;
 +-------------------------------+------------------------------------------------------+
@@ -1265,13 +1453,49 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------+
-; Port Connectivity Checks: "sine_wave:synth" ;
-+--------+-------+----------+-----------------+
-; Port   ; Type  ; Severity ; Details         ;
-+--------+-------+----------+-----------------+
-; enable ; Input ; Info     ; Stuck at VCC    ;
-+--------+-------+----------+-----------------+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "RythmController:rythctl"       ;
++-------------------------+-------+----------+--------------+
+; Port                    ; Type  ; Severity ; Details      ;
++-------------------------+-------+----------+--------------+
+; bpm[5..2]               ; Input ; Info     ; Stuck at VCC ;
+; bpm[15..6]              ; Input ; Info     ; Stuck at GND ;
+; bpm[1..0]               ; Input ; Info     ; Stuck at GND ;
+; sample1_pattern[14..12] ; Input ; Info     ; Stuck at GND ;
+; sample1_pattern[10..8]  ; Input ; Info     ; Stuck at GND ;
+; sample1_pattern[6..4]   ; Input ; Info     ; Stuck at GND ;
+; sample1_pattern[2..0]   ; Input ; Info     ; Stuck at GND ;
+; sample1_pattern[15]     ; Input ; Info     ; Stuck at VCC ;
+; sample1_pattern[11]     ; Input ; Info     ; Stuck at VCC ;
+; sample1_pattern[7]      ; Input ; Info     ; Stuck at VCC ;
+; sample1_pattern[3]      ; Input ; Info     ; Stuck at VCC ;
+; sample2_pattern[13..11] ; Input ; Info     ; Stuck at GND ;
+; sample2_pattern[9..7]   ; Input ; Info     ; Stuck at GND ;
+; sample2_pattern[5..3]   ; Input ; Info     ; Stuck at GND ;
+; sample2_pattern[1..0]   ; Input ; Info     ; Stuck at GND ;
+; sample2_pattern[15]     ; Input ; Info     ; Stuck at GND ;
+; sample2_pattern[14]     ; Input ; Info     ; Stuck at VCC ;
+; sample2_pattern[10]     ; Input ; Info     ; Stuck at VCC ;
+; sample2_pattern[6]      ; Input ; Info     ; Stuck at VCC ;
+; sample2_pattern[2]      ; Input ; Info     ; Stuck at VCC ;
+; sample3_pattern[15..14] ; Input ; Info     ; Stuck at GND ;
+; sample3_pattern[12..10] ; Input ; Info     ; Stuck at GND ;
+; sample3_pattern[8..6]   ; Input ; Info     ; Stuck at GND ;
+; sample3_pattern[4..2]   ; Input ; Info     ; Stuck at GND ;
+; sample3_pattern[13]     ; Input ; Info     ; Stuck at VCC ;
+; sample3_pattern[9]      ; Input ; Info     ; Stuck at VCC ;
+; sample3_pattern[5]      ; Input ; Info     ; Stuck at VCC ;
+; sample3_pattern[1]      ; Input ; Info     ; Stuck at VCC ;
+; sample3_pattern[0]      ; Input ; Info     ; Stuck at GND ;
+; sample4_pattern[15..13] ; Input ; Info     ; Stuck at GND ;
+; sample4_pattern[11..9]  ; Input ; Info     ; Stuck at GND ;
+; sample4_pattern[7..5]   ; Input ; Info     ; Stuck at GND ;
+; sample4_pattern[3..1]   ; Input ; Info     ; Stuck at GND ;
+; sample4_pattern[12]     ; Input ; Info     ; Stuck at VCC ;
+; sample4_pattern[8]      ; Input ; Info     ; Stuck at VCC ;
+; sample4_pattern[4]      ; Input ; Info     ; Stuck at VCC ;
+; sample4_pattern[0]      ; Input ; Info     ; Stuck at VCC ;
++-------------------------+-------+----------+--------------+
 
 
 +----------------------------------------------------------------------+
@@ -1339,7 +1563,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -1349,7 +1573,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Jan 17 16:00:10 2020
+    Info: Processing started: Mon Jan 20 20:00:22 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CopySamplesDE2 -c CopySamples
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file pwm.vhd
@@ -1399,11 +1623,20 @@ Info (12021): Found 2 design units, including 1 entities, in source file sine_wa
 Info (12021): Found 2 design units, including 1 entities, in source file rythmcontroller.vhd
     Info (12022): Found design unit 1: RythmController-Arch
     Info (12023): Found entity 1: RythmController
+Info (12021): Found 2 design units, including 1 entities, in source file samplemixer.vhd
+    Info (12022): Found design unit 1: sampleMixer-arch
+    Info (12023): Found entity 1: sampleMixer
 Info (12127): Elaborating entity "CopySamples" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at CopySamples.vhd(20): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at CopySamples.vhd(65): used implicit default value for signal "audio_output_r_s" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10036): Verilog HDL or VHDL warning at CopySamples.vhd(65): object "audio_input_l_s" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at CopySamples.vhd(65): object "audio_input_r_s" assigned a value but never read
+Warning (10541): VHDL Signal Declaration warning at CopySamples.vhd(24): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at CopySamples.vhd(81): object "enable" assigned a value but never read
+Warning (10541): VHDL Signal Declaration warning at CopySamples.vhd(82): used implicit default value for signal "synth1_prsc_ind" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at CopySamples.vhd(82): used implicit default value for signal "synth2_prsc_ind" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at CopySamples.vhd(82): used implicit default value for signal "synth3_prsc_ind" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at CopySamples.vhd(82): used implicit default value for signal "synth4_prsc_ind" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at CopySamples.vhd(84): used implicit default value for signal "audio_output_r_s" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at CopySamples.vhd(84): object "audio_input_l_s" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at CopySamples.vhd(84): object "audio_input_r_s" assigned a value but never read
+Warning (10492): VHDL Process Statement warning at CopySamples.vhd(140): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "clock_generator" for hierarchy "clock_generator:cgen"
 Info (12128): Elaborating entity "altpll" for hierarchy "clock_generator:cgen|altpll:DE_Clock_Generator_Audio"
 Info (12130): Elaborated megafunction instantiation "clock_generator:cgen|altpll:DE_Clock_Generator_Audio"
@@ -1510,12 +1743,16 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cntr
 Info (12128): Elaborating entity "cntr_0ab" for hierarchy "audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_0ab:wr_ptr"
 Info (12128): Elaborating entity "Altera_UP_Audio_Out_Serializer" for hierarchy "audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer"
 Info (12128): Elaborating entity "copy_module" for hierarchy "copy_module:processing"
-Warning (10541): VHDL Signal Declaration warning at copy_module.vhd(19): used implicit default value for signal "read_s" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at copy_module.vhd(30): used implicit default value for signal "readIn" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10631): VHDL Process Statement warning at copy_module.vhd(38): inferring latch(es) for signal or variable "writeout", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "writeout" at copy_module.vhd(38)
+Warning (10541): VHDL Signal Declaration warning at copy_module.vhd(25): used implicit default value for signal "read_s" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at copy_module.vhd(36): used implicit default value for signal "readIn" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10631): VHDL Process Statement warning at copy_module.vhd(44): inferring latch(es) for signal or variable "writeout", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "writeout" at copy_module.vhd(44)
 Info (12128): Elaborating entity "reg" for hierarchy "copy_module:processing|reg:inputbufferL"
-Info (12128): Elaborating entity "sine_wave" for hierarchy "sine_wave:synth"
+Info (12128): Elaborating entity "sine_wave" for hierarchy "sine_wave:synth1"
+Info (12128): Elaborating entity "RythmController" for hierarchy "RythmController:rythctl"
+Info (12128): Elaborating entity "sampleMixer" for hierarchy "sampleMixer:smplmx"
+Warning (10541): VHDL Signal Declaration warning at sampleMixer.vhd(14): used implicit default value for signal "aud_out" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at sampleMixer.vhd(20): object "active_synths" assigned a value but never read
 Warning (12030): Port "clk" on the entity instantiation of "DE_Clock_Generator_Audio" is connected to a signal of width 1. The formal width of the signal in the module is 6.  The extra bits will be left dangling without any fan-out logic.
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
@@ -1590,10 +1827,8 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[17]" is stuck at GND
     Warning (13410): Pin "LEDR[18]" is stuck at GND
     Warning (13410): Pin "LEDR[19]" is stuck at GND
-Critical Warning (18061): Ignored Power-Up Level option on the following registers
-    Critical Warning (18010): Register sine_wave:synth|positive_cycle will power up to High
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 121 registers lost all their fanouts during netlist optimizations.
+Info (17049): 290 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 22 input pin(s) that do not drive logic
@@ -1619,17 +1854,17 @@ Warning (21074): Design contains 22 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[17]"
     Warning (15610): No output dependent on input pin "SW[18]"
     Warning (15610): No output dependent on input pin "SW[19]"
-Info (21057): Implemented 502 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 458 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 27 input pins
     Info (21059): Implemented 23 output pins
     Info (21060): Implemented 1 bidirectional pins
-    Info (21061): Implemented 402 logic cells
+    Info (21061): Implemented 358 logic cells
     Info (21064): Implemented 48 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 105 warnings
-    Info: Peak virtual memory: 4685 megabytes
-    Info: Processing ended: Fri Jan 17 16:00:14 2020
-    Info: Elapsed time: 00:00:04
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 111 warnings
+    Info: Peak virtual memory: 4675 megabytes
+    Info: Processing ended: Mon Jan 20 20:00:27 2020
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:04
 
 
