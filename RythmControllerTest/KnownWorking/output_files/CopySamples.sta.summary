@@ -1,0 +1,89 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -4.111
+TNS   : -579.131
+
+Type  : Slow 1200mV 85C Model Setup 'RythmController:rythCtl|BPM_clk'
+Slack : -3.403
+TNS   : -95.106
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'RythmController:rythCtl|BPM_clk'
+Slack : 1.239
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -339.369
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'RythmController:rythCtl|BPM_clk'
+Slack : -1.285
+TNS   : -42.405
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK2_50'
+Slack : 18.413
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -3.655
+TNS   : -502.524
+
+Type  : Slow 1200mV 0C Model Setup 'RythmController:rythCtl|BPM_clk'
+Slack : -3.087
+TNS   : -84.604
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.337
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'RythmController:rythCtl|BPM_clk'
+Slack : 1.109
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -339.017
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'RythmController:rythCtl|BPM_clk'
+Slack : -1.285
+TNS   : -42.405
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK2_50'
+Slack : 18.424
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -1.322
+TNS   : -156.273
+
+Type  : Fast 1200mV 0C Model Setup 'RythmController:rythCtl|BPM_clk'
+Slack : -1.139
+TNS   : -29.978
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'RythmController:rythCtl|BPM_clk'
+Slack : 0.571
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -273.375
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'RythmController:rythCtl|BPM_clk'
+Slack : -1.000
+TNS   : -33.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK2_50'
+Slack : 18.096
+TNS   : 0.000
+
+------------------------------------------------------------
