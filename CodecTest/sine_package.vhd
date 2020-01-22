@@ -1,3 +1,8 @@
+--source: https://www.doulos.com/knowhow/vhdl_designers_guide/models/sine_wave_generator/
+--modified by Manuel Faatz
+--added support for 24 bit outputs
+--adjusted LUT accordingly
+
 library ieee;
 use ieee.std_logic_1164.all;
 

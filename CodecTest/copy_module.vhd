@@ -8,6 +8,12 @@
 -- 
 --
 -- GHartung 2014/11
+
+--modified by Manuel Faatz
+--seperated input and output buffers
+--added external I/O ports
+--adjusted control flow accordingly
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;

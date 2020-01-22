@@ -1,0 +1,10 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_signed.all;
+USE ieee.numeric_std.ALL; 
+
+ENTITY sampleMixer IS
+	PORT(sample1_en, sample2_en, sample3_en, sample4_en, BPM_clk :IN std_logic;
+		  synth1_out, synth2_out, synth3_out, synth4_out :IN std_logic_vector(23 downto 0);
+		  aud_out :OUT std_logic_vector(23 downto 0) 
+	);

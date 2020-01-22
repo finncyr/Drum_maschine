@@ -1,5 +1,26 @@
 
-State Machine - |CopySamples|sine_wave:synth|state
+State Machine - |CopySamples|sine_wave:synth4|state
+Name state.change_up state.counting_down state.change_down state.counting_up 
+state.counting_up 0 0 0 0 
+state.change_down 0 0 1 1 
+state.counting_down 0 1 0 1 
+state.change_up 1 0 0 1 
+
+State Machine - |CopySamples|sine_wave:synth3|state
+Name state.change_up state.counting_down state.change_down state.counting_up 
+state.counting_up 0 0 0 0 
+state.change_down 0 0 1 1 
+state.counting_down 0 1 0 1 
+state.change_up 1 0 0 1 
+
+State Machine - |CopySamples|sine_wave:synth2|state
+Name state.change_up state.counting_down state.change_down state.counting_up 
+state.counting_up 0 0 0 0 
+state.change_down 0 0 1 1 
+state.counting_down 0 1 0 1 
+state.change_up 1 0 0 1 
+
+State Machine - |CopySamples|sine_wave:synth1|state
 Name state.change_up state.counting_down state.change_down state.counting_up 
 state.counting_up 0 0 0 0 
 state.change_down 0 0 1 1 

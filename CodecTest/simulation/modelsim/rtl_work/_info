@@ -1,0 +1,551 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Sciebo\THK\DTS\Drum_maschine\CodecTest\simulation\modelsim
+vAltera_UP_Audio_Bit_Counter
+IHP862j9`LIlIZhdNV`Na20
+V[DMX<k58Afd5RNzL0cmS31
+Z1 dC:\Sciebo\THK\DTS\Drum_maschine\CodecTest\simulation\modelsim
+Z2 w1579016257
+8C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Audio_Bit_Counter.v
+FC:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Audio_Bit_Counter.v
+L0 49
+Z3 OV;L;10.1d;51
+r1
+31
+Z4 o-vlog01compat -work work -O0
+Z5 !s92 -vlog01compat -work work +incdir+C:/Sciebo/THK/DTS/Drum_maschine/CodecTest -O0
+n@altera_@u@p_@audio_@bit_@counter
+!i10b 1
+!s100 1bA5aGLn;0SO`FNhSJ9kD2
+!s85 0
+!s108 1579548592.432000
+!s107 C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Audio_Bit_Counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Sciebo/THK/DTS/Drum_maschine/CodecTest|C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Audio_Bit_Counter.v|
+!s101 -O0
+vAltera_UP_Audio_In_Deserializer
+IUZofbMgkA>Z@c_?K0KHSF0
+VBW?cUoXTh0eaQgM:G5Q3U0
+R1
+R2
+8C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Audio_In_Deserializer.v
+FC:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Audio_In_Deserializer.v
+L0 47
+R3
+r1
+31
+R4
+R5
+n@altera_@u@p_@audio_@in_@deserializer
+!i10b 1
+!s100 iC_h?CRMQDfW1i5=DcOBV1
+!s85 0
+!s108 1579548592.347000
+!s107 C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Audio_In_Deserializer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Sciebo/THK/DTS/Drum_maschine/CodecTest|C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Audio_In_Deserializer.v|
+!s101 -O0
+vAltera_UP_Audio_Out_Serializer
+IooQK[RkEdd2B3SSkz>4CB2
+V<a2RMQL3;=;@K8aj>@lhM0
+R1
+R2
+8C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Audio_Out_Serializer.v
+FC:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Audio_Out_Serializer.v
+L0 47
+R3
+r1
+31
+R4
+R5
+n@altera_@u@p_@audio_@out_@serializer
+!i10b 1
+!s100 PT`hQhaaV93lhfH_Q7?QM0
+!s85 0
+!s108 1579548592.263000
+!s107 C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Audio_Out_Serializer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Sciebo/THK/DTS/Drum_maschine/CodecTest|C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Audio_Out_Serializer.v|
+!s101 -O0
+vAltera_UP_Clock_Edge
+IC@1XQf[X898Qh17M5iiR41
+VU9og[Vl?S4XI@AFe2dZo42
+R1
+R2
+8C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Clock_Edge.v
+FC:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Clock_Edge.v
+L0 48
+R3
+r1
+31
+R4
+R5
+n@altera_@u@p_@clock_@edge
+!i10b 1
+!s100 Ed_Sd`b2HOHjePbf3joeY3
+!s85 0
+!s108 1579548592.169000
+!s107 C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Clock_Edge.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Sciebo/THK/DTS/Drum_maschine/CodecTest|C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Clock_Edge.v|
+!s101 -O0
+vAltera_UP_I2C
+I:0BA9IUbZgGdVBLh9;6:P3
+VNSkVZ[`HQMYWC5ZI^<[`b2
+R1
+R2
+8C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_I2C.v
+FC:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_I2C.v
+L0 48
+R3
+r1
+31
+R4
+R5
+n@altera_@u@p_@i2@c
+!i10b 1
+!s100 Q6jddJ@^UFB41LOMiHQ6c0
+!s85 0
+!s108 1579548592.084000
+!s107 C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_I2C.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Sciebo/THK/DTS/Drum_maschine/CodecTest|C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_I2C.v|
+!s101 -O0
+vAltera_UP_I2C_AV_Auto_Initialize
+IbSUWTcAS1`3Eo]5AXC9Da3
+VIBZfeQc87jO0QjG219zYg1
+R1
+R2
+8C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_I2C_AV_Auto_Initialize.v
+FC:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_I2C_AV_Auto_Initialize.v
+L0 48
+R3
+r1
+31
+R4
+R5
+n@altera_@u@p_@i2@c_@a@v_@auto_@initialize
+!i10b 1
+!s100 cJz=egYCGJL2:k<80nViz2
+!s85 0
+!s108 1579548592.000000
+!s107 C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_I2C_AV_Auto_Initialize.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Sciebo/THK/DTS/Drum_maschine/CodecTest|C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_I2C_AV_Auto_Initialize.v|
+!s101 -O0
+vAltera_UP_Slow_Clock_Generator
+In7JYj?XaS>OV6C68koV5>0
+VQbmMFeAjU<967P5TW=[bo1
+R1
+R2
+8C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Slow_Clock_Generator.v
+FC:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Slow_Clock_Generator.v
+L0 53
+R3
+r1
+31
+R4
+R5
+n@altera_@u@p_@slow_@clock_@generator
+!i10b 1
+!s100 lFN=o9i`j_@GBkg_d`6dW1
+!s85 0
+!s108 1579548591.915000
+!s107 C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Slow_Clock_Generator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Sciebo/THK/DTS/Drum_maschine/CodecTest|C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_Slow_Clock_Generator.v|
+!s101 -O0
+vAltera_UP_SYNC_FIFO
+IWhj<`edbM:@HnR3R]DF712
+Vn_IhGHZXbYP9F;geG2?Uo2
+R1
+R2
+8C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_SYNC_FIFO.v
+FC:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_SYNC_FIFO.v
+L0 47
+R3
+r1
+31
+R4
+R5
+n@altera_@u@p_@s@y@n@c_@f@i@f@o
+!i10b 1
+!s100 [FLdi2<hE:@^XHM[:_fcK2
+!s85 0
+!s108 1579548591.846000
+!s107 C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_SYNC_FIFO.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Sciebo/THK/DTS/Drum_maschine/CodecTest|C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/Altera_UP_SYNC_FIFO.v|
+!s101 -O0
+vaudio_and_video_config
+IHje8TA_^E;9VN5cVlgTzU0
+V?BMSN9zQ]hVmba0oJG0JX1
+R1
+Z6 w1579016258
+8C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/audio_and_video_config.v
+FC:/Sciebo/THK/DTS/Drum_maschine/CodecTest/audio_and_video_config.v
+L0 49
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 3ShYjn0BfK7GiS0`^jZ1V2
+!s85 0
+!s108 1579548591.746000
+!s107 C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/audio_and_video_config.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Sciebo/THK/DTS/Drum_maschine/CodecTest|C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/audio_and_video_config.v|
+!s101 -O0
+vaudio_codec
+Ibbn7^>nIWEIILiWFdSljn0
+VcNoGh7V`cT>N?UklCXhY42
+R1
+R6
+8C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/audio_codec.v
+FC:/Sciebo/THK/DTS/Drum_maschine/CodecTest/audio_codec.v
+L0 49
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 MD1Ij:8zJfOV[;YI<Ok960
+!s85 0
+!s108 1579548591.668000
+!s107 C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/audio_codec.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Sciebo/THK/DTS/Drum_maschine/CodecTest|C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/audio_codec.v|
+!s101 -O0
+vclock_generator
+IJf0Ao5]Dz@JDP^>Mi?MzJ3
+VhIlaZzQVIMSDT0<hdQhY:3
+R1
+R6
+8C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/clock_generator.v
+FC:/Sciebo/THK/DTS/Drum_maschine/CodecTest/clock_generator.v
+L0 48
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 0?hLFf>J]IY4hG5SoKl460
+!s85 0
+!s108 1579548591.545000
+!s107 C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/clock_generator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Sciebo/THK/DTS/Drum_maschine/CodecTest|C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/clock_generator.v|
+!s101 -O0
+Ecopy_module
+Z7 w1579539420
+Z8 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z9 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z10 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+R1
+Z11 8C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/copy_module.vhd
+Z12 FC:/Sciebo/THK/DTS/Drum_maschine/CodecTest/copy_module.vhd
+l0
+L20
+VQd<BmS5hQ1IhaDMM1Y@Eb2
+Z13 OV;C;10.1d;51
+31
+Z14 !s108 1579548592.617000
+Z15 !s90 -reportprogress|300|-93|-work|work|C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/copy_module.vhd|
+Z16 !s107 C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/copy_module.vhd|
+Z17 o-93 -work work -O0
+Z18 tExplicit 1
+!s100 1k4XmboCEYE[5S5NYUOol3
+!i10b 1
+Adataflow
+R8
+R9
+R10
+DEx4 work 11 copy_module 0 22 Qd<BmS5hQ1IhaDMM1Y@Eb2
+l37
+L28
+VM5MEiS4HTz0Pm8S^G1C>A1
+R13
+31
+R14
+R15
+R16
+R17
+R18
+!s100 nkm_?5d`WK;;O^S8<RX[10
+!i10b 1
+Ecopysamples
+Z19 w1579546576
+Z20 DPx4 work 12 sine_package 0 22 ??42Zc90DK6h8k^4iE`?@1
+R8
+Z21 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z22 DPx4 ieee 16 std_logic_signed 0 22 E>OLoMaBGQ?hbGgOoNXM^1
+R9
+R10
+R1
+Z23 8C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/CopySamples.vhd
+Z24 FC:/Sciebo/THK/DTS/Drum_maschine/CodecTest/CopySamples.vhd
+l0
+L17
+Vz2l^ca`6h;GSJbKRl3^dZ0
+R13
+31
+Z25 !s108 1579548593.071000
+Z26 !s90 -reportprogress|300|-93|-work|work|C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/CopySamples.vhd|
+Z27 !s107 C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/CopySamples.vhd|
+R17
+R18
+!s100 P[lgm3EG:M4XUf>nb4`IK3
+!i10b 1
+Astruct
+R20
+R8
+R21
+R22
+R9
+R10
+DEx4 work 11 copysamples 0 22 z2l^ca`6h;GSJbKRl3^dZ0
+l86
+L29
+VF>C:9m?oN;lRcazEQV2Db2
+R13
+31
+R25
+R26
+R27
+R17
+R18
+!s100 J36IEN`a=]47`CEBcm4V[0
+!i10b 1
+Ereg
+R6
+R9
+R10
+R1
+Z28 8C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/reg.vhd
+Z29 FC:/Sciebo/THK/DTS/Drum_maschine/CodecTest/reg.vhd
+l0
+L3
+VMiN:P1cLPQ]MTQS]7?QbU1
+R13
+31
+Z30 !s108 1579548592.517000
+Z31 !s90 -reportprogress|300|-93|-work|work|C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/reg.vhd|
+Z32 !s107 C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/reg.vhd|
+R17
+R18
+!s100 31BYaGf[cOalS1fVg36[=1
+!i10b 1
+Abehv
+R9
+R10
+DEx4 work 3 reg 0 22 MiN:P1cLPQ]MTQS]7?QbU1
+l11
+L10
+V3gS=@43fJ8ALR]E<IX;Wz0
+R13
+31
+R30
+R31
+R32
+R17
+R18
+!s100 `QlMP_81N9Bdd[fjL4HNb2
+!i10b 1
+Erythmcontroller
+Z33 w1579545845
+R8
+R21
+R22
+R9
+R10
+R1
+Z34 8C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/rythmcontroller.vhd
+Z35 FC:/Sciebo/THK/DTS/Drum_maschine/CodecTest/rythmcontroller.vhd
+l0
+L13
+V_8b0gRZKcGJA<_jHzG]7l1
+R13
+31
+Z36 !s108 1579548592.833000
+Z37 !s90 -reportprogress|300|-93|-work|work|C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/rythmcontroller.vhd|
+Z38 !s107 C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/rythmcontroller.vhd|
+R17
+R18
+!s100 <DzOoeZVRQj@cfloa<KK52
+!i10b 1
+Aarch
+R8
+R21
+R22
+R9
+R10
+DEx4 work 15 rythmcontroller 0 22 _8b0gRZKcGJA<_jHzG]7l1
+l29
+L24
+V_3F[_AiUT?iVgYTRSTT7V2
+R13
+31
+R36
+R37
+R38
+R17
+R18
+!s100 LhlGeRmjzS_ISQEXa6QUd0
+!i10b 1
+Erythmcontrollertb
+Z39 w1579548060
+Z40 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z41 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R21
+R22
+R10
+R9
+R8
+R1
+Z42 8C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/simulation/modelsim/rythmControllerTB.vhd
+Z43 FC:/Sciebo/THK/DTS/Drum_maschine/CodecTest/simulation/modelsim/rythmControllerTB.vhd
+l0
+L9
+VChS[W>[M;9P[hmJd[4Y>Q0
+!s100 Z4E=a[S@ZADe7L3omEXO^1
+R13
+31
+!i10b 1
+Z44 !s108 1579548593.350000
+Z45 !s90 -reportprogress|300|-93|-work|work|C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/simulation/modelsim/rythmControllerTB.vhd|
+Z46 !s107 C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/simulation/modelsim/rythmControllerTB.vhd|
+R17
+R18
+Arythmcontrollertb_arch
+R40
+R41
+R21
+R22
+R10
+R9
+R8
+DEx4 work 17 rythmcontrollertb 0 22 ChS[W>[M;9P[hmJd[4Y>Q0
+l46
+L17
+V:e?Yb4>aDH=@P_GEoBQd53
+!s100 LaHLmdM^NAiN]4V:1ohh@3
+R13
+31
+!i10b 1
+R44
+R45
+R46
+R17
+R18
+Esamplemixer
+Z47 w1579544191
+R8
+R21
+R22
+R9
+R10
+R1
+Z48 8C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/sampleMixer.vhd
+Z49 FC:/Sciebo/THK/DTS/Drum_maschine/CodecTest/sampleMixer.vhd
+l0
+L11
+VJI^ElHe4gGdXLRk8cUaei0
+R13
+31
+Z50 !s108 1579548592.949000
+Z51 !s90 -reportprogress|300|-93|-work|work|C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/sampleMixer.vhd|
+Z52 !s107 C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/sampleMixer.vhd|
+R17
+R18
+!s100 ePc?EZHCl9TQ`S4I;?Tia3
+!i10b 1
+Aarch
+R8
+R21
+R22
+R9
+R10
+DEx4 work 11 samplemixer 0 22 JI^ElHe4gGdXLRk8cUaei0
+l23
+L18
+V>P_2J3COYQ1NB51FNU3m:2
+R13
+31
+R50
+R51
+R52
+R17
+R18
+!s100 ORh]gdnmBokN[em9oQlCQ0
+!i10b 1
+Psine_package
+R9
+R10
+Z53 w1579539324
+R1
+Z54 8C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/sine_package.vhd
+Z55 FC:/Sciebo/THK/DTS/Drum_maschine/CodecTest/sine_package.vhd
+l0
+L9
+V??42Zc90DK6h8k^4iE`?@1
+R13
+31
+b1
+Z56 !s108 1579548592.717000
+Z57 !s90 -reportprogress|300|-93|-work|work|C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/sine_package.vhd|
+Z58 !s107 C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/sine_package.vhd|
+R17
+R18
+!s100 k_Tj45Q>8jlH7;3=Nc1XZ2
+!i10b 1
+Bbody
+R20
+R9
+R10
+l0
+L23
+VM_bGRDo_3Y96AY3>Pm2R81
+R13
+31
+R56
+R57
+R58
+R17
+R18
+nbody
+!s100 efYES;fz=7Kf_nAiWzV<61
+!i10b 1
+Esine_wave
+Z59 w1579019297
+R20
+R8
+R9
+R10
+R1
+Z60 8C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/sine_wave.vhd
+Z61 FC:/Sciebo/THK/DTS/Drum_maschine/CodecTest/sine_wave.vhd
+l0
+L10
+VElOnngzCSHbI2M`21[[:J3
+R13
+31
+Z62 !s108 1579548593.218000
+Z63 !s90 -reportprogress|300|-93|-work|work|C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/sine_wave.vhd|
+Z64 !s107 C:/Sciebo/THK/DTS/Drum_maschine/CodecTest/sine_wave.vhd|
+R17
+R18
+!s100 GUBgzJ^1?f1^4_RVcDUZ_3
+!i10b 1
+Aarch1
+R20
+R8
+R9
+R10
+DEx4 work 9 sine_wave 0 22 ElOnngzCSHbI2M`21[[:J3
+l20
+L15
+VbdSlHnNTadS>[g^EKaoJ_1
+R13
+31
+R62
+R63
+R64
+R17
+R18
+!s100 miPe?fH1J2aO]1`Z7>LFk1
+!i10b 1
