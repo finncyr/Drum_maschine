@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CopySamples
-Tue Jan 21 16:39:46 2020
+Tue Jan 21 17:04:08 2020
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -86,13 +86,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jan 21 16:39:46 2020           ;
+; Analysis & Synthesis Status        ; Successful - Tue Jan 21 17:04:08 2020           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; CopySamples                                     ;
 ; Top-level Entity Name              ; CopySamples                                     ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 550                                             ;
-;     Total combinational functions  ; 546                                             ;
+; Total logic elements               ; 551                                             ;
+;     Total combinational functions  ; 547                                             ;
 ;     Dedicated logic registers      ; 278                                             ;
 ; Total registers                    ; 278                                             ;
 ; Total pins                         ; 51                                              ;
@@ -206,23 +206,23 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path   ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                    ; Library ;
 +------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
-; reg.vhd                            ; yes             ; User VHDL File               ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/reg.vhd                            ;         ;
-; CopySamples.vhd                    ; yes             ; User VHDL File               ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/CopySamples.vhd                    ;         ;
-; copy_module.vhd                    ; yes             ; User VHDL File               ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/copy_module.vhd                    ;         ;
-; clock_generator.v                  ; yes             ; User Verilog HDL File        ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/clock_generator.v                  ;         ;
-; audio_codec.v                      ; yes             ; User Verilog HDL File        ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/audio_codec.v                      ;         ;
-; audio_and_video_config.v           ; yes             ; User Verilog HDL File        ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/audio_and_video_config.v           ;         ;
-; Altera_UP_SYNC_FIFO.v              ; yes             ; User Verilog HDL File        ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/Altera_UP_SYNC_FIFO.v              ;         ;
-; Altera_UP_Slow_Clock_Generator.v   ; yes             ; User Verilog HDL File        ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/Altera_UP_Slow_Clock_Generator.v   ;         ;
-; Altera_UP_I2C_AV_Auto_Initialize.v ; yes             ; User Verilog HDL File        ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/Altera_UP_I2C_AV_Auto_Initialize.v ;         ;
-; Altera_UP_I2C.v                    ; yes             ; User Verilog HDL File        ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/Altera_UP_I2C.v                    ;         ;
-; Altera_UP_Clock_Edge.v             ; yes             ; User Verilog HDL File        ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/Altera_UP_Clock_Edge.v             ;         ;
-; Altera_UP_Audio_Out_Serializer.v   ; yes             ; User Verilog HDL File        ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/Altera_UP_Audio_Out_Serializer.v   ;         ;
-; Altera_UP_Audio_In_Deserializer.v  ; yes             ; User Verilog HDL File        ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/Altera_UP_Audio_In_Deserializer.v  ;         ;
-; Altera_UP_Audio_Bit_Counter.v      ; yes             ; User Verilog HDL File        ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/Altera_UP_Audio_Bit_Counter.v      ;         ;
-; sine_package.vhd                   ; yes             ; User VHDL File               ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/sine_package.vhd                   ;         ;
-; sine_wave.vhd                      ; yes             ; User VHDL File               ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/sine_wave.vhd                      ;         ;
-; rythmcontroller.vhd                ; yes             ; User VHDL File               ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/rythmcontroller.vhd                ;         ;
+; reg.vhd                            ; yes             ; User VHDL File               ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/reg.vhd                            ;         ;
+; CopySamples.vhd                    ; yes             ; User VHDL File               ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/CopySamples.vhd                    ;         ;
+; copy_module.vhd                    ; yes             ; User VHDL File               ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/copy_module.vhd                    ;         ;
+; clock_generator.v                  ; yes             ; User Verilog HDL File        ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/clock_generator.v                  ;         ;
+; audio_codec.v                      ; yes             ; User Verilog HDL File        ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/audio_codec.v                      ;         ;
+; audio_and_video_config.v           ; yes             ; User Verilog HDL File        ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/audio_and_video_config.v           ;         ;
+; Altera_UP_SYNC_FIFO.v              ; yes             ; User Verilog HDL File        ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/Altera_UP_SYNC_FIFO.v              ;         ;
+; Altera_UP_Slow_Clock_Generator.v   ; yes             ; User Verilog HDL File        ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/Altera_UP_Slow_Clock_Generator.v   ;         ;
+; Altera_UP_I2C_AV_Auto_Initialize.v ; yes             ; User Verilog HDL File        ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/Altera_UP_I2C_AV_Auto_Initialize.v ;         ;
+; Altera_UP_I2C.v                    ; yes             ; User Verilog HDL File        ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/Altera_UP_I2C.v                    ;         ;
+; Altera_UP_Clock_Edge.v             ; yes             ; User Verilog HDL File        ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/Altera_UP_Clock_Edge.v             ;         ;
+; Altera_UP_Audio_Out_Serializer.v   ; yes             ; User Verilog HDL File        ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/Altera_UP_Audio_Out_Serializer.v   ;         ;
+; Altera_UP_Audio_In_Deserializer.v  ; yes             ; User Verilog HDL File        ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/Altera_UP_Audio_In_Deserializer.v  ;         ;
+; Altera_UP_Audio_Bit_Counter.v      ; yes             ; User Verilog HDL File        ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/Altera_UP_Audio_Bit_Counter.v      ;         ;
+; sine_package.vhd                   ; yes             ; User VHDL File               ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/sine_package.vhd                   ;         ;
+; sine_wave.vhd                      ; yes             ; User VHDL File               ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/sine_wave.vhd                      ;         ;
+; rythmcontroller.vhd                ; yes             ; User VHDL File               ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/rythmcontroller.vhd                ;         ;
 ; altpll.tdf                         ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altpll.tdf                    ;         ;
 ; aglobal130.inc                     ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                ;         ;
 ; stratix_pll.inc                    ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_pll.inc               ;         ;
@@ -234,13 +234,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; a_i2fifo.inc                       ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_i2fifo.inc                  ;         ;
 ; a_fffifo.inc                       ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_fffifo.inc                  ;         ;
 ; a_f2fifo.inc                       ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_f2fifo.inc                  ;         ;
-; db/scfifo_o441.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/db/scfifo_o441.tdf                 ;         ;
-; db/a_dpfifo_bs31.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/db/a_dpfifo_bs31.tdf               ;         ;
-; db/altsyncram_fh81.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/db/altsyncram_fh81.tdf             ;         ;
-; db/cmpr_ks8.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/db/cmpr_ks8.tdf                    ;         ;
-; db/cntr_v9b.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/db/cntr_v9b.tdf                    ;         ;
-; db/cntr_ca7.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/db/cntr_ca7.tdf                    ;         ;
-; db/cntr_0ab.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/db/cntr_0ab.tdf                    ;         ;
+; db/scfifo_o441.tdf                 ; yes             ; Auto-Generated Megafunction  ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/db/scfifo_o441.tdf                 ;         ;
+; db/a_dpfifo_bs31.tdf               ; yes             ; Auto-Generated Megafunction  ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/db/a_dpfifo_bs31.tdf               ;         ;
+; db/altsyncram_fh81.tdf             ; yes             ; Auto-Generated Megafunction  ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/db/altsyncram_fh81.tdf             ;         ;
+; db/cmpr_ks8.tdf                    ; yes             ; Auto-Generated Megafunction  ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/db/cmpr_ks8.tdf                    ;         ;
+; db/cntr_v9b.tdf                    ; yes             ; Auto-Generated Megafunction  ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/db/cntr_v9b.tdf                    ;         ;
+; db/cntr_ca7.tdf                    ; yes             ; Auto-Generated Megafunction  ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/db/cntr_ca7.tdf                    ;         ;
+; db/cntr_0ab.tdf                    ; yes             ; Auto-Generated Megafunction  ; F:/Sciebo/THK/DTS/Drum_maschine/KnownWorking/db/cntr_0ab.tdf                    ;         ;
 +------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
 
 
@@ -249,16 +249,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 550            ;
+; Estimated Total logic elements              ; 551            ;
 ;                                             ;                ;
-; Total combinational functions               ; 546            ;
+; Total combinational functions               ; 547            ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 211            ;
-;     -- 3 input functions                    ; 133            ;
-;     -- <=2 input functions                  ; 202            ;
+;     -- 4 input functions                    ; 243            ;
+;     -- 3 input functions                    ; 103            ;
+;     -- <=2 input functions                  ; 201            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 399            ;
+;     -- normal mode                          ; 400            ;
 ;     -- arithmetic mode                      ; 147            ;
 ;                                             ;                ;
 ; Total registers                             ; 278            ;
@@ -273,8 +273,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 293            ;
-; Total fan-out                               ; 3419           ;
-; Average fan-out                             ; 3.50           ;
+; Total fan-out                               ; 3455           ;
+; Average fan-out                             ; 3.54           ;
 +---------------------------------------------+----------------+
 
 
@@ -283,8 +283,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                          ; Library Name ;
 +---------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |CopySamples                                                  ; 546 (1)           ; 278 (0)      ; 6144        ; 0            ; 0       ; 0         ; 51   ; 0            ; |CopySamples                                                                                                                                                                                                                 ; work         ;
-;    |RythmController:rythmCtl|                                 ; 148 (148)         ; 66 (66)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|RythmController:rythmCtl                                                                                                                                                                                        ; work         ;
+; |CopySamples                                                  ; 547 (1)           ; 278 (0)      ; 6144        ; 0            ; 0       ; 0         ; 51   ; 0            ; |CopySamples                                                                                                                                                                                                                 ; work         ;
+;    |RythmController:rythmCtl|                                 ; 149 (149)         ; 66 (66)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|RythmController:rythmCtl                                                                                                                                                                                        ; work         ;
 ;    |audio_and_video_config:avIntf|                            ; 189 (10)          ; 65 (9)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_and_video_config:avIntf                                                                                                                                                                                   ; work         ;
 ;       |Altera_UP_I2C:I2C_Controller|                          ; 38 (38)           ; 18 (18)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller                                                                                                                                                      ; work         ;
 ;       |Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|      ; 125 (125)         ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize                                                                                                                                  ; work         ;
@@ -470,15 +470,15 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|rom_address_counter[3] ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller|current_byte[7]                            ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CopySamples|audio_and_video_config:avIntf|data_to_transfer[1]                                                     ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz|clk_counter[2]    ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|rom_address_counter[2] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller|current_byte[0]                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CopySamples|audio_and_video_config:avIntf|data_to_transfer[6]                                                     ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz|clk_counter[5]    ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |CopySamples|sine_wave:synth|table_index[3]                                                                        ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller|current_bit[2]                             ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller|current_bit[1]                             ;
 ; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|data_out[3]            ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|data_out[4]            ;
-; 6:1                ; 23 bits   ; 92 LEs        ; 46 LEs               ; 46 LEs                 ; Yes        ; |CopySamples|audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[22]          ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CopySamples|audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|data_out[6]            ;
+; 6:1                ; 23 bits   ; 92 LEs        ; 46 LEs               ; 46 LEs                 ; Yes        ; |CopySamples|audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[17]          ;
 ; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |CopySamples|sine_wave:synth|Selector0                                                                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------+
 
@@ -1379,7 +1379,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Jan 21 16:39:41 2020
+    Info: Processing started: Tue Jan 21 17:04:03 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CopySamplesDE2 -c CopySamples
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file pwm.vhd
@@ -1650,17 +1650,17 @@ Warning (21074): Design contains 22 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[17]"
     Warning (15610): No output dependent on input pin "SW[18]"
     Warning (15610): No output dependent on input pin "SW[19]"
-Info (21057): Implemented 655 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 656 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 27 input pins
     Info (21059): Implemented 23 output pins
     Info (21060): Implemented 1 bidirectional pins
-    Info (21061): Implemented 555 logic cells
+    Info (21061): Implemented 556 logic cells
     Info (21064): Implemented 48 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 105 warnings
-    Info: Peak virtual memory: 4679 megabytes
-    Info: Processing ended: Tue Jan 21 16:39:46 2020
+    Info: Peak virtual memory: 4665 megabytes
+    Info: Processing ended: Tue Jan 21 17:04:08 2020
     Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Total CPU time (on all processors): 00:00:05
 
 

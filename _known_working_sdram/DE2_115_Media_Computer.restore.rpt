@@ -1,0 +1,231 @@
+Restore Archived Project report for DE2_115_Media_Computer
+Wed Jan 22 16:59:12 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Wed Jan 22 16:59:12 2020 ;
+; Revision Name                   ; DE2_115_Media_Computer                ;
+; Top-level Entity Name           ; DE2_115_Media_Computer                ;
+; Family                          ; Cyclone IV E                          ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/Sciebo/THK/DTS/Drum_maschine/DE2-115_Media_Computer/vhdl/Backup_15_22.qar' into the 'C:/Sciebo/THK/DTS/Drum_maschine/DE2-115_Media_Computer/vhdl/_known_working_sdram/' directory
+Info: Generated report 'DE2_115_Media_Computer.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/altera/13.0sp1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus II 64-Bit Shell was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4423 megabytes
+    Info: Processing ended: Wed Jan 22 16:59:12 2020
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Files Restored                                                                                                          ;
++-------------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                               ;
++-------------------------------------------------------------------------------------------------------------------------+
+; Altera_UP_Audio_Bit_Counter.v                                                                                           ;
+; Altera_UP_Audio_In_Deserializer.v                                                                                       ;
+; Altera_UP_Audio_Out_Serializer.v                                                                                        ;
+; Altera_UP_Clock_Edge.v                                                                                                  ;
+; Altera_UP_I2C.v                                                                                                         ;
+; Altera_UP_I2C_AV_Auto_Initialize.v                                                                                      ;
+; Altera_UP_I2C_DC_Auto_Initialize.v                                                                                      ;
+; Altera_UP_I2C_LCM_Auto_Initialize.v                                                                                     ;
+; Altera_UP_SYNC_FIFO.v                                                                                                   ;
+; Altera_UP_Slow_Clock_Generator.v                                                                                        ;
+; CopySamples.vhd                                                                                                         ;
+; DE2_115_Media_Computer.qpf                                                                                              ;
+; DE2_115_Media_Computer.qsf                                                                                              ;
+; DE2_115_Media_Computer.sdc                                                                                              ;
+; DE2_115_Media_Computer.vhd                                                                                              ;
+; DE2_115_Media_Computer_assignment_defaults.qdf                                                                          ;
+; audio_and_video_config.v                                                                                                ;
+; audio_codec.v                                                                                                           ;
+; clock_generator.v                                                                                                       ;
+; copy_module.vhd                                                                                                         ;
+; incremental_db/compiled_partitions/DE2_115_Media_Computer.db_info                                                       ;
+; nios_system.cmp                                                                                                         ;
+; nios_system.qsys                                                                                                        ;
+; nios_system.sopcinfo                                                                                                    ;
+; nios_system/synthesis/nios_system.qip                                                                                   ;
+; nios_system/synthesis/nios_system.vhd                                                                                   ;
+; nios_system/synthesis/nios_system_burst_adapter.vhd                                                                     ;
+; nios_system/synthesis/nios_system_burst_adapter_001.vhd                                                                 ;
+; nios_system/synthesis/nios_system_char_lcd_16x2_avalon_lcd_slave_translator.vhd                                         ;
+; nios_system/synthesis/nios_system_char_lcd_16x2_avalon_lcd_slave_translator_avalon_universal_slave_0_agent.vhd          ;
+; nios_system/synthesis/nios_system_char_lcd_16x2_avalon_lcd_slave_translator_avalon_universal_slave_0_agent_rsp_fifo.vhd ;
+; nios_system/synthesis/nios_system_cpu_data_master_translator.vhd                                                        ;
+; nios_system/synthesis/nios_system_cpu_instruction_master_translator.vhd                                                 ;
+; nios_system/synthesis/nios_system_cpu_jtag_debug_module_translator.vhd                                                  ;
+; nios_system/synthesis/nios_system_cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent.vhd                   ;
+; nios_system/synthesis/nios_system_cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo.vhd          ;
+; nios_system/synthesis/nios_system_flash_flash_data_translator.vhd                                                       ;
+; nios_system/synthesis/nios_system_flash_flash_erase_control_translator.vhd                                              ;
+; nios_system/synthesis/nios_system_interval_timer_s1_translator.vhd                                                      ;
+; nios_system/synthesis/nios_system_jtag_uart_avalon_jtag_slave_translator.vhd                                            ;
+; nios_system/synthesis/nios_system_red_leds_avalon_parallel_port_slave_translator.vhd                                    ;
+; nios_system/synthesis/nios_system_rst_controller.vhd                                                                    ;
+; nios_system/synthesis/nios_system_rst_controller_001.vhd                                                                ;
+; nios_system/synthesis/nios_system_rst_controller_002.vhd                                                                ;
+; nios_system/synthesis/nios_system_sd_card_avalon_sdcard_slave_translator.vhd                                            ;
+; nios_system/synthesis/nios_system_sdram_s1_translator.vhd                                                               ;
+; nios_system/synthesis/nios_system_serial_port_avalon_rs232_slave_translator.vhd                                         ;
+; nios_system/synthesis/nios_system_sram_avalon_sram_slave_translator.vhd                                                 ;
+; nios_system/synthesis/nios_system_sram_avalon_sram_slave_translator_avalon_universal_slave_0_agent.vhd                  ;
+; nios_system/synthesis/nios_system_sram_avalon_sram_slave_translator_avalon_universal_slave_0_agent_rdata_fifo.vhd       ;
+; nios_system/synthesis/nios_system_sram_avalon_sram_slave_translator_avalon_universal_slave_0_agent_rsp_fifo.vhd         ;
+; nios_system/synthesis/nios_system_sysid_control_slave_translator.vhd                                                    ;
+; nios_system/synthesis/nios_system_usb_avalon_usb_slave_translator.vhd                                                   ;
+; nios_system/synthesis/nios_system_width_adapter.vhd                                                                     ;
+; nios_system/synthesis/nios_system_width_adapter_001.vhd                                                                 ;
+; nios_system/synthesis/nios_system_width_adapter_002.vhd                                                                 ;
+; nios_system/synthesis/nios_system_width_adapter_003.vhd                                                                 ;
+; nios_system/synthesis/submodules/Altera_UP_Flash_Memory_Controller.vhd                                                  ;
+; nios_system/synthesis/submodules/Altera_UP_Flash_Memory_IP_Core_Avalon_Interface.vhd                                    ;
+; nios_system/synthesis/submodules/Altera_UP_Flash_Memory_IP_Core_Standalone.vhd                                          ;
+; nios_system/synthesis/submodules/Altera_UP_Flash_Memory_User_Interface.vhd                                              ;
+; nios_system/synthesis/submodules/Altera_UP_SD_CRC16_Generator.vhd                                                       ;
+; nios_system/synthesis/submodules/Altera_UP_SD_CRC7_Generator.vhd                                                        ;
+; nios_system/synthesis/submodules/Altera_UP_SD_Card_48_bit_Command_Generator.vhd                                         ;
+; nios_system/synthesis/submodules/Altera_UP_SD_Card_Avalon_Interface.vhd                                                 ;
+; nios_system/synthesis/submodules/Altera_UP_SD_Card_Buffer.vhd                                                           ;
+; nios_system/synthesis/submodules/Altera_UP_SD_Card_Clock.vhd                                                            ;
+; nios_system/synthesis/submodules/Altera_UP_SD_Card_Control_FSM.vhd                                                      ;
+; nios_system/synthesis/submodules/Altera_UP_SD_Card_Interface.vhd                                                        ;
+; nios_system/synthesis/submodules/Altera_UP_SD_Card_Memory_Block.bsf                                                     ;
+; nios_system/synthesis/submodules/Altera_UP_SD_Card_Memory_Block.cmp                                                     ;
+; nios_system/synthesis/submodules/Altera_UP_SD_Card_Memory_Block.qip                                                     ;
+; nios_system/synthesis/submodules/Altera_UP_SD_Card_Memory_Block.vhd                                                     ;
+; nios_system/synthesis/submodules/Altera_UP_SD_Card_Response_Receiver.vhd                                                ;
+; nios_system/synthesis/submodules/Altera_UP_SD_Signal_Trigger.vhd                                                        ;
+; nios_system/synthesis/submodules/altera_avalon_sc_fifo.v                                                                ;
+; nios_system/synthesis/submodules/altera_avalon_st_pipeline_base.v                                                       ;
+; nios_system/synthesis/submodules/altera_customins_master_translator.v                                                   ;
+; nios_system/synthesis/submodules/altera_customins_slave_translator.sv                                                   ;
+; nios_system/synthesis/submodules/altera_merlin_address_alignment.sv                                                     ;
+; nios_system/synthesis/submodules/altera_merlin_arbitrator.sv                                                            ;
+; nios_system/synthesis/submodules/altera_merlin_burst_adapter.sv                                                         ;
+; nios_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv                                                    ;
+; nios_system/synthesis/submodules/altera_merlin_master_agent.sv                                                          ;
+; nios_system/synthesis/submodules/altera_merlin_master_translator.sv                                                     ;
+; nios_system/synthesis/submodules/altera_merlin_slave_agent.sv                                                           ;
+; nios_system/synthesis/submodules/altera_merlin_slave_translator.sv                                                      ;
+; nios_system/synthesis/submodules/altera_merlin_traffic_limiter.sv                                                       ;
+; nios_system/synthesis/submodules/altera_merlin_width_adapter.sv                                                         ;
+; nios_system/synthesis/submodules/altera_reset_controller.sdc                                                            ;
+; nios_system/synthesis/submodules/altera_reset_controller.v                                                              ;
+; nios_system/synthesis/submodules/altera_reset_synchronizer.v                                                            ;
+; nios_system/synthesis/submodules/altera_up_character_lcd_communication.v                                                ;
+; nios_system/synthesis/submodules/altera_up_character_lcd_initialization.v                                               ;
+; nios_system/synthesis/submodules/altera_up_irda_counters.v                                                              ;
+; nios_system/synthesis/submodules/altera_up_irda_in_deserializer.v                                                       ;
+; nios_system/synthesis/submodules/altera_up_irda_out_serializer.v                                                        ;
+; nios_system/synthesis/submodules/altera_up_rs232_counters.v                                                             ;
+; nios_system/synthesis/submodules/altera_up_rs232_in_deserializer.v                                                      ;
+; nios_system/synthesis/submodules/altera_up_rs232_out_serializer.v                                                       ;
+; nios_system/synthesis/submodules/altera_up_sync_fifo.v                                                                  ;
+; nios_system/synthesis/submodules/fpoint_hw_qsys.v                                                                       ;
+; nios_system/synthesis/submodules/fpoint_qsys.v                                                                          ;
+; nios_system/synthesis/submodules/fpoint_wrapper.v                                                                       ;
+; nios_system/synthesis/submodules/nios_system_CPU.ocp                                                                    ;
+; nios_system/synthesis/submodules/nios_system_CPU.sdc                                                                    ;
+; nios_system/synthesis/submodules/nios_system_CPU.v                                                                      ;
+; nios_system/synthesis/submodules/nios_system_CPU_custom_instruction_master_multi_xconnect.sv                            ;
+; nios_system/synthesis/submodules/nios_system_CPU_ic_tag_ram.mif                                                         ;
+; nios_system/synthesis/submodules/nios_system_CPU_jtag_debug_module_sysclk.v                                             ;
+; nios_system/synthesis/submodules/nios_system_CPU_jtag_debug_module_tck.v                                                ;
+; nios_system/synthesis/submodules/nios_system_CPU_jtag_debug_module_wrapper.v                                            ;
+; nios_system/synthesis/submodules/nios_system_CPU_mult_cell.v                                                            ;
+; nios_system/synthesis/submodules/nios_system_CPU_oci_test_bench.v                                                       ;
+; nios_system/synthesis/submodules/nios_system_CPU_ociram_default_contents.mif                                            ;
+; nios_system/synthesis/submodules/nios_system_CPU_rf_ram_a.mif                                                           ;
+; nios_system/synthesis/submodules/nios_system_CPU_rf_ram_b.mif                                                           ;
+; nios_system/synthesis/submodules/nios_system_CPU_test_bench.v                                                           ;
+; nios_system/synthesis/submodules/nios_system_Char_LCD_16x2.v                                                            ;
+; nios_system/synthesis/submodules/nios_system_Expansion_JP5.v                                                            ;
+; nios_system/synthesis/submodules/nios_system_External_Clocks.v                                                          ;
+; nios_system/synthesis/submodules/nios_system_Green_LEDs.v                                                               ;
+; nios_system/synthesis/submodules/nios_system_HEX3_HEX0.v                                                                ;
+; nios_system/synthesis/submodules/nios_system_HEX7_HEX4.v                                                                ;
+; nios_system/synthesis/submodules/nios_system_Interval_Timer.v                                                           ;
+; nios_system/synthesis/submodules/nios_system_IrDA.v                                                                     ;
+; nios_system/synthesis/submodules/nios_system_JTAG_UART.v                                                                ;
+; nios_system/synthesis/submodules/nios_system_Pushbuttons.v                                                              ;
+; nios_system/synthesis/submodules/nios_system_Red_LEDs.v                                                                 ;
+; nios_system/synthesis/submodules/nios_system_SDRAM.v                                                                    ;
+; nios_system/synthesis/submodules/nios_system_SRAM.v                                                                     ;
+; nios_system/synthesis/submodules/nios_system_Serial_Port.v                                                              ;
+; nios_system/synthesis/submodules/nios_system_Slider_Switches.v                                                          ;
+; nios_system/synthesis/submodules/nios_system_USB.v                                                                      ;
+; nios_system/synthesis/submodules/nios_system_addr_router.sv                                                             ;
+; nios_system/synthesis/submodules/nios_system_addr_router_001.sv                                                         ;
+; nios_system/synthesis/submodules/nios_system_cmd_xbar_demux.sv                                                          ;
+; nios_system/synthesis/submodules/nios_system_cmd_xbar_demux_001.sv                                                      ;
+; nios_system/synthesis/submodules/nios_system_cmd_xbar_mux.sv                                                            ;
+; nios_system/synthesis/submodules/nios_system_id_router.sv                                                               ;
+; nios_system/synthesis/submodules/nios_system_id_router_003.sv                                                           ;
+; nios_system/synthesis/submodules/nios_system_id_router_014.sv                                                           ;
+; nios_system/synthesis/submodules/nios_system_id_router_015.sv                                                           ;
+; nios_system/synthesis/submodules/nios_system_irq_mapper.sv                                                              ;
+; nios_system/synthesis/submodules/nios_system_rsp_xbar_demux.sv                                                          ;
+; nios_system/synthesis/submodules/nios_system_rsp_xbar_demux_003.sv                                                      ;
+; nios_system/synthesis/submodules/nios_system_rsp_xbar_mux.sv                                                            ;
+; nios_system/synthesis/submodules/nios_system_rsp_xbar_mux_001.sv                                                        ;
+; nios_system/synthesis/submodules/nios_system_sysid.v                                                                    ;
+; pwm.vhd                                                                                                                 ;
+; readControl.vhd                                                                                                         ;
+; reg.vhd                                                                                                                 ;
+; rythmcontroller.vhd                                                                                                     ;
+; sine_package.vhd                                                                                                        ;
+; sine_wave.vhd                                                                                                           ;
+; writeControl.vhd                                                                                                        ;
++-------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------+
+; Files Not Restored         ;
++----------------------------+
+; File Name                  ;
++----------------------------+
+; de2_115_media_computer.vhd ;
++----------------------------+
+
+

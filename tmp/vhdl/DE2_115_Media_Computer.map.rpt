@@ -1,0 +1,1617 @@
+Analysis & Synthesis report for DE2_115_Media_Computer
+Wed Jan 22 12:45:57 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis IP Cores Summary
+  6. Analysis & Synthesis Messages
+  7. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Wed Jan 22 12:45:57 2020               ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; DE2_115_Media_Computer                          ;
+; Top-level Entity Name              ; DE2_115_Media_Computer                          ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
++------------------------------------+-------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                                ;
++----------------------------------------------------------------------------+------------------------+------------------------+
+; Option                                                                     ; Setting                ; Default Value          ;
++----------------------------------------------------------------------------+------------------------+------------------------+
+; Device                                                                     ; EP4CE115F29C8          ;                        ;
+; Top-level entity name                                                      ; DE2_115_Media_Computer ; DE2_115_Media_Computer ;
+; Family name                                                                ; Cyclone IV E           ; Cyclone IV GX          ;
+; Use smart compilation                                                      ; Off                    ; Off                    ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                     ; On                     ;
+; Enable compact report table                                                ; Off                    ; Off                    ;
+; Restructure Multiplexers                                                   ; Auto                   ; Auto                   ;
+; Create Debugging Nodes for IP Cores                                        ; Off                    ; Off                    ;
+; Preserve fewer node names                                                  ; On                     ; On                     ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                    ; Off                    ;
+; Verilog Version                                                            ; Verilog_2001           ; Verilog_2001           ;
+; VHDL Version                                                               ; VHDL_1993              ; VHDL_1993              ;
+; State Machine Processing                                                   ; Auto                   ; Auto                   ;
+; Safe State Machine                                                         ; Off                    ; Off                    ;
+; Extract Verilog State Machines                                             ; On                     ; On                     ;
+; Extract VHDL State Machines                                                ; On                     ; On                     ;
+; Ignore Verilog initial constructs                                          ; Off                    ; Off                    ;
+; Iteration limit for constant Verilog loops                                 ; 5000                   ; 5000                   ;
+; Iteration limit for non-constant Verilog loops                             ; 250                    ; 250                    ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                     ; On                     ;
+; Infer RAMs from Raw Logic                                                  ; On                     ; On                     ;
+; Parallel Synthesis                                                         ; On                     ; On                     ;
+; DSP Block Balancing                                                        ; Auto                   ; Auto                   ;
+; NOT Gate Push-Back                                                         ; On                     ; On                     ;
+; Power-Up Don't Care                                                        ; On                     ; On                     ;
+; Remove Redundant Logic Cells                                               ; Off                    ; Off                    ;
+; Remove Duplicate Registers                                                 ; On                     ; On                     ;
+; Ignore CARRY Buffers                                                       ; Off                    ; Off                    ;
+; Ignore CASCADE Buffers                                                     ; Off                    ; Off                    ;
+; Ignore GLOBAL Buffers                                                      ; Off                    ; Off                    ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                    ; Off                    ;
+; Ignore LCELL Buffers                                                       ; Off                    ; Off                    ;
+; Ignore SOFT Buffers                                                        ; On                     ; On                     ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                    ; Off                    ;
+; Optimization Technique                                                     ; Balanced               ; Balanced               ;
+; Carry Chain Length                                                         ; 70                     ; 70                     ;
+; Auto Carry Chains                                                          ; On                     ; On                     ;
+; Auto Open-Drain Pins                                                       ; On                     ; On                     ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                    ; Off                    ;
+; Auto ROM Replacement                                                       ; On                     ; On                     ;
+; Auto RAM Replacement                                                       ; On                     ; On                     ;
+; Auto DSP Block Replacement                                                 ; On                     ; On                     ;
+; Auto Shift Register Replacement                                            ; Auto                   ; Auto                   ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto                   ; Auto                   ;
+; Auto Clock Enable Replacement                                              ; On                     ; On                     ;
+; Strict RAM Replacement                                                     ; Off                    ; Off                    ;
+; Allow Synchronous Control Signals                                          ; On                     ; On                     ;
+; Force Use of Synchronous Clear Signals                                     ; Off                    ; Off                    ;
+; Auto RAM Block Balancing                                                   ; On                     ; On                     ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                    ; Off                    ;
+; Auto Resource Sharing                                                      ; Off                    ; Off                    ;
+; Allow Any RAM Size For Recognition                                         ; Off                    ; Off                    ;
+; Allow Any ROM Size For Recognition                                         ; Off                    ; Off                    ;
+; Allow Any Shift Register Size For Recognition                              ; Off                    ; Off                    ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                     ; On                     ;
+; Ignore translate_off and synthesis_off directives                          ; Off                    ; Off                    ;
+; Timing-Driven Synthesis                                                    ; On                     ; On                     ;
+; Report Parameter Settings                                                  ; On                     ; On                     ;
+; Report Source Assignments                                                  ; On                     ; On                     ;
+; Report Connectivity Checks                                                 ; On                     ; On                     ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                    ; Off                    ;
+; Synchronization Register Chain Length                                      ; 2                      ; 2                      ;
+; PowerPlay Power Optimization                                               ; Normal compilation     ; Normal compilation     ;
+; HDL message level                                                          ; Level2                 ; Level2                 ;
+; Suppress Register Optimization Related Messages                            ; Off                    ; Off                    ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000                   ; 5000                   ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                   ; 5000                   ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                    ; 100                    ;
+; Clock MUX Protection                                                       ; On                     ; On                     ;
+; Auto Gated Clock Conversion                                                ; Off                    ; Off                    ;
+; Block Design Naming                                                        ; Auto                   ; Auto                   ;
+; SDC constraint protection                                                  ; Off                    ; Off                    ;
+; Synthesis Effort                                                           ; Auto                   ; Auto                   ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                     ; On                     ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                    ; Off                    ;
+; Analysis & Synthesis Message Level                                         ; Medium                 ; Medium                 ;
+; Disable Register Merging Across Hierarchies                                ; Auto                   ; Auto                   ;
+; Resource Aware Inference For Block RAM                                     ; On                     ; On                     ;
+; Synthesis Seed                                                             ; 1                      ; 1                      ;
++----------------------------------------------------------------------------+------------------------+------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                     ;
++--------+--------------+---------+--------------+--------------+--------------------------------------------+----------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                            ; IP Include File                              ;
++--------+--------------+---------+--------------+--------------+--------------------------------------------+----------------------------------------------+
+; Altera ; Qsys         ; 13.0    ; N/A          ; N/A          ; |DE2_115_Media_Computer|nios_system:NiosII ; nios_system/synthesis/../../nios_system.qsys ;
++--------+--------------+---------+--------------+--------------+--------------------------------------------+----------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Jan 22 12:45:16 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE2_115_Media_Computer -c DE2_115_Media_Computer
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12248): Elaborating Qsys system entity "nios_system.qsys"
+Info (12250): 2020.01.22.12:45:18 Progress: Loading vhdl/nios_system.qsys
+Info (12250): 2020.01.22.12:45:19 Progress: Reading input file
+Info (12250): 2020.01.22.12:45:19 Progress: Adding clk [clock_source 13.0]
+Info (12250): 2020.01.22.12:45:19 Progress: Parameterizing module clk
+Info (12250): 2020.01.22.12:45:19 Progress: Adding JTAG_UART [altera_avalon_jtag_uart 13.0.1]
+Warning (12251): JTAG_UART: Used altera_avalon_jtag_uart 13.0.1.99.2 (instead of 13.0.1)
+Info (12250): 2020.01.22.12:45:19 Progress: Parameterizing module JTAG_UART
+Info (12250): 2020.01.22.12:45:19 Progress: Adding Interval_Timer [altera_avalon_timer 13.0.1]
+Warning (12251): Interval_Timer: Used altera_avalon_timer 13.0.1.99.2 (instead of 13.0.1)
+Info (12250): 2020.01.22.12:45:19 Progress: Parameterizing module Interval_Timer
+Info (12250): 2020.01.22.12:45:19 Progress: Adding SDRAM [altera_avalon_new_sdram_controller 13.0.1]
+Warning (12251): SDRAM: Used altera_avalon_new_sdram_controller 13.0.1.99.2 (instead of 13.0.1)
+Info (12250): 2020.01.22.12:45:19 Progress: Parameterizing module SDRAM
+Info (12250): 2020.01.22.12:45:19 Progress: Adding Red_LEDs [altera_up_avalon_parallel_port 12.0]
+Warning (12251): Red_LEDs: Used altera_up_avalon_parallel_port 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:19 Progress: Parameterizing module Red_LEDs
+Info (12250): 2020.01.22.12:45:19 Progress: Adding Green_LEDs [altera_up_avalon_parallel_port 12.0]
+Warning (12251): Green_LEDs: Used altera_up_avalon_parallel_port 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:19 Progress: Parameterizing module Green_LEDs
+Info (12250): 2020.01.22.12:45:19 Progress: Adding HEX3_HEX0 [altera_up_avalon_parallel_port 12.0]
+Warning (12251): HEX3_HEX0: Used altera_up_avalon_parallel_port 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:19 Progress: Parameterizing module HEX3_HEX0
+Info (12250): 2020.01.22.12:45:19 Progress: Adding HEX7_HEX4 [altera_up_avalon_parallel_port 12.0]
+Warning (12251): HEX7_HEX4: Used altera_up_avalon_parallel_port 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:19 Progress: Parameterizing module HEX7_HEX4
+Info (12250): 2020.01.22.12:45:19 Progress: Adding Slider_Switches [altera_up_avalon_parallel_port 12.0]
+Warning (12251): Slider_Switches: Used altera_up_avalon_parallel_port 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:19 Progress: Parameterizing module Slider_Switches
+Info (12250): 2020.01.22.12:45:19 Progress: Adding Pushbuttons [altera_up_avalon_parallel_port 12.0]
+Warning (12251): Pushbuttons: Used altera_up_avalon_parallel_port 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:19 Progress: Parameterizing module Pushbuttons
+Info (12250): 2020.01.22.12:45:19 Progress: Adding Expansion_JP5 [altera_up_avalon_parallel_port 12.0]
+Warning (12251): Expansion_JP5: Used altera_up_avalon_parallel_port 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:19 Progress: Parameterizing module Expansion_JP5
+Info (12250): 2020.01.22.12:45:19 Progress: Adding Serial_Port [altera_up_avalon_rs232 12.0]
+Warning (12251): Serial_Port: Used altera_up_avalon_rs232 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:19 Progress: Parameterizing module Serial_Port
+Info (12250): 2020.01.22.12:45:19 Progress: Adding AV_Config [altera_up_avalon_audio_and_video_config 12.0]
+Warning (12251): AV_Config: Used altera_up_avalon_audio_and_video_config 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:19 Progress: Parameterizing module AV_Config
+Info (12250): 2020.01.22.12:45:19 Progress: Adding Audio [altera_up_avalon_audio 12.0]
+Warning (12251): Audio: Used altera_up_avalon_audio 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:20 Progress: Parameterizing module Audio
+Info (12250): 2020.01.22.12:45:20 Progress: Adding Char_LCD_16x2 [altera_up_avalon_character_lcd 12.0]
+Warning (12251): Char_LCD_16x2: Used altera_up_avalon_character_lcd 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:20 Progress: Parameterizing module Char_LCD_16x2
+Info (12250): 2020.01.22.12:45:20 Progress: Adding PS2_Port [altera_up_avalon_ps2 12.0]
+Warning (12251): PS2_Port: Used altera_up_avalon_ps2 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:20 Progress: Parameterizing module PS2_Port
+Info (12250): 2020.01.22.12:45:20 Progress: Adding SRAM [altera_up_avalon_sram 12.0]
+Warning (12251): SRAM: Used altera_up_avalon_sram 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:20 Progress: Parameterizing module SRAM
+Info (12250): 2020.01.22.12:45:20 Progress: Adding VGA_Pixel_Buffer [altera_up_avalon_video_pixel_buffer_dma 12.0]
+Warning (12251): VGA_Pixel_Buffer: Used altera_up_avalon_video_pixel_buffer_dma 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:20 Progress: Parameterizing module VGA_Pixel_Buffer
+Info (12250): 2020.01.22.12:45:20 Progress: Adding VGA_Char_Buffer [altera_up_avalon_video_character_buffer_with_dma 12.0]
+Warning (12251): VGA_Char_Buffer: Used altera_up_avalon_video_character_buffer_with_dma 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:20 Progress: Parameterizing module VGA_Char_Buffer
+Info (12250): 2020.01.22.12:45:20 Progress: Adding VGA_Controller [altera_up_avalon_video_vga_controller 12.0]
+Warning (12251): VGA_Controller: Used altera_up_avalon_video_vga_controller 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:20 Progress: Parameterizing module VGA_Controller
+Info (12250): 2020.01.22.12:45:20 Progress: Adding VGA_Pixel_RGB_Resampler [altera_up_avalon_video_rgb_resampler 12.0]
+Warning (12251): VGA_Pixel_RGB_Resampler: Used altera_up_avalon_video_rgb_resampler 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:20 Progress: Parameterizing module VGA_Pixel_RGB_Resampler
+Info (12250): 2020.01.22.12:45:20 Progress: Adding VGA_Pixel_Scaler [altera_up_avalon_video_scaler 12.0]
+Warning (12251): VGA_Pixel_Scaler: Used altera_up_avalon_video_scaler 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:20 Progress: Parameterizing module VGA_Pixel_Scaler
+Info (12250): 2020.01.22.12:45:20 Progress: Adding VGA_Dual_Clock_FIFO [altera_up_avalon_video_dual_clock_buffer 12.0]
+Warning (12251): VGA_Dual_Clock_FIFO: Used altera_up_avalon_video_dual_clock_buffer 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:20 Progress: Parameterizing module VGA_Dual_Clock_FIFO
+Info (12250): 2020.01.22.12:45:20 Progress: Adding CPU_fpoint [altera_nios_custom_instr_floating_point 13.0]
+Info (12250): 2020.01.22.12:45:20 Progress: Parameterizing module CPU_fpoint
+Info (12250): 2020.01.22.12:45:20 Progress: Adding clk_27 [clock_source 13.0]
+Info (12250): 2020.01.22.12:45:20 Progress: Parameterizing module clk_27
+Info (12250): 2020.01.22.12:45:20 Progress: Adding Alpha_Blending [altera_up_avalon_video_alpha_blender 12.0]
+Warning (12251): Alpha_Blending: Used altera_up_avalon_video_alpha_blender 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:20 Progress: Parameterizing module Alpha_Blending
+Info (12250): 2020.01.22.12:45:20 Progress: Adding PS2_Port_Dual [altera_up_avalon_ps2 12.0]
+Warning (12251): PS2_Port_Dual: Used altera_up_avalon_ps2 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:20 Progress: Parameterizing module PS2_Port_Dual
+Info (12250): 2020.01.22.12:45:20 Progress: Adding CPU [altera_nios2_qsys 13.0]
+Info (12250): 2020.01.22.12:45:21 Progress: Parameterizing module CPU
+Info (12250): 2020.01.22.12:45:21 Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Info (12250): 2020.01.22.12:45:21 Progress: Parameterizing module sysid
+Info (12250): 2020.01.22.12:45:21 Progress: Adding merged_resets [altera_reset_bridge 13.0]
+Info (12250): 2020.01.22.12:45:21 Progress: Parameterizing module merged_resets
+Info (12250): 2020.01.22.12:45:21 Progress: Adding sys_clk [altera_clock_bridge 13.0]
+Info (12250): 2020.01.22.12:45:21 Progress: Parameterizing module sys_clk
+Info (12250): 2020.01.22.12:45:21 Progress: Adding vga_clk [altera_clock_bridge 13.0]
+Info (12250): 2020.01.22.12:45:21 Progress: Parameterizing module vga_clk
+Info (12250): 2020.01.22.12:45:21 Progress: Adding External_Clocks [altera_up_clocks 12.0]
+Warning (12251): External_Clocks: Used altera_up_clocks 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:21 Progress: Parameterizing module External_Clocks
+Info (12250): 2020.01.22.12:45:21 Progress: Adding Flash [Altera_UP_Flash_Memory_IP_Core_Avalon_Interface 1.0]
+Warning (12251): Flash: Used Altera_UP_Flash_Memory_IP_Core_Avalon_Interface 13.0 (instead of 1.0)
+Info (12250): 2020.01.22.12:45:24 Progress: Parameterizing module Flash
+Info (12250): 2020.01.22.12:45:24 Progress: Adding SD_Card [Altera_UP_SD_Card_Avalon_Interface 1.0]
+Warning (12251): SD_Card: Used Altera_UP_SD_Card_Avalon_Interface 13.0 (instead of 1.0)
+Info (12250): 2020.01.22.12:45:28 Progress: Parameterizing module SD_Card
+Info (12250): 2020.01.22.12:45:28 Progress: Adding IrDA [altera_up_avalon_irda 12.0]
+Warning (12251): IrDA: Used altera_up_avalon_irda 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:28 Progress: Parameterizing module IrDA
+Info (12250): 2020.01.22.12:45:28 Progress: Adding Video_In [altera_up_avalon_video_decoder 12.0]
+Warning (12251): Video_In: Used altera_up_avalon_video_decoder 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:28 Progress: Parameterizing module Video_In
+Info (12250): 2020.01.22.12:45:28 Progress: Adding Video_In_Chroma_Resampler [altera_up_avalon_video_chroma_resampler 12.0]
+Warning (12251): Video_In_Chroma_Resampler: Used altera_up_avalon_video_chroma_resampler 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:28 Progress: Parameterizing module Video_In_Chroma_Resampler
+Info (12250): 2020.01.22.12:45:28 Progress: Adding Video_In_CSC [altera_up_avalon_video_csc 12.0]
+Warning (12251): Video_In_CSC: Used altera_up_avalon_video_csc 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:28 Progress: Parameterizing module Video_In_CSC
+Info (12250): 2020.01.22.12:45:28 Progress: Adding Video_In_RGB_Resampler [altera_up_avalon_video_rgb_resampler 12.0]
+Warning (12251): Video_In_RGB_Resampler: Used altera_up_avalon_video_rgb_resampler 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:28 Progress: Parameterizing module Video_In_RGB_Resampler
+Info (12250): 2020.01.22.12:45:28 Progress: Adding Video_In_Clipper [altera_up_avalon_video_clipper 12.0]
+Warning (12251): Video_In_Clipper: Used altera_up_avalon_video_clipper 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:28 Progress: Parameterizing module Video_In_Clipper
+Info (12250): 2020.01.22.12:45:28 Progress: Adding Video_In_Scaler [altera_up_avalon_video_scaler 12.0]
+Warning (12251): Video_In_Scaler: Used altera_up_avalon_video_scaler 13.0 (instead of 12.0)
+Info (12250): 2020.01.22.12:45:28 Progress: Parameterizing module Video_In_Scaler
+Info (12250): 2020.01.22.12:45:28 Progress: Adding Video_In_DMA_Controller [altera_up_avalon_video_dma_controller 13.0]
+Info (12250): 2020.01.22.12:45:28 Progress: Parameterizing module Video_In_DMA_Controller
+Info (12250): 2020.01.22.12:45:28 Progress: Adding USB [altera_up_avalon_usb 13.0]
+Info (12250): 2020.01.22.12:45:28 Progress: Parameterizing module USB
+Info (12250): 2020.01.22.12:45:28 Progress: Building connections
+Info (12250): 2020.01.22.12:45:28 Progress: Parameterizing connections
+Info (12250): 2020.01.22.12:45:28 Progress: Validating
+Info (12250): 2020.01.22.12:45:30 Progress: Done reading input file
+Info (12250): Nios_system.VGA_Char_Buffer: Character Resolution: 80 x 60
+Info (12250): Nios_system.VGA_Controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes)
+Info (12250): Nios_system.VGA_Pixel_RGB_Resampler: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info (12250): Nios_system.VGA_Pixel_Scaler: Change in Resolution: 320 x 240 -> 640 x 480
+Info (12250): Nios_system.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info (12250): Nios_system.sysid: Time stamp will be automatically updated when this component is generated.
+Info (12250): Nios_system.Video_In: Video In Stream: Format: 720 x 244 (Odd Frames) or 720 x 243 (Even Frames) with Colour: 8 (bits) x 2 (planes) (YCrCb 4:2:2)
+Info (12250): Nios_system.Video_In_Chroma_Resampler: Chroma Resampling: 8 (bits) x 2 (planes) -> 8 (bits) x 3 (planes)
+Info (12250): Nios_system.Video_In_CSC: Colour Space Conversion: 8 (bits) x 3 (planes) (444 YCrCb) -> 8 (bits) x 3 (planes) (24-bit RGB)
+Info (12250): Nios_system.Video_In_RGB_Resampler: RGB Resampling: 8 (bits) x 3 (planes) -> 16 (bits) x 1 (planes)
+Info (12250): Nios_system.Video_In_Clipper: Change in Resolution: 720 x 244 -> 640 x 240
+Info (12250): Nios_system.Video_In_Scaler: Change in Resolution: 640 x 240 -> 320 x 240
+Info (12250): Nios_system: Generating nios_system "nios_system" for QUARTUS_SYNTH
+Info (12250): Pipeline_bridge_swap_transform: After transform: 44 modules, 215 connections
+Info (12250): Merlin_custom_instruction_transform: After transform: 47 modules, 218 connections
+Info (12250): Merlin_translator_transform: After transform: 79 modules, 374 connections
+Info (12250): Merlin_domain_transform: After transform: 141 modules, 882 connections
+Info (12250): Merlin_router_transform: After transform: 173 modules, 1038 connections
+Info (12250): Merlin_traffic_limiter_transform: After transform: 174 modules, 1044 connections
+Info (12250): Merlin_burst_transform: After transform: 177 modules, 1059 connections
+Info (12250): Reset_adaptation_transform: After transform: 181 modules, 697 connections
+Info (12250): Merlin_network_to_switch_transform: After transform: 244 modules, 827 connections
+Info (12250): Merlin_width_transform: After transform: 250 modules, 845 connections
+Info (12250): Limiter_update_transform: After transform: 250 modules, 846 connections
+Info (12250): Merlin_mm_transform: After transform: 250 modules, 846 connections
+Info (12250): Merlin_interrupt_mapper_transform: After transform: 251 modules, 849 connections
+Warning (12251): Nios_system: "No matching role found for CPU_custom_instruction_master_translator:ci_slave:ci_slave_result (result)"
+Warning (12251): Nios_system: "No matching role found for CPU_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_ipending (ipending)"
+Warning (12251): Nios_system: "No matching role found for CPU_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_estatus (estatus)"
+Info (12250): JTAG_UART: Starting RTL generation for module 'nios_system_JTAG_UART'
+Info (12250): JTAG_UART:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=nios_system_JTAG_UART --dir=C:/Users/MANUEL~1/AppData/Local/Temp/alt8283_8466994735321290025.dir/0006_JTAG_UART_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/MANUEL~1/AppData/Local/Temp/alt8283_8466994735321290025.dir/0006_JTAG_UART_gen//nios_system_JTAG_UART_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): JTAG_UART: Done RTL generation for module 'nios_system_JTAG_UART'
+Info (12250): JTAG_UART: "nios_system" instantiated altera_avalon_jtag_uart "JTAG_UART"
+Info (12250): Interval_Timer: Starting RTL generation for module 'nios_system_Interval_Timer'
+Info (12250): Interval_Timer:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=nios_system_Interval_Timer --dir=C:/Users/MANUEL~1/AppData/Local/Temp/alt8283_8466994735321290025.dir/0007_Interval_Timer_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/MANUEL~1/AppData/Local/Temp/alt8283_8466994735321290025.dir/0007_Interval_Timer_gen//nios_system_Interval_Timer_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Interval_Timer: Done RTL generation for module 'nios_system_Interval_Timer'
+Info (12250): Interval_Timer: "nios_system" instantiated altera_avalon_timer "Interval_Timer"
+Info (12250): SDRAM: Starting RTL generation for module 'nios_system_SDRAM'
+Info (12250): SDRAM:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=nios_system_SDRAM --dir=C:/Users/MANUEL~1/AppData/Local/Temp/alt8283_8466994735321290025.dir/0008_SDRAM_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/MANUEL~1/AppData/Local/Temp/alt8283_8466994735321290025.dir/0008_SDRAM_gen//nios_system_SDRAM_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): SDRAM: Done RTL generation for module 'nios_system_SDRAM'
+Info (12250): SDRAM: "nios_system" instantiated altera_avalon_new_sdram_controller "SDRAM"
+Info (12250): Red_LEDs: Starting Generation of Parallel Port
+Info (12250): Red_LEDs: "nios_system" instantiated altera_up_avalon_parallel_port "Red_LEDs"
+Info (12250): Green_LEDs: Starting Generation of Parallel Port
+Info (12250): Green_LEDs: "nios_system" instantiated altera_up_avalon_parallel_port "Green_LEDs"
+Info (12250): HEX3_HEX0: Starting Generation of Parallel Port
+Info (12250): HEX3_HEX0: "nios_system" instantiated altera_up_avalon_parallel_port "HEX3_HEX0"
+Info (12250): HEX7_HEX4: Starting Generation of Parallel Port
+Info (12250): HEX7_HEX4: "nios_system" instantiated altera_up_avalon_parallel_port "HEX7_HEX4"
+Info (12250): Slider_Switches: Starting Generation of Parallel Port
+Info (12250): Slider_Switches: "nios_system" instantiated altera_up_avalon_parallel_port "Slider_Switches"
+Info (12250): Pushbuttons: Starting Generation of Parallel Port
+Info (12250): Pushbuttons: "nios_system" instantiated altera_up_avalon_parallel_port "Pushbuttons"
+Info (12250): Expansion_JP5: Starting Generation of Parallel Port
+Info (12250): Expansion_JP5: "nios_system" instantiated altera_up_avalon_parallel_port "Expansion_JP5"
+Info (12250): Serial_Port: Starting Generation of RS232 UART
+Info (12250): Serial_Port: "nios_system" instantiated altera_up_avalon_rs232 "Serial_Port"
+Info (12250): AV_Config: Starting Generation of Audio and Video Config
+Info (12250): AV_Config: "nios_system" instantiated altera_up_avalon_audio_and_video_config "AV_Config"
+Info (12250): Audio: Starting Generation of Audio Controller
+Info (12250): Audio: "nios_system" instantiated altera_up_avalon_audio "Audio"
+Warning (12251): Overwriting different file C:/Sciebo/THK/DTS/Drum_maschine/DE2-115_Media_Computer/vhdl/db/ip/nios_system/submodules/altera_up_sync_fifo.v
+Info (12250): Char_LCD_16x2: Starting Generation of Character LCD
+Info (12250): Char_LCD_16x2: "nios_system" instantiated altera_up_avalon_character_lcd "Char_LCD_16x2"
+Info (12250): PS2_Port: Starting Generation of PS2 Controller
+Info (12250): PS2_Port: "nios_system" instantiated altera_up_avalon_ps2 "PS2_Port"
+Info (12250): SRAM: Starting Generation of SRAM or SSRAM Controller
+Info (12250): SRAM: "nios_system" instantiated altera_up_avalon_sram "SRAM"
+Info (12250): VGA_Pixel_Buffer: Starting Generation of VGA Pixel Buffer
+Info (12250): VGA_Pixel_Buffer: "nios_system" instantiated altera_up_avalon_video_pixel_buffer_dma "VGA_Pixel_Buffer"
+Info (12250): VGA_Char_Buffer: Starting Generation of Character Buffer
+Info (12250): VGA_Char_Buffer: "nios_system" instantiated altera_up_avalon_video_character_buffer_with_dma "VGA_Char_Buffer"
+Info (12250): VGA_Controller: Starting Generation of VGA Controller
+Info (12250): VGA_Controller: "nios_system" instantiated altera_up_avalon_video_vga_controller "VGA_Controller"
+Info (12250): VGA_Pixel_RGB_Resampler: Starting Generation of Video RGB Resampler
+Info (12250): VGA_Pixel_RGB_Resampler: "nios_system" instantiated altera_up_avalon_video_rgb_resampler "VGA_Pixel_RGB_Resampler"
+Info (12250): VGA_Pixel_Scaler: Starting Generation of Video Scaler
+Info (12250): VGA_Pixel_Scaler: "nios_system" instantiated altera_up_avalon_video_scaler "VGA_Pixel_Scaler"
+Info (12250): VGA_Dual_Clock_FIFO: Starting Generation of the Dual Clock Buffer
+Info (12250): VGA_Dual_Clock_FIFO: "nios_system" instantiated altera_up_avalon_video_dual_clock_buffer "VGA_Dual_Clock_FIFO"
+Info (12250): CPU_fpoint: "nios_system" instantiated altera_nios_custom_instr_floating_point "CPU_fpoint"
+Info (12250): Alpha_Blending: Starting Generation of the Alpha Blender
+Info (12250): Alpha_Blending: "nios_system" instantiated altera_up_avalon_video_alpha_blender "Alpha_Blending"
+Info (12250): CPU: Starting RTL generation for module 'nios_system_CPU'
+Info (12250): CPU:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=nios_system_CPU --dir=C:/Users/MANUEL~1/AppData/Local/Temp/alt8283_8466994735321290025.dir/0029_CPU_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/MANUEL~1/AppData/Local/Temp/alt8283_8466994735321290025.dir/0029_CPU_gen//nios_system_CPU_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info (12250): CPU: # 2020.01.22 12:45:40 (*) Starting Nios II generation
+Info (12250): CPU: # 2020.01.22 12:45:40 (*)   Checking for plaintext license.
+Info (12250): CPU: # 2020.01.22 12:45:41 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info (12250): CPU: # 2020.01.22 12:45:41 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info (12250): CPU: # 2020.01.22 12:45:41 (*)   LM_LICENSE_FILE environment variable is empty
+Info (12250): CPU: # 2020.01.22 12:45:41 (*)   Plaintext license not found.
+Info (12250): CPU: # 2020.01.22 12:45:41 (*)   Checking for encrypted license (non-evaluation).
+Info (12250): CPU: # 2020.01.22 12:45:41 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info (12250): CPU: # 2020.01.22 12:45:41 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info (12250): CPU: # 2020.01.22 12:45:41 (*)   LM_LICENSE_FILE environment variable is empty
+Info (12250): CPU: # 2020.01.22 12:45:41 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info (12250): CPU: # 2020.01.22 12:45:41 (*)   Elaborating CPU configuration settings
+Info (12250): CPU: # 2020.01.22 12:45:41 (*)   Creating all objects for CPU
+Info (12250): CPU: # 2020.01.22 12:45:41 (*)     Testbench
+Info (12250): CPU: # 2020.01.22 12:45:41 (*)     Instruction decoding
+Info (12250): CPU: # 2020.01.22 12:45:41 (*)       Instruction fields
+Info (12250): CPU: # 2020.01.22 12:45:41 (*)       Instruction decodes
+Info (12250): CPU: # 2020.01.22 12:45:42 (*)       Signals for RTL simulation waveforms
+Info (12250): CPU: # 2020.01.22 12:45:42 (*)       Instruction controls
+Info (12250): CPU: # 2020.01.22 12:45:42 (*)     Pipeline frontend
+Info (12250): CPU: # 2020.01.22 12:45:42 (*)     Pipeline backend
+Info (12250): CPU: # 2020.01.22 12:45:44 (*)   Generating RTL from CPU objects
+Info (12250): CPU: # 2020.01.22 12:45:46 (*)   Creating encrypted RTL
+Info (12250): CPU: # 2020.01.22 12:45:47 (*) Done Nios II generation
+Info (12250): CPU: Done RTL generation for module 'nios_system_CPU'
+Info (12250): CPU: "nios_system" instantiated altera_nios2_qsys "CPU"
+Info (12250): Sysid: "nios_system" instantiated altera_avalon_sysid_qsys "sysid"
+Info (12250): External_Clocks: Starting Generation of Required Clocks for DE-Series Boards
+Info (12250): External_Clocks: "nios_system" instantiated altera_up_clocks "External_Clocks"
+Info (12250): Flash: "nios_system" instantiated Altera_UP_Flash_Memory_IP_Core_Avalon_Interface "Flash"
+Info (12250): SD_Card: "nios_system" instantiated Altera_UP_SD_Card_Avalon_Interface "SD_Card"
+Info (12250): IrDA: Starting Generation of RS232 UART
+Info (12250): IrDA: "nios_system" instantiated altera_up_avalon_irda "IrDA"
+Warning (12251): Overwriting different file C:/Sciebo/THK/DTS/Drum_maschine/DE2-115_Media_Computer/vhdl/db/ip/nios_system/submodules/altera_up_sync_fifo.v
+Warning (12251): Overwriting different file C:/Sciebo/THK/DTS/Drum_maschine/DE2-115_Media_Computer/vhdl/db/ip/nios_system/submodules/altera_up_sync_fifo.v
+Info (12250): Video_In: Starting Generation of Video In Decoder
+Info (12250): Video_In: "nios_system" instantiated altera_up_avalon_video_decoder "Video_In"
+Info (12250): Video_In_Chroma_Resampler: Starting Generation of Chroma Resampler
+Info (12250): Video_In_Chroma_Resampler: "nios_system" instantiated altera_up_avalon_video_chroma_resampler "Video_In_Chroma_Resampler"
+Info (12250): Video_In_CSC: Starting Generation of Colour Space Converter
+Info (12250): Video_In_CSC: "nios_system" instantiated altera_up_avalon_video_csc "Video_In_CSC"
+Info (12250): Video_In_RGB_Resampler: Starting Generation of Video RGB Resampler
+Info (12250): Video_In_RGB_Resampler: "nios_system" instantiated altera_up_avalon_video_rgb_resampler "Video_In_RGB_Resampler"
+Info (12250): Video_In_Clipper: Starting generation of the video clipper
+Info (12250): Video_In_Clipper: "nios_system" instantiated altera_up_avalon_video_clipper "Video_In_Clipper"
+Info (12250): Video_In_Scaler: Starting Generation of Video Scaler
+Info (12250): Video_In_Scaler: "nios_system" instantiated altera_up_avalon_video_scaler "Video_In_Scaler"
+Info (12250): Reusing file C:/Sciebo/THK/DTS/Drum_maschine/DE2-115_Media_Computer/vhdl/db/ip/nios_system/submodules/altera_up_video_scaler_shrink.v
+Info (12250): Reusing file C:/Sciebo/THK/DTS/Drum_maschine/DE2-115_Media_Computer/vhdl/db/ip/nios_system/submodules/altera_up_video_scaler_multiply_width.v
+Info (12250): Reusing file C:/Sciebo/THK/DTS/Drum_maschine/DE2-115_Media_Computer/vhdl/db/ip/nios_system/submodules/altera_up_video_scaler_multiply_height.v
+Info (12250): Video_In_DMA_Controller: Starting Generation of Video DMA Controller
+Info (12250): Video_In_DMA_Controller: "nios_system" instantiated altera_up_avalon_video_dma_controller "Video_In_DMA_Controller"
+Info (12250): USB: Starting Generation of USB Controller
+Info (12250): USB: "nios_system" instantiated altera_up_avalon_usb "USB"
+Info (12250): CPU_custom_instruction_master_translator: "nios_system" instantiated altera_customins_master_translator "CPU_custom_instruction_master_translator"
+Info (12250): CPU_custom_instruction_master_multi_xconnect: "nios_system" instantiated altera_customins_xconnect "CPU_custom_instruction_master_multi_xconnect"
+Info (12250): CPU_custom_instruction_master_multi_slave_translator0: "nios_system" instantiated altera_customins_slave_translator "CPU_custom_instruction_master_multi_slave_translator0"
+Info (12250): CPU_instruction_master_translator: "nios_system" instantiated altera_merlin_master_translator "CPU_instruction_master_translator"
+Info (12250): CPU_jtag_debug_module_translator: "nios_system" instantiated altera_merlin_slave_translator "CPU_jtag_debug_module_translator"
+Info (12250): CPU_instruction_master_translator_avalon_universal_master_0_agent: "nios_system" instantiated altera_merlin_master_agent "CPU_instruction_master_translator_avalon_universal_master_0_agent"
+Info (12250): CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent: "nios_system" instantiated altera_merlin_slave_agent "CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info (12250): CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "nios_system" instantiated altera_avalon_sc_fifo "CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info (12250): Addr_router: "nios_system" instantiated altera_merlin_router "addr_router"
+Info (12250): Addr_router_001: "nios_system" instantiated altera_merlin_router "addr_router_001"
+Info (12250): Addr_router_002: "nios_system" instantiated altera_merlin_router "addr_router_002"
+Info (12250): Id_router: "nios_system" instantiated altera_merlin_router "id_router"
+Info (12250): Id_router_003: "nios_system" instantiated altera_merlin_router "id_router_003"
+Info (12250): Id_router_014: "nios_system" instantiated altera_merlin_router "id_router_014"
+Info (12250): Id_router_016: "nios_system" instantiated altera_merlin_router "id_router_016"
+Info (12250): Limiter: "nios_system" instantiated altera_merlin_traffic_limiter "limiter"
+Info (12250): Burst_adapter: "nios_system" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info (12250): Rst_controller: "nios_system" instantiated altera_reset_controller "rst_controller"
+Info (12250): Cmd_xbar_demux: "nios_system" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info (12250): Cmd_xbar_demux_001: "nios_system" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info (12250): Cmd_xbar_demux_002: "nios_system" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_002"
+Info (12250): Cmd_xbar_mux: "nios_system" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info (12250): Cmd_xbar_mux_016: "nios_system" instantiated altera_merlin_multiplexer "cmd_xbar_mux_016"
+Info (12250): Reusing file C:/Sciebo/THK/DTS/Drum_maschine/DE2-115_Media_Computer/vhdl/db/ip/nios_system/submodules/altera_merlin_arbitrator.sv
+Info (12250): Rsp_xbar_demux: "nios_system" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info (12250): Rsp_xbar_demux_003: "nios_system" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_003"
+Info (12250): Rsp_xbar_demux_014: "nios_system" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_014"
+Info (12250): Rsp_xbar_demux_016: "nios_system" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_016"
+Info (12250): Rsp_xbar_mux: "nios_system" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info (12250): Reusing file C:/Sciebo/THK/DTS/Drum_maschine/DE2-115_Media_Computer/vhdl/db/ip/nios_system/submodules/altera_merlin_arbitrator.sv
+Info (12250): Rsp_xbar_mux_001: "nios_system" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info (12250): Reusing file C:/Sciebo/THK/DTS/Drum_maschine/DE2-115_Media_Computer/vhdl/db/ip/nios_system/submodules/altera_merlin_arbitrator.sv
+Info (12250): Width_adapter: "nios_system" instantiated altera_merlin_width_adapter "width_adapter"
+Info (12250): Reusing file C:/Sciebo/THK/DTS/Drum_maschine/DE2-115_Media_Computer/vhdl/db/ip/nios_system/submodules/altera_merlin_address_alignment.sv
+Info (12250): Reusing file C:/Sciebo/THK/DTS/Drum_maschine/DE2-115_Media_Computer/vhdl/db/ip/nios_system/submodules/altera_merlin_burst_uncompressor.sv
+Info (12250): Irq_mapper: "nios_system" instantiated altera_irq_mapper "irq_mapper"
+Info (12250): Nios_system: Done nios_system" with 70 modules, 360 files, 7258576 bytes
+Info (12249): Finished elaborating Qsys system entity "nios_system.qsys"
+Info (12021): Found 2 design units, including 1 entities, in source file writecontrol.vhd
+    Info (12022): Found design unit 1: CF-BEHAVE
+    Info (12023): Found entity 1: CF
+Info (12021): Found 2 design units, including 1 entities, in source file sine_wave.vhd
+    Info (12022): Found design unit 1: sine_wave-arch1
+    Info (12023): Found entity 1: sine_wave
+Info (12021): Found 2 design units, including 0 entities, in source file sine_package.vhd
+    Info (12022): Found design unit 1: sine_package
+    Info (12022): Found design unit 2: sine_package-body
+Info (12021): Found 2 design units, including 1 entities, in source file rythmcontroller.vhd
+    Info (12022): Found design unit 1: RythmController-Arch
+    Info (12023): Found entity 1: RythmController
+Info (12021): Found 2 design units, including 1 entities, in source file reg.vhd
+    Info (12022): Found design unit 1: reg-behv
+    Info (12023): Found entity 1: reg
+Info (12021): Found 2 design units, including 1 entities, in source file readcontrol.vhd
+    Info (12022): Found design unit 1: READCONTROL-BEHAVE
+    Info (12023): Found entity 1: READCONTROL
+Info (12021): Found 2 design units, including 1 entities, in source file pwm.vhd
+    Info (12022): Found design unit 1: pwm-logic
+    Info (12023): Found entity 1: pwm
+Info (12021): Found 2 design units, including 1 entities, in source file copysamples.vhd
+    Info (12022): Found design unit 1: CopySamples-Struct
+    Info (12023): Found entity 1: CopySamples
+Info (12021): Found 2 design units, including 1 entities, in source file copy_module.vhd
+    Info (12022): Found design unit 1: copy_module-dataflow
+    Info (12023): Found entity 1: copy_module
+Info (12021): Found 1 design units, including 1 entities, in source file clock_generator.v
+    Info (12023): Found entity 1: clock_generator
+Info (12021): Found 1 design units, including 1 entities, in source file audio_codec.v
+    Info (12023): Found entity 1: audio_codec
+Info (12021): Found 1 design units, including 1 entities, in source file audio_and_video_config.v
+    Info (12023): Found entity 1: audio_and_video_config
+Info (12021): Found 1 design units, including 1 entities, in source file altera_up_sync_fifo.v
+    Info (12023): Found entity 1: Altera_UP_SYNC_FIFO
+Info (12021): Found 1 design units, including 1 entities, in source file altera_up_slow_clock_generator.v
+    Info (12023): Found entity 1: Altera_UP_Slow_Clock_Generator
+Info (12021): Found 1 design units, including 1 entities, in source file altera_up_i2c_lcm_auto_initialize.v
+    Info (12023): Found entity 1: Altera_UP_I2C_LCM_Auto_Initialize
+Info (12021): Found 1 design units, including 1 entities, in source file altera_up_i2c_dc_auto_initialize.v
+    Info (12023): Found entity 1: Altera_UP_I2C_DC_Auto_Initialize
+Info (12021): Found 1 design units, including 1 entities, in source file altera_up_i2c_av_auto_initialize.v
+    Info (12023): Found entity 1: Altera_UP_I2C_AV_Auto_Initialize
+Info (12021): Found 1 design units, including 1 entities, in source file altera_up_i2c.v
+    Info (12023): Found entity 1: Altera_UP_I2C
+Info (12021): Found 1 design units, including 1 entities, in source file altera_up_clock_edge.v
+    Info (12023): Found entity 1: Altera_UP_Clock_Edge
+Info (12021): Found 1 design units, including 1 entities, in source file altera_up_audio_out_serializer.v
+    Info (12023): Found entity 1: Altera_UP_Audio_Out_Serializer
+Info (12021): Found 1 design units, including 1 entities, in source file altera_up_audio_in_deserializer.v
+    Info (12023): Found entity 1: Altera_UP_Audio_In_Deserializer
+Info (12021): Found 1 design units, including 1 entities, in source file altera_up_audio_bit_counter.v
+    Info (12023): Found entity 1: Altera_UP_Audio_Bit_Counter
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system.vhd
+    Info (12022): Found design unit 1: nios_system-rtl
+    Info (12023): Found entity 1: nios_system
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_width_adapter.vhd
+    Info (12022): Found design unit 1: nios_system_width_adapter-rtl
+    Info (12023): Found entity 1: nios_system_width_adapter
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_width_adapter_001.vhd
+    Info (12022): Found design unit 1: nios_system_width_adapter_001-rtl
+    Info (12023): Found entity 1: nios_system_width_adapter_001
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_width_adapter_003.vhd
+    Info (12022): Found design unit 1: nios_system_width_adapter_003-rtl
+    Info (12023): Found entity 1: nios_system_width_adapter_003
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_width_adapter_004.vhd
+    Info (12022): Found design unit 1: nios_system_width_adapter_004-rtl
+    Info (12023): Found entity 1: nios_system_width_adapter_004
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_burst_adapter.vhd
+    Info (12022): Found design unit 1: nios_system_burst_adapter-rtl
+    Info (12023): Found entity 1: nios_system_burst_adapter
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_burst_adapter_001.vhd
+    Info (12022): Found design unit 1: nios_system_burst_adapter_001-rtl
+    Info (12023): Found entity 1: nios_system_burst_adapter_001
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_rst_controller.vhd
+    Info (12022): Found design unit 1: nios_system_rst_controller-rtl
+    Info (12023): Found entity 1: nios_system_rst_controller
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_rst_controller_002.vhd
+    Info (12022): Found design unit 1: nios_system_rst_controller_002-rtl
+    Info (12023): Found entity 1: nios_system_rst_controller_002
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_rst_controller_003.vhd
+    Info (12022): Found design unit 1: nios_system_rst_controller_003-rtl
+    Info (12023): Found entity 1: nios_system_rst_controller_003
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo.vhd
+    Info (12022): Found design unit 1: nios_system_cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo-rtl
+    Info (12023): Found entity 1: nios_system_cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_char_lcd_16x2_avalon_lcd_slave_translator_avalon_universal_slave_0_agent_rsp_fifo.vhd
+    Info (12022): Found design unit 1: nios_system_char_lcd_16x2_avalon_lcd_slave_translator_avalon_universal_slave_0_agent_rsp_fifo-rtl
+    Info (12023): Found entity 1: nios_system_char_lcd_16x2_avalon_lcd_slave_translator_avalon_universal_slave_0_agent_rsp_fifo
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_sram_avalon_sram_slave_translator_avalon_universal_slave_0_agent_rsp_fifo.vhd
+    Info (12022): Found design unit 1: nios_system_sram_avalon_sram_slave_translator_avalon_universal_slave_0_agent_rsp_fifo-rtl
+    Info (12023): Found entity 1: nios_system_sram_avalon_sram_slave_translator_avalon_universal_slave_0_agent_rsp_fifo
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_sram_avalon_sram_slave_translator_avalon_universal_slave_0_agent_rdata_fifo.vhd
+    Info (12022): Found design unit 1: nios_system_sram_avalon_sram_slave_translator_avalon_universal_slave_0_agent_rdata_fifo-rtl
+    Info (12023): Found entity 1: nios_system_sram_avalon_sram_slave_translator_avalon_universal_slave_0_agent_rdata_fifo
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent.vhd
+    Info (12022): Found design unit 1: nios_system_cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent-rtl
+    Info (12023): Found entity 1: nios_system_cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_char_lcd_16x2_avalon_lcd_slave_translator_avalon_universal_slave_0_agent.vhd
+    Info (12022): Found design unit 1: nios_system_char_lcd_16x2_avalon_lcd_slave_translator_avalon_universal_slave_0_agent-rtl
+    Info (12023): Found entity 1: nios_system_char_lcd_16x2_avalon_lcd_slave_translator_avalon_universal_slave_0_agent
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_sram_avalon_sram_slave_translator_avalon_universal_slave_0_agent.vhd
+    Info (12022): Found design unit 1: nios_system_sram_avalon_sram_slave_translator_avalon_universal_slave_0_agent-rtl
+    Info (12023): Found entity 1: nios_system_sram_avalon_sram_slave_translator_avalon_universal_slave_0_agent
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_cpu_instruction_master_translator.vhd
+    Info (12022): Found design unit 1: nios_system_cpu_instruction_master_translator-rtl
+    Info (12023): Found entity 1: nios_system_cpu_instruction_master_translator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_cpu_data_master_translator.vhd
+    Info (12022): Found design unit 1: nios_system_cpu_data_master_translator-rtl
+    Info (12023): Found entity 1: nios_system_cpu_data_master_translator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_vga_pixel_buffer_avalon_pixel_dma_master_translator.vhd
+    Info (12022): Found design unit 1: nios_system_vga_pixel_buffer_avalon_pixel_dma_master_translator-rtl
+    Info (12023): Found entity 1: nios_system_vga_pixel_buffer_avalon_pixel_dma_master_translator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_video_in_dma_controller_avalon_dma_master_translator.vhd
+    Info (12022): Found design unit 1: nios_system_video_in_dma_controller_avalon_dma_master_translator-rtl
+    Info (12023): Found entity 1: nios_system_video_in_dma_controller_avalon_dma_master_translator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_cpu_jtag_debug_module_translator.vhd
+    Info (12022): Found design unit 1: nios_system_cpu_jtag_debug_module_translator-rtl
+    Info (12023): Found entity 1: nios_system_cpu_jtag_debug_module_translator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_sdram_s1_translator.vhd
+    Info (12022): Found design unit 1: nios_system_sdram_s1_translator-rtl
+    Info (12023): Found entity 1: nios_system_sdram_s1_translator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_flash_flash_data_translator.vhd
+    Info (12022): Found design unit 1: nios_system_flash_flash_data_translator-rtl
+    Info (12023): Found entity 1: nios_system_flash_flash_data_translator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_jtag_uart_avalon_jtag_slave_translator.vhd
+    Info (12022): Found design unit 1: nios_system_jtag_uart_avalon_jtag_slave_translator-rtl
+    Info (12023): Found entity 1: nios_system_jtag_uart_avalon_jtag_slave_translator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_interval_timer_s1_translator.vhd
+    Info (12022): Found design unit 1: nios_system_interval_timer_s1_translator-rtl
+    Info (12023): Found entity 1: nios_system_interval_timer_s1_translator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_sysid_control_slave_translator.vhd
+    Info (12022): Found design unit 1: nios_system_sysid_control_slave_translator-rtl
+    Info (12023): Found entity 1: nios_system_sysid_control_slave_translator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_red_leds_avalon_parallel_port_slave_translator.vhd
+    Info (12022): Found design unit 1: nios_system_red_leds_avalon_parallel_port_slave_translator-rtl
+    Info (12023): Found entity 1: nios_system_red_leds_avalon_parallel_port_slave_translator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_serial_port_avalon_rs232_slave_translator.vhd
+    Info (12022): Found design unit 1: nios_system_serial_port_avalon_rs232_slave_translator-rtl
+    Info (12023): Found entity 1: nios_system_serial_port_avalon_rs232_slave_translator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_char_lcd_16x2_avalon_lcd_slave_translator.vhd
+    Info (12022): Found design unit 1: nios_system_char_lcd_16x2_avalon_lcd_slave_translator-rtl
+    Info (12023): Found entity 1: nios_system_char_lcd_16x2_avalon_lcd_slave_translator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_ps2_port_avalon_ps2_slave_translator.vhd
+    Info (12022): Found design unit 1: nios_system_ps2_port_avalon_ps2_slave_translator-rtl
+    Info (12023): Found entity 1: nios_system_ps2_port_avalon_ps2_slave_translator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_sram_avalon_sram_slave_translator.vhd
+    Info (12022): Found design unit 1: nios_system_sram_avalon_sram_slave_translator-rtl
+    Info (12023): Found entity 1: nios_system_sram_avalon_sram_slave_translator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_vga_char_buffer_avalon_char_buffer_slave_translator.vhd
+    Info (12022): Found design unit 1: nios_system_vga_char_buffer_avalon_char_buffer_slave_translator-rtl
+    Info (12023): Found entity 1: nios_system_vga_char_buffer_avalon_char_buffer_slave_translator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_av_config_avalon_av_config_slave_translator.vhd
+    Info (12022): Found design unit 1: nios_system_av_config_avalon_av_config_slave_translator-rtl
+    Info (12023): Found entity 1: nios_system_av_config_avalon_av_config_slave_translator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_vga_pixel_buffer_avalon_control_slave_translator.vhd
+    Info (12022): Found design unit 1: nios_system_vga_pixel_buffer_avalon_control_slave_translator-rtl
+    Info (12023): Found entity 1: nios_system_vga_pixel_buffer_avalon_control_slave_translator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_audio_avalon_audio_slave_translator.vhd
+    Info (12022): Found design unit 1: nios_system_audio_avalon_audio_slave_translator-rtl
+    Info (12023): Found entity 1: nios_system_audio_avalon_audio_slave_translator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_flash_flash_erase_control_translator.vhd
+    Info (12022): Found design unit 1: nios_system_flash_flash_erase_control_translator-rtl
+    Info (12023): Found entity 1: nios_system_flash_flash_erase_control_translator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_sd_card_avalon_sdcard_slave_translator.vhd
+    Info (12022): Found design unit 1: nios_system_sd_card_avalon_sdcard_slave_translator-rtl
+    Info (12023): Found entity 1: nios_system_sd_card_avalon_sdcard_slave_translator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_usb_avalon_usb_slave_translator.vhd
+    Info (12022): Found design unit 1: nios_system_usb_avalon_usb_slave_translator-rtl
+    Info (12023): Found entity 1: nios_system_usb_avalon_usb_slave_translator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_cpu_instruction_master_translator_avalon_universal_master_0_agent.vhd
+    Info (12022): Found design unit 1: nios_system_cpu_instruction_master_translator_avalon_universal_master_0_agent-rtl
+    Info (12023): Found entity 1: nios_system_cpu_instruction_master_translator_avalon_universal_master_0_agent
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/nios_system_vga_pixel_buffer_avalon_pixel_dma_master_translator_avalon_universal_master_0_agent.vhd
+    Info (12022): Found design unit 1: nios_system_vga_pixel_buffer_avalon_pixel_dma_master_translator_avalon_universal_master_0_agent-rtl
+    Info (12023): Found entity 1: nios_system_vga_pixel_buffer_avalon_pixel_dma_master_translator_avalon_universal_master_0_agent
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_irq_mapper.sv
+    Info (12023): Found entity 1: nios_system_irq_mapper
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_merlin_width_adapter.sv
+    Info (12023): Found entity 1: altera_merlin_width_adapter
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_merlin_address_alignment.sv
+    Info (12023): Found entity 1: altera_merlin_address_alignment
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+    Info (12023): Found entity 1: altera_merlin_burst_uncompressor
+Info (12021): Found 2 design units, including 2 entities, in source file nios_system/synthesis/submodules/altera_merlin_arbitrator.sv
+    Info (12023): Found entity 1: altera_merlin_arbitrator
+    Info (12023): Found entity 2: altera_merlin_arb_adder
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_rsp_xbar_mux_001.sv
+    Info (12023): Found entity 1: nios_system_rsp_xbar_mux_001
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_rsp_xbar_mux.sv
+    Info (12023): Found entity 1: nios_system_rsp_xbar_mux
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_rsp_xbar_demux_016.sv
+    Info (12023): Found entity 1: nios_system_rsp_xbar_demux_016
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_rsp_xbar_demux_014.sv
+    Info (12023): Found entity 1: nios_system_rsp_xbar_demux_014
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_rsp_xbar_demux_003.sv
+    Info (12023): Found entity 1: nios_system_rsp_xbar_demux_003
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_rsp_xbar_demux.sv
+    Info (12023): Found entity 1: nios_system_rsp_xbar_demux
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_cmd_xbar_mux_016.sv
+    Info (12023): Found entity 1: nios_system_cmd_xbar_mux_016
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_cmd_xbar_mux.sv
+    Info (12023): Found entity 1: nios_system_cmd_xbar_mux
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_cmd_xbar_demux_002.sv
+    Info (12023): Found entity 1: nios_system_cmd_xbar_demux_002
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_cmd_xbar_demux_001.sv
+    Info (12023): Found entity 1: nios_system_cmd_xbar_demux_001
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_cmd_xbar_demux.sv
+    Info (12023): Found entity 1: nios_system_cmd_xbar_demux
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_reset_controller.v
+    Info (12023): Found entity 1: altera_reset_controller
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_reset_synchronizer.v
+    Info (12023): Found entity 1: altera_reset_synchronizer
+Info (12021): Found 7 design units, including 7 entities, in source file nios_system/synthesis/submodules/altera_merlin_burst_adapter.sv
+    Info (12023): Found entity 1: altera_merlin_burst_adapter_burstwrap_increment
+    Info (12023): Found entity 2: altera_merlin_burst_adapter_adder
+    Info (12023): Found entity 3: altera_merlin_burst_adapter_subtractor
+    Info (12023): Found entity 4: altera_merlin_burst_adapter_min
+    Info (12023): Found entity 5: altera_merlin_burst_adapter
+    Info (12023): Found entity 6: altera_merlin_burst_adapter_uncompressed_only
+    Info (12023): Found entity 7: altera_merlin_burst_adapter_full
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_merlin_traffic_limiter.sv
+    Info (12023): Found entity 1: altera_merlin_traffic_limiter
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_avalon_st_pipeline_base.v
+    Info (12023): Found entity 1: altera_avalon_st_pipeline_base
+Info (12021): Found 2 design units, including 2 entities, in source file nios_system/synthesis/submodules/nios_system_id_router_016.sv
+    Info (12023): Found entity 1: nios_system_id_router_016_default_decode
+    Info (12023): Found entity 2: nios_system_id_router_016
+Info (12021): Found 2 design units, including 2 entities, in source file nios_system/synthesis/submodules/nios_system_id_router_014.sv
+    Info (12023): Found entity 1: nios_system_id_router_014_default_decode
+    Info (12023): Found entity 2: nios_system_id_router_014
+Info (12021): Found 2 design units, including 2 entities, in source file nios_system/synthesis/submodules/nios_system_id_router_003.sv
+    Info (12023): Found entity 1: nios_system_id_router_003_default_decode
+    Info (12023): Found entity 2: nios_system_id_router_003
+Info (12021): Found 2 design units, including 2 entities, in source file nios_system/synthesis/submodules/nios_system_id_router.sv
+    Info (12023): Found entity 1: nios_system_id_router_default_decode
+    Info (12023): Found entity 2: nios_system_id_router
+Info (12021): Found 2 design units, including 2 entities, in source file nios_system/synthesis/submodules/nios_system_addr_router_002.sv
+    Info (12023): Found entity 1: nios_system_addr_router_002_default_decode
+    Info (12023): Found entity 2: nios_system_addr_router_002
+Info (12021): Found 2 design units, including 2 entities, in source file nios_system/synthesis/submodules/nios_system_addr_router_001.sv
+    Info (12023): Found entity 1: nios_system_addr_router_001_default_decode
+    Info (12023): Found entity 2: nios_system_addr_router_001
+Info (12021): Found 2 design units, including 2 entities, in source file nios_system/synthesis/submodules/nios_system_addr_router.sv
+    Info (12023): Found entity 1: nios_system_addr_router_default_decode
+    Info (12023): Found entity 2: nios_system_addr_router
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_avalon_sc_fifo.v
+    Info (12023): Found entity 1: altera_avalon_sc_fifo
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_merlin_slave_agent.sv
+    Info (12023): Found entity 1: altera_merlin_slave_agent
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_merlin_master_agent.sv
+    Info (12023): Found entity 1: altera_merlin_master_agent
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_merlin_slave_translator.sv
+    Info (12023): Found entity 1: altera_merlin_slave_translator
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_merlin_master_translator.sv
+    Info (12023): Found entity 1: altera_merlin_master_translator
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_customins_slave_translator.sv
+    Info (12023): Found entity 1: altera_customins_slave_translator
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_cpu_custom_instruction_master_multi_xconnect.sv
+    Info (12023): Found entity 1: nios_system_CPU_custom_instruction_master_multi_xconnect
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_customins_master_translator.v
+    Info (12023): Found entity 1: altera_customins_master_translator
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_usb.v
+    Info (12023): Found entity 1: nios_system_USB
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_video_dma_control_slave.v
+    Info (12023): Found entity 1: altera_up_video_dma_control_slave
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_video_dma_to_memory.v
+    Info (12023): Found entity 1: altera_up_video_dma_to_memory
+Warning (10275): Verilog HDL Module Instantiation warning at altera_up_video_dma_to_stream.v(291): ignored dangling comma in List of Port Connections
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_video_dma_to_stream.v
+    Info (12023): Found entity 1: altera_up_video_dma_to_stream
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_video_in_dma_controller.v
+    Info (12023): Found entity 1: nios_system_Video_In_DMA_Controller
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_video_scaler_shrink.v
+    Info (12023): Found entity 1: altera_up_video_scaler_shrink
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_video_scaler_multiply_width.v
+    Info (12023): Found entity 1: altera_up_video_scaler_multiply_width
+Warning (10275): Verilog HDL Module Instantiation warning at altera_up_video_scaler_multiply_height.v(307): ignored dangling comma in List of Port Connections
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_video_scaler_multiply_height.v
+    Info (12023): Found entity 1: altera_up_video_scaler_multiply_height
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_video_in_scaler.v
+    Info (12023): Found entity 1: nios_system_Video_In_Scaler
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_video_clipper_add.v
+    Info (12023): Found entity 1: altera_up_video_clipper_add
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_video_clipper_drop.v
+    Info (12023): Found entity 1: altera_up_video_clipper_drop
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_video_clipper_counters.v
+    Info (12023): Found entity 1: altera_up_video_clipper_counters
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_video_in_clipper.v
+    Info (12023): Found entity 1: nios_system_Video_In_Clipper
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_video_in_rgb_resampler.v
+    Info (12023): Found entity 1: nios_system_Video_In_RGB_Resampler
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_ycrcb_to_rgb_converter.v
+    Info (12023): Found entity 1: altera_up_YCrCb_to_RGB_converter
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_rgb_to_ycrcb_converter.v
+    Info (12023): Found entity 1: altera_up_RGB_to_YCrCb_converter
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_video_in_csc.v
+    Info (12023): Found entity 1: nios_system_Video_In_CSC
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_video_in_chroma_resampler.v
+    Info (12023): Found entity 1: nios_system_Video_In_Chroma_Resampler
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_video_itu_656_decoder.v
+    Info (12023): Found entity 1: altera_up_video_itu_656_decoder
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_video_decoder_add_endofpacket.v
+    Info (12023): Found entity 1: altera_up_video_decoder_add_endofpacket
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_video_camera_decoder.v
+    Info (12023): Found entity 1: altera_up_video_camera_decoder
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_video_dual_clock_fifo.v
+    Info (12023): Found entity 1: altera_up_video_dual_clock_fifo
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_video_in.v
+    Info (12023): Found entity 1: nios_system_Video_In
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_irda_counters.v
+    Info (12023): Found entity 1: altera_up_irda_counters
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_irda_in_deserializer.v
+    Info (12023): Found entity 1: altera_up_irda_in_deserializer
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_irda_out_serializer.v
+    Info (12023): Found entity 1: altera_up_irda_out_serializer
+Warning (10275): Verilog HDL Module Instantiation warning at altera_up_sync_fifo.v(157): ignored dangling comma in List of Port Connections
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_sync_fifo.v
+    Info (12023): Found entity 1: altera_up_sync_fifo
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_irda.v
+    Info (12023): Found entity 1: nios_system_IrDA
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_sd_card_avalon_interface.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Card_Avalon_Interface-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Card_Avalon_Interface
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_sd_card_48_bit_command_generator.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Card_48_bit_Command_Generator-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Card_48_bit_Command_Generator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_sd_card_buffer.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Card_Buffer-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Card_Buffer
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_sd_card_clock.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Card_Clock-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Card_Clock
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_sd_card_control_fsm.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Card_Control_FSM-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Card_Control_FSM
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_sd_card_interface.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Card_Interface-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Card_Interface
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_sd_card_memory_block.vhd
+    Info (12022): Found design unit 1: altera_up_sd_card_memory_block-SYN
+    Info (12023): Found entity 1: Altera_UP_SD_Card_Memory_Block
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_sd_card_response_receiver.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Card_Response_Receiver-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Card_Response_Receiver
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_sd_crc16_generator.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_CRC16_Generator-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_CRC16_Generator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_sd_crc7_generator.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_CRC7_Generator-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_CRC7_Generator
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_sd_signal_trigger.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Signal_Trigger-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Signal_Trigger
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_sd_card_memory_block.vhd
+    Info (12022): Found design unit 1: altera_up_sd_card_memory_block-SYN
+    Info (12023): Found entity 1: Altera_UP_SD_Card_Memory_Block
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_flash_memory_ip_core_avalon_interface.vhd
+    Info (12022): Found design unit 1: Altera_UP_Flash_Memory_IP_Core_Avalon_Interface-rtl
+    Info (12023): Found entity 1: Altera_UP_Flash_Memory_IP_Core_Avalon_Interface
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_flash_memory_controller.vhd
+    Info (12022): Found design unit 1: Altera_UP_Flash_Memory_Controller-rtl
+    Info (12023): Found entity 1: Altera_UP_Flash_Memory_Controller
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_flash_memory_ip_core_standalone.vhd
+    Info (12022): Found design unit 1: Altera_UP_Flash_Memory_UP_Core_Standalone-rtl
+    Info (12023): Found entity 1: Altera_UP_Flash_Memory_UP_Core_Standalone
+Info (12021): Found 2 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_flash_memory_user_interface.vhd
+    Info (12022): Found design unit 1: Altera_UP_Flash_Memory_User_Interface-rtl
+    Info (12023): Found entity 1: Altera_UP_Flash_Memory_User_Interface
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_external_clocks.v
+    Info (12023): Found entity 1: nios_system_External_Clocks
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_sysid.v
+    Info (12023): Found entity 1: nios_system_sysid
+Info (12021): Found 26 design units, including 26 entities, in source file nios_system/synthesis/submodules/nios_system_cpu.v
+    Info (12023): Found entity 1: nios_system_CPU_ic_data_module
+    Info (12023): Found entity 2: nios_system_CPU_ic_tag_module
+    Info (12023): Found entity 3: nios_system_CPU_register_bank_a_module
+    Info (12023): Found entity 4: nios_system_CPU_register_bank_b_module
+    Info (12023): Found entity 5: nios_system_CPU_nios2_oci_debug
+    Info (12023): Found entity 6: nios_system_CPU_ociram_sp_ram_module
+    Info (12023): Found entity 7: nios_system_CPU_nios2_ocimem
+    Info (12023): Found entity 8: nios_system_CPU_nios2_avalon_reg
+    Info (12023): Found entity 9: nios_system_CPU_nios2_oci_break
+    Info (12023): Found entity 10: nios_system_CPU_nios2_oci_xbrk
+    Info (12023): Found entity 11: nios_system_CPU_nios2_oci_match_single
+    Info (12023): Found entity 12: nios_system_CPU_nios2_oci_match_paired
+    Info (12023): Found entity 13: nios_system_CPU_nios2_oci_dbrk
+    Info (12023): Found entity 14: nios_system_CPU_nios2_oci_itrace
+    Info (12023): Found entity 15: nios_system_CPU_nios2_oci_td_mode
+    Info (12023): Found entity 16: nios_system_CPU_nios2_oci_dtrace
+    Info (12023): Found entity 17: nios_system_CPU_nios2_oci_compute_tm_count
+    Info (12023): Found entity 18: nios_system_CPU_nios2_oci_fifowp_inc
+    Info (12023): Found entity 19: nios_system_CPU_nios2_oci_fifocount_inc
+    Info (12023): Found entity 20: nios_system_CPU_nios2_oci_fifo
+    Info (12023): Found entity 21: nios_system_CPU_nios2_oci_pib
+    Info (12023): Found entity 22: nios_system_CPU_traceram_lpm_dram_bdp_component_module
+    Info (12023): Found entity 23: nios_system_CPU_nios2_oci_im
+    Info (12023): Found entity 24: nios_system_CPU_nios2_performance_monitors
+    Info (12023): Found entity 25: nios_system_CPU_nios2_oci
+    Info (12023): Found entity 26: nios_system_CPU
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_cpu_jtag_debug_module_sysclk.v
+    Info (12023): Found entity 1: nios_system_CPU_jtag_debug_module_sysclk
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_cpu_jtag_debug_module_tck.v
+    Info (12023): Found entity 1: nios_system_CPU_jtag_debug_module_tck
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_cpu_jtag_debug_module_wrapper.v
+    Info (12023): Found entity 1: nios_system_CPU_jtag_debug_module_wrapper
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_cpu_mult_cell.v
+    Info (12023): Found entity 1: nios_system_CPU_mult_cell
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_cpu_oci_test_bench.v
+    Info (12023): Found entity 1: nios_system_CPU_oci_test_bench
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_cpu_test_bench.v
+    Info (12023): Found entity 1: nios_system_CPU_test_bench
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_video_alpha_blender_normal.v
+    Info (12023): Found entity 1: altera_up_video_alpha_blender_normal
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_video_alpha_blender_simple.v
+    Info (12023): Found entity 1: altera_up_video_alpha_blender_simple
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_alpha_blending.v
+    Info (12023): Found entity 1: nios_system_Alpha_Blending
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/fpoint_wrapper.v
+    Info (12023): Found entity 1: fpoint_wrapper
+Info (12021): Found 23 design units, including 23 entities, in source file nios_system/synthesis/submodules/fpoint_qsys.v
+    Info (12023): Found entity 1: fpoint_qsys_mult_single
+    Info (12023): Found entity 2: fpoint_qsys_addsub_single_altbarrel_shift_fjg
+    Info (12023): Found entity 3: fpoint_qsys_addsub_single_altbarrel_shift_44e
+    Info (12023): Found entity 4: fpoint_qsys_addsub_single_altpriority_encoder_i0b
+    Info (12023): Found entity 5: fpoint_qsys_addsub_single_altpriority_encoder_l0b
+    Info (12023): Found entity 6: fpoint_qsys_addsub_single_altpriority_encoder_q0b
+    Info (12023): Found entity 7: fpoint_qsys_addsub_single_altpriority_encoder_iha
+    Info (12023): Found entity 8: fpoint_qsys_addsub_single_altpriority_encoder_lha
+    Info (12023): Found entity 9: fpoint_qsys_addsub_single_altpriority_encoder_qha
+    Info (12023): Found entity 10: fpoint_qsys_addsub_single_altpriority_encoder_aja
+    Info (12023): Found entity 11: fpoint_qsys_addsub_single_altpriority_encoder_a2b
+    Info (12023): Found entity 12: fpoint_qsys_addsub_single_altpriority_encoder_9u8
+    Info (12023): Found entity 13: fpoint_qsys_addsub_single_altpriority_encoder_64b
+    Info (12023): Found entity 14: fpoint_qsys_addsub_single_altpriority_encoder_94b
+    Info (12023): Found entity 15: fpoint_qsys_addsub_single_altpriority_encoder_e4b
+    Info (12023): Found entity 16: fpoint_qsys_addsub_single_altpriority_encoder_u5b
+    Info (12023): Found entity 17: fpoint_qsys_addsub_single_altpriority_encoder_6la
+    Info (12023): Found entity 18: fpoint_qsys_addsub_single_altpriority_encoder_9la
+    Info (12023): Found entity 19: fpoint_qsys_addsub_single_altpriority_encoder_ela
+    Info (12023): Found entity 20: fpoint_qsys_addsub_single_altpriority_encoder_uma
+    Info (12023): Found entity 21: fpoint_qsys_addsub_single_altpriority_encoder_tma
+    Info (12023): Found entity 22: fpoint_qsys_addsub_single
+    Info (12023): Found entity 23: fpoint_qsys
+Info (12021): Found 36 design units, including 36 entities, in source file nios_system/synthesis/submodules/fpoint_hw_qsys.v
+    Info (12023): Found entity 1: fpoint_hw_qsys_mult_single
+    Info (12023): Found entity 2: fpoint_hw_qsys_addsub_single_altbarrel_shift_fjg
+    Info (12023): Found entity 3: fpoint_hw_qsys_addsub_single_altbarrel_shift_44e
+    Info (12023): Found entity 4: fpoint_hw_qsys_addsub_single_altpriority_encoder_i0b
+    Info (12023): Found entity 5: fpoint_hw_qsys_addsub_single_altpriority_encoder_l0b
+    Info (12023): Found entity 6: fpoint_hw_qsys_addsub_single_altpriority_encoder_q0b
+    Info (12023): Found entity 7: fpoint_hw_qsys_addsub_single_altpriority_encoder_iha
+    Info (12023): Found entity 8: fpoint_hw_qsys_addsub_single_altpriority_encoder_lha
+    Info (12023): Found entity 9: fpoint_hw_qsys_addsub_single_altpriority_encoder_qha
+    Info (12023): Found entity 10: fpoint_hw_qsys_addsub_single_altpriority_encoder_aja
+    Info (12023): Found entity 11: fpoint_hw_qsys_addsub_single_altpriority_encoder_a2b
+    Info (12023): Found entity 12: fpoint_hw_qsys_addsub_single_altpriority_encoder_9u8
+    Info (12023): Found entity 13: fpoint_hw_qsys_addsub_single_altpriority_encoder_64b
+    Info (12023): Found entity 14: fpoint_hw_qsys_addsub_single_altpriority_encoder_94b
+    Info (12023): Found entity 15: fpoint_hw_qsys_addsub_single_altpriority_encoder_e4b
+    Info (12023): Found entity 16: fpoint_hw_qsys_addsub_single_altpriority_encoder_u5b
+    Info (12023): Found entity 17: fpoint_hw_qsys_addsub_single_altpriority_encoder_6la
+    Info (12023): Found entity 18: fpoint_hw_qsys_addsub_single_altpriority_encoder_9la
+    Info (12023): Found entity 19: fpoint_hw_qsys_addsub_single_altpriority_encoder_ela
+    Info (12023): Found entity 20: fpoint_hw_qsys_addsub_single_altpriority_encoder_uma
+    Info (12023): Found entity 21: fpoint_hw_qsys_addsub_single_altpriority_encoder_tma
+    Info (12023): Found entity 22: fpoint_hw_qsys_addsub_single
+    Info (12023): Found entity 23: fpoint_hw_qsys_div_single_altfp_div_csa_vhf
+    Info (12023): Found entity 24: fpoint_hw_qsys_div_single_altfp_div_csa_mke
+    Info (12023): Found entity 25: fpoint_hw_qsys_div_single_altfp_div_csa_2jh
+    Info (12023): Found entity 26: fpoint_hw_qsys_div_single_altfp_div_csa_rle
+    Info (12023): Found entity 27: fpoint_hw_qsys_div_single_altfp_div_csa_pke
+    Info (12023): Found entity 28: fpoint_hw_qsys_div_single_altfp_div_csa_qle
+    Info (12023): Found entity 29: fpoint_hw_qsys_div_single_qds_block_mab
+    Info (12023): Found entity 30: fpoint_hw_qsys_div_single_srt_block_int_02n
+    Info (12023): Found entity 31: fpoint_hw_qsys_div_single_qds_block_ls9
+    Info (12023): Found entity 32: fpoint_hw_qsys_div_single_srt_block_int_84n
+    Info (12023): Found entity 33: fpoint_hw_qsys_div_single_srt_block_int_fum
+    Info (12023): Found entity 34: fpoint_hw_qsys_div_single_altfp_div_srt_ext_5mh
+    Info (12023): Found entity 35: fpoint_hw_qsys_div_single
+    Info (12023): Found entity 36: fpoint_hw_qsys
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_vga_dual_clock_fifo.v
+    Info (12023): Found entity 1: nios_system_VGA_Dual_Clock_FIFO
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_vga_pixel_scaler.v
+    Info (12023): Found entity 1: nios_system_VGA_Pixel_Scaler
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_vga_pixel_rgb_resampler.v
+    Info (12023): Found entity 1: nios_system_VGA_Pixel_RGB_Resampler
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_avalon_video_vga_timing.v
+    Info (12023): Found entity 1: altera_up_avalon_video_vga_timing
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_vga_controller.v
+    Info (12023): Found entity 1: nios_system_VGA_Controller
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_video_128_character_rom.v
+    Info (12023): Found entity 1: altera_up_video_128_character_rom
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_video_fb_color_rom.v
+    Info (12023): Found entity 1: altera_up_video_fb_color_rom
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_vga_char_buffer.v
+    Info (12023): Found entity 1: nios_system_VGA_Char_Buffer
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_vga_pixel_buffer.v
+    Info (12023): Found entity 1: nios_system_VGA_Pixel_Buffer
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_sram.v
+    Info (12023): Found entity 1: nios_system_SRAM
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_ps2.v
+    Info (12023): Found entity 1: altera_up_ps2
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_ps2_command_out.v
+    Info (12023): Found entity 1: altera_up_ps2_command_out
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_ps2_data_in.v
+    Info (12023): Found entity 1: altera_up_ps2_data_in
+Warning (10275): Verilog HDL Module Instantiation warning at nios_system_PS2_Port.v(258): ignored dangling comma in List of Port Connections
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_ps2_port.v
+    Info (12023): Found entity 1: nios_system_PS2_Port
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_character_lcd_communication.v
+    Info (12023): Found entity 1: altera_up_character_lcd_communication
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_character_lcd_initialization.v
+    Info (12023): Found entity 1: altera_up_character_lcd_initialization
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_char_lcd_16x2.v
+    Info (12023): Found entity 1: nios_system_Char_LCD_16x2
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_audio_bit_counter.v
+    Info (12023): Found entity 1: altera_up_audio_bit_counter
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_audio_in_deserializer.v
+    Info (12023): Found entity 1: altera_up_audio_in_deserializer
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_audio_out_serializer.v
+    Info (12023): Found entity 1: altera_up_audio_out_serializer
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_clock_edge.v
+    Info (12023): Found entity 1: altera_up_clock_edge
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_audio.v
+    Info (12023): Found entity 1: nios_system_Audio
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_av_config_serial_bus_controller.v
+    Info (12023): Found entity 1: altera_up_av_config_serial_bus_controller
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_slow_clock_generator.v
+    Info (12023): Found entity 1: altera_up_slow_clock_generator
+Warning (10238): Verilog Module Declaration warning at altera_up_av_config_auto_init.v(70): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "altera_up_av_config_auto_init"
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_av_config_auto_init.v
+    Info (12023): Found entity 1: altera_up_av_config_auto_init
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_av_config_auto_init_dc2.v
+    Info (12023): Found entity 1: altera_up_av_config_auto_init_dc2
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_av_config_auto_init_d5m.v
+    Info (12023): Found entity 1: altera_up_av_config_auto_init_d5m
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_av_config_auto_init_lcm.v
+    Info (12023): Found entity 1: altera_up_av_config_auto_init_lcm
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_av_config_auto_init_ltm.v
+    Info (12023): Found entity 1: altera_up_av_config_auto_init_ltm
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_av_config_auto_init_ob_de2_35.v
+    Info (12023): Found entity 1: altera_up_av_config_auto_init_ob_de2_35
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_av_config_auto_init_ob_adv7181.v
+    Info (12023): Found entity 1: altera_up_av_config_auto_init_ob_adv7181
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_av_config_auto_init_ob_de2_70.v
+    Info (12023): Found entity 1: altera_up_av_config_auto_init_ob_de2_70
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_av_config_auto_init_ob_de2_115.v
+    Info (12023): Found entity 1: altera_up_av_config_auto_init_ob_de2_115
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_av_config_auto_init_ob_audio.v
+    Info (12023): Found entity 1: altera_up_av_config_auto_init_ob_audio
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_av_config_auto_init_ob_adv7180.v
+    Info (12023): Found entity 1: altera_up_av_config_auto_init_ob_adv7180
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_av_config.v
+    Info (12023): Found entity 1: nios_system_AV_Config
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_rs232_counters.v
+    Info (12023): Found entity 1: altera_up_rs232_counters
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_rs232_in_deserializer.v
+    Info (12023): Found entity 1: altera_up_rs232_in_deserializer
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/altera_up_rs232_out_serializer.v
+    Info (12023): Found entity 1: altera_up_rs232_out_serializer
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_serial_port.v
+    Info (12023): Found entity 1: nios_system_Serial_Port
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_expansion_jp5.v
+    Info (12023): Found entity 1: nios_system_Expansion_JP5
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_pushbuttons.v
+    Info (12023): Found entity 1: nios_system_Pushbuttons
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_slider_switches.v
+    Info (12023): Found entity 1: nios_system_Slider_Switches
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_hex7_hex4.v
+    Info (12023): Found entity 1: nios_system_HEX7_HEX4
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_hex3_hex0.v
+    Info (12023): Found entity 1: nios_system_HEX3_HEX0
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_green_leds.v
+    Info (12023): Found entity 1: nios_system_Green_LEDs
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_red_leds.v
+    Info (12023): Found entity 1: nios_system_Red_LEDs
+Info (12021): Found 2 design units, including 2 entities, in source file nios_system/synthesis/submodules/nios_system_sdram.v
+    Info (12023): Found entity 1: nios_system_SDRAM_input_efifo_module
+    Info (12023): Found entity 2: nios_system_SDRAM
+Info (12021): Found 1 design units, including 1 entities, in source file nios_system/synthesis/submodules/nios_system_interval_timer.v
+    Info (12023): Found entity 1: nios_system_Interval_Timer
+Info (12021): Found 5 design units, including 5 entities, in source file nios_system/synthesis/submodules/nios_system_jtag_uart.v
+    Info (12023): Found entity 1: nios_system_JTAG_UART_sim_scfifo_w
+    Info (12023): Found entity 2: nios_system_JTAG_UART_scfifo_w
+    Info (12023): Found entity 3: nios_system_JTAG_UART_sim_scfifo_r
+    Info (12023): Found entity 4: nios_system_JTAG_UART_scfifo_r
+    Info (12023): Found entity 5: nios_system_JTAG_UART
+Info (12021): Found 2 design units, including 1 entities, in source file de2_115_media_computer.vhd
+    Info (12022): Found design unit 1: DE2_115_Media_Computer-DE2_115_Media_Computer_rtl
+    Info (12023): Found entity 1: DE2_115_Media_Computer
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/nios_system.v
+    Info (12023): Found entity 1: nios_system
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_flash_memory_controller.vhd
+    Info (12022): Found design unit 1: Altera_UP_Flash_Memory_Controller-rtl
+    Info (12023): Found entity 1: Altera_UP_Flash_Memory_Controller
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_flash_memory_ip_core_avalon_interface.vhd
+    Info (12022): Found design unit 1: Altera_UP_Flash_Memory_IP_Core_Avalon_Interface-rtl
+    Info (12023): Found entity 1: Altera_UP_Flash_Memory_IP_Core_Avalon_Interface
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_flash_memory_ip_core_standalone.vhd
+    Info (12022): Found design unit 1: Altera_UP_Flash_Memory_UP_Core_Standalone-rtl
+    Info (12023): Found entity 1: Altera_UP_Flash_Memory_UP_Core_Standalone
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_flash_memory_user_interface.vhd
+    Info (12022): Found design unit 1: Altera_UP_Flash_Memory_User_Interface-rtl
+    Info (12023): Found entity 1: Altera_UP_Flash_Memory_User_Interface
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_sd_crc16_generator.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_CRC16_Generator-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_CRC16_Generator
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_sd_crc7_generator.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_CRC7_Generator-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_CRC7_Generator
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_sd_card_48_bit_command_generator.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Card_48_bit_Command_Generator-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Card_48_bit_Command_Generator
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_sd_card_avalon_interface.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Card_Avalon_Interface-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Card_Avalon_Interface
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_sd_card_buffer.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Card_Buffer-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Card_Buffer
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_sd_card_clock.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Card_Clock-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Card_Clock
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_sd_card_control_fsm.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Card_Control_FSM-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Card_Control_FSM
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_sd_card_interface.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Card_Interface-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Card_Interface
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_sd_card_memory_block.vhd
+    Info (12022): Found design unit 1: altera_up_sd_card_memory_block-SYN
+    Info (12023): Found entity 1: Altera_UP_SD_Card_Memory_Block
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_sd_card_response_receiver.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Card_Response_Receiver-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Card_Response_Receiver
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_sd_signal_trigger.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Signal_Trigger-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Signal_Trigger
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_avalon_sc_fifo.v
+    Info (12023): Found entity 1: altera_avalon_sc_fifo
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_avalon_st_pipeline_base.v
+    Info (12023): Found entity 1: altera_avalon_st_pipeline_base
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_customins_master_translator.v
+    Info (12023): Found entity 1: altera_customins_master_translator
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_customins_slave_translator.sv
+    Info (12023): Found entity 1: altera_customins_slave_translator
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_merlin_address_alignment.sv
+    Info (12023): Found entity 1: altera_merlin_address_alignment
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/nios_system/submodules/altera_merlin_arbitrator.sv
+    Info (12023): Found entity 1: altera_merlin_arbitrator
+    Info (12023): Found entity 2: altera_merlin_arb_adder
+Info (12021): Found 7 design units, including 7 entities, in source file db/ip/nios_system/submodules/altera_merlin_burst_adapter.sv
+    Info (12023): Found entity 1: altera_merlin_burst_adapter_burstwrap_increment
+    Info (12023): Found entity 2: altera_merlin_burst_adapter_adder
+    Info (12023): Found entity 3: altera_merlin_burst_adapter_subtractor
+    Info (12023): Found entity 4: altera_merlin_burst_adapter_min
+    Info (12023): Found entity 5: altera_merlin_burst_adapter
+    Info (12023): Found entity 6: altera_merlin_burst_adapter_uncompressed_only
+    Info (12023): Found entity 7: altera_merlin_burst_adapter_full
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_merlin_burst_uncompressor.sv
+    Info (12023): Found entity 1: altera_merlin_burst_uncompressor
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_merlin_master_agent.sv
+    Info (12023): Found entity 1: altera_merlin_master_agent
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_merlin_master_translator.sv
+    Info (12023): Found entity 1: altera_merlin_master_translator
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_merlin_slave_agent.sv
+    Info (12023): Found entity 1: altera_merlin_slave_agent
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_merlin_slave_translator.sv
+    Info (12023): Found entity 1: altera_merlin_slave_translator
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_merlin_traffic_limiter.sv
+    Info (12023): Found entity 1: altera_merlin_traffic_limiter
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_merlin_width_adapter.sv
+    Info (12023): Found entity 1: altera_merlin_width_adapter
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_reset_controller.v
+    Info (12023): Found entity 1: altera_reset_controller
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_reset_synchronizer.v
+    Info (12023): Found entity 1: altera_reset_synchronizer
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_rgb_to_ycrcb_converter.v
+    Info (12023): Found entity 1: altera_up_RGB_to_YCrCb_converter
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_ycrcb_to_rgb_converter.v
+    Info (12023): Found entity 1: altera_up_YCrCb_to_RGB_converter
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_audio_bit_counter.v
+    Info (12023): Found entity 1: altera_up_audio_bit_counter
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_audio_in_deserializer.v
+    Info (12023): Found entity 1: altera_up_audio_in_deserializer
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_audio_out_serializer.v
+    Info (12023): Found entity 1: altera_up_audio_out_serializer
+Warning (10238): Verilog Module Declaration warning at altera_up_av_config_auto_init.v(70): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "altera_up_av_config_auto_init"
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_av_config_auto_init.v
+    Info (12023): Found entity 1: altera_up_av_config_auto_init
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_av_config_auto_init_d5m.v
+    Info (12023): Found entity 1: altera_up_av_config_auto_init_d5m
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_av_config_auto_init_dc2.v
+    Info (12023): Found entity 1: altera_up_av_config_auto_init_dc2
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_av_config_auto_init_lcm.v
+    Info (12023): Found entity 1: altera_up_av_config_auto_init_lcm
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_av_config_auto_init_ltm.v
+    Info (12023): Found entity 1: altera_up_av_config_auto_init_ltm
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_av_config_auto_init_ob_adv7180.v
+    Info (12023): Found entity 1: altera_up_av_config_auto_init_ob_adv7180
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_av_config_auto_init_ob_adv7181.v
+    Info (12023): Found entity 1: altera_up_av_config_auto_init_ob_adv7181
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_av_config_auto_init_ob_audio.v
+    Info (12023): Found entity 1: altera_up_av_config_auto_init_ob_audio
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_av_config_auto_init_ob_de2_115.v
+    Info (12023): Found entity 1: altera_up_av_config_auto_init_ob_de2_115
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_av_config_auto_init_ob_de2_35.v
+    Info (12023): Found entity 1: altera_up_av_config_auto_init_ob_de2_35
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_av_config_auto_init_ob_de2_70.v
+    Info (12023): Found entity 1: altera_up_av_config_auto_init_ob_de2_70
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_av_config_serial_bus_controller.v
+    Info (12023): Found entity 1: altera_up_av_config_serial_bus_controller
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_avalon_video_vga_timing.v
+    Info (12023): Found entity 1: altera_up_avalon_video_vga_timing
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_character_lcd_communication.v
+    Info (12023): Found entity 1: altera_up_character_lcd_communication
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_character_lcd_initialization.v
+    Info (12023): Found entity 1: altera_up_character_lcd_initialization
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_clock_edge.v
+    Info (12023): Found entity 1: altera_up_clock_edge
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_irda_counters.v
+    Info (12023): Found entity 1: altera_up_irda_counters
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_irda_in_deserializer.v
+    Info (12023): Found entity 1: altera_up_irda_in_deserializer
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_irda_out_serializer.v
+    Info (12023): Found entity 1: altera_up_irda_out_serializer
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_ps2.v
+    Info (12023): Found entity 1: altera_up_ps2
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_ps2_command_out.v
+    Info (12023): Found entity 1: altera_up_ps2_command_out
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_ps2_data_in.v
+    Info (12023): Found entity 1: altera_up_ps2_data_in
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_rs232_counters.v
+    Info (12023): Found entity 1: altera_up_rs232_counters
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_rs232_in_deserializer.v
+    Info (12023): Found entity 1: altera_up_rs232_in_deserializer
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_rs232_out_serializer.v
+    Info (12023): Found entity 1: altera_up_rs232_out_serializer
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_slow_clock_generator.v
+    Info (12023): Found entity 1: altera_up_slow_clock_generator
+Warning (10275): Verilog HDL Module Instantiation warning at altera_up_sync_fifo.v(157): ignored dangling comma in List of Port Connections
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_sync_fifo.v
+    Info (12023): Found entity 1: altera_up_sync_fifo
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_video_128_character_rom.v
+    Info (12023): Found entity 1: altera_up_video_128_character_rom
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_video_alpha_blender_normal.v
+    Info (12023): Found entity 1: altera_up_video_alpha_blender_normal
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_video_alpha_blender_simple.v
+    Info (12023): Found entity 1: altera_up_video_alpha_blender_simple
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_video_camera_decoder.v
+    Info (12023): Found entity 1: altera_up_video_camera_decoder
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_video_clipper_add.v
+    Info (12023): Found entity 1: altera_up_video_clipper_add
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_video_clipper_counters.v
+    Info (12023): Found entity 1: altera_up_video_clipper_counters
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_video_clipper_drop.v
+    Info (12023): Found entity 1: altera_up_video_clipper_drop
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_video_decoder_add_endofpacket.v
+    Info (12023): Found entity 1: altera_up_video_decoder_add_endofpacket
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_video_dma_control_slave.v
+    Info (12023): Found entity 1: altera_up_video_dma_control_slave
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_video_dma_to_memory.v
+    Info (12023): Found entity 1: altera_up_video_dma_to_memory
+Warning (10275): Verilog HDL Module Instantiation warning at altera_up_video_dma_to_stream.v(291): ignored dangling comma in List of Port Connections
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_video_dma_to_stream.v
+    Info (12023): Found entity 1: altera_up_video_dma_to_stream
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_video_dual_clock_fifo.v
+    Info (12023): Found entity 1: altera_up_video_dual_clock_fifo
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_video_fb_color_rom.v
+    Info (12023): Found entity 1: altera_up_video_fb_color_rom
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_video_itu_656_decoder.v
+    Info (12023): Found entity 1: altera_up_video_itu_656_decoder
+Warning (10275): Verilog HDL Module Instantiation warning at altera_up_video_scaler_multiply_height.v(307): ignored dangling comma in List of Port Connections
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_video_scaler_multiply_height.v
+    Info (12023): Found entity 1: altera_up_video_scaler_multiply_height
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_video_scaler_multiply_width.v
+    Info (12023): Found entity 1: altera_up_video_scaler_multiply_width
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/altera_up_video_scaler_shrink.v
+    Info (12023): Found entity 1: altera_up_video_scaler_shrink
+Info (12021): Found 36 design units, including 36 entities, in source file db/ip/nios_system/submodules/fpoint_hw_qsys.v
+    Info (12023): Found entity 1: fpoint_hw_qsys_mult_single
+    Info (12023): Found entity 2: fpoint_hw_qsys_addsub_single_altbarrel_shift_fjg
+    Info (12023): Found entity 3: fpoint_hw_qsys_addsub_single_altbarrel_shift_44e
+    Info (12023): Found entity 4: fpoint_hw_qsys_addsub_single_altpriority_encoder_i0b
+    Info (12023): Found entity 5: fpoint_hw_qsys_addsub_single_altpriority_encoder_l0b
+    Info (12023): Found entity 6: fpoint_hw_qsys_addsub_single_altpriority_encoder_q0b
+    Info (12023): Found entity 7: fpoint_hw_qsys_addsub_single_altpriority_encoder_iha
+    Info (12023): Found entity 8: fpoint_hw_qsys_addsub_single_altpriority_encoder_lha
+    Info (12023): Found entity 9: fpoint_hw_qsys_addsub_single_altpriority_encoder_qha
+    Info (12023): Found entity 10: fpoint_hw_qsys_addsub_single_altpriority_encoder_aja
+    Info (12023): Found entity 11: fpoint_hw_qsys_addsub_single_altpriority_encoder_a2b
+    Info (12023): Found entity 12: fpoint_hw_qsys_addsub_single_altpriority_encoder_9u8
+    Info (12023): Found entity 13: fpoint_hw_qsys_addsub_single_altpriority_encoder_64b
+    Info (12023): Found entity 14: fpoint_hw_qsys_addsub_single_altpriority_encoder_94b
+    Info (12023): Found entity 15: fpoint_hw_qsys_addsub_single_altpriority_encoder_e4b
+    Info (12023): Found entity 16: fpoint_hw_qsys_addsub_single_altpriority_encoder_u5b
+    Info (12023): Found entity 17: fpoint_hw_qsys_addsub_single_altpriority_encoder_6la
+    Info (12023): Found entity 18: fpoint_hw_qsys_addsub_single_altpriority_encoder_9la
+    Info (12023): Found entity 19: fpoint_hw_qsys_addsub_single_altpriority_encoder_ela
+    Info (12023): Found entity 20: fpoint_hw_qsys_addsub_single_altpriority_encoder_uma
+    Info (12023): Found entity 21: fpoint_hw_qsys_addsub_single_altpriority_encoder_tma
+    Info (12023): Found entity 22: fpoint_hw_qsys_addsub_single
+    Info (12023): Found entity 23: fpoint_hw_qsys_div_single_altfp_div_csa_vhf
+    Info (12023): Found entity 24: fpoint_hw_qsys_div_single_altfp_div_csa_mke
+    Info (12023): Found entity 25: fpoint_hw_qsys_div_single_altfp_div_csa_2jh
+    Info (12023): Found entity 26: fpoint_hw_qsys_div_single_altfp_div_csa_rle
+    Info (12023): Found entity 27: fpoint_hw_qsys_div_single_altfp_div_csa_pke
+    Info (12023): Found entity 28: fpoint_hw_qsys_div_single_altfp_div_csa_qle
+    Info (12023): Found entity 29: fpoint_hw_qsys_div_single_qds_block_mab
+    Info (12023): Found entity 30: fpoint_hw_qsys_div_single_srt_block_int_02n
+    Info (12023): Found entity 31: fpoint_hw_qsys_div_single_qds_block_ls9
+    Info (12023): Found entity 32: fpoint_hw_qsys_div_single_srt_block_int_84n
+    Info (12023): Found entity 33: fpoint_hw_qsys_div_single_srt_block_int_fum
+    Info (12023): Found entity 34: fpoint_hw_qsys_div_single_altfp_div_srt_ext_5mh
+    Info (12023): Found entity 35: fpoint_hw_qsys_div_single
+    Info (12023): Found entity 36: fpoint_hw_qsys
+Info (12021): Found 23 design units, including 23 entities, in source file db/ip/nios_system/submodules/fpoint_qsys.v
+    Info (12023): Found entity 1: fpoint_qsys_mult_single
+    Info (12023): Found entity 2: fpoint_qsys_addsub_single_altbarrel_shift_fjg
+    Info (12023): Found entity 3: fpoint_qsys_addsub_single_altbarrel_shift_44e
+    Info (12023): Found entity 4: fpoint_qsys_addsub_single_altpriority_encoder_i0b
+    Info (12023): Found entity 5: fpoint_qsys_addsub_single_altpriority_encoder_l0b
+    Info (12023): Found entity 6: fpoint_qsys_addsub_single_altpriority_encoder_q0b
+    Info (12023): Found entity 7: fpoint_qsys_addsub_single_altpriority_encoder_iha
+    Info (12023): Found entity 8: fpoint_qsys_addsub_single_altpriority_encoder_lha
+    Info (12023): Found entity 9: fpoint_qsys_addsub_single_altpriority_encoder_qha
+    Info (12023): Found entity 10: fpoint_qsys_addsub_single_altpriority_encoder_aja
+    Info (12023): Found entity 11: fpoint_qsys_addsub_single_altpriority_encoder_a2b
+    Info (12023): Found entity 12: fpoint_qsys_addsub_single_altpriority_encoder_9u8
+    Info (12023): Found entity 13: fpoint_qsys_addsub_single_altpriority_encoder_64b
+    Info (12023): Found entity 14: fpoint_qsys_addsub_single_altpriority_encoder_94b
+    Info (12023): Found entity 15: fpoint_qsys_addsub_single_altpriority_encoder_e4b
+    Info (12023): Found entity 16: fpoint_qsys_addsub_single_altpriority_encoder_u5b
+    Info (12023): Found entity 17: fpoint_qsys_addsub_single_altpriority_encoder_6la
+    Info (12023): Found entity 18: fpoint_qsys_addsub_single_altpriority_encoder_9la
+    Info (12023): Found entity 19: fpoint_qsys_addsub_single_altpriority_encoder_ela
+    Info (12023): Found entity 20: fpoint_qsys_addsub_single_altpriority_encoder_uma
+    Info (12023): Found entity 21: fpoint_qsys_addsub_single_altpriority_encoder_tma
+    Info (12023): Found entity 22: fpoint_qsys_addsub_single
+    Info (12023): Found entity 23: fpoint_qsys
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/fpoint_wrapper.v
+    Info (12023): Found entity 1: fpoint_wrapper
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_av_config.v
+    Info (12023): Found entity 1: nios_system_AV_Config
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_alpha_blending.v
+    Info (12023): Found entity 1: nios_system_Alpha_Blending
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_audio.v
+    Info (12023): Found entity 1: nios_system_Audio
+Info (12021): Found 26 design units, including 26 entities, in source file db/ip/nios_system/submodules/nios_system_cpu.v
+    Info (12023): Found entity 1: nios_system_CPU_ic_data_module
+    Info (12023): Found entity 2: nios_system_CPU_ic_tag_module
+    Info (12023): Found entity 3: nios_system_CPU_register_bank_a_module
+    Info (12023): Found entity 4: nios_system_CPU_register_bank_b_module
+    Info (12023): Found entity 5: nios_system_CPU_nios2_oci_debug
+    Info (12023): Found entity 6: nios_system_CPU_ociram_sp_ram_module
+    Info (12023): Found entity 7: nios_system_CPU_nios2_ocimem
+    Info (12023): Found entity 8: nios_system_CPU_nios2_avalon_reg
+    Info (12023): Found entity 9: nios_system_CPU_nios2_oci_break
+    Info (12023): Found entity 10: nios_system_CPU_nios2_oci_xbrk
+    Info (12023): Found entity 11: nios_system_CPU_nios2_oci_match_single
+    Info (12023): Found entity 12: nios_system_CPU_nios2_oci_match_paired
+    Info (12023): Found entity 13: nios_system_CPU_nios2_oci_dbrk
+    Info (12023): Found entity 14: nios_system_CPU_nios2_oci_itrace
+    Info (12023): Found entity 15: nios_system_CPU_nios2_oci_td_mode
+    Info (12023): Found entity 16: nios_system_CPU_nios2_oci_dtrace
+    Info (12023): Found entity 17: nios_system_CPU_nios2_oci_compute_tm_count
+    Info (12023): Found entity 18: nios_system_CPU_nios2_oci_fifowp_inc
+    Info (12023): Found entity 19: nios_system_CPU_nios2_oci_fifocount_inc
+    Info (12023): Found entity 20: nios_system_CPU_nios2_oci_fifo
+    Info (12023): Found entity 21: nios_system_CPU_nios2_oci_pib
+    Info (12023): Found entity 22: nios_system_CPU_traceram_lpm_dram_bdp_component_module
+    Info (12023): Found entity 23: nios_system_CPU_nios2_oci_im
+    Info (12023): Found entity 24: nios_system_CPU_nios2_performance_monitors
+    Info (12023): Found entity 25: nios_system_CPU_nios2_oci
+    Info (12023): Found entity 26: nios_system_CPU
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_cpu_custom_instruction_master_multi_xconnect.sv
+    Info (12023): Found entity 1: nios_system_CPU_custom_instruction_master_multi_xconnect
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_cpu_jtag_debug_module_sysclk.v
+    Info (12023): Found entity 1: nios_system_CPU_jtag_debug_module_sysclk
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_cpu_jtag_debug_module_tck.v
+    Info (12023): Found entity 1: nios_system_CPU_jtag_debug_module_tck
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_cpu_jtag_debug_module_wrapper.v
+    Info (12023): Found entity 1: nios_system_CPU_jtag_debug_module_wrapper
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_cpu_mult_cell.v
+    Info (12023): Found entity 1: nios_system_CPU_mult_cell
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_cpu_oci_test_bench.v
+    Info (12023): Found entity 1: nios_system_CPU_oci_test_bench
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_cpu_test_bench.v
+    Info (12023): Found entity 1: nios_system_CPU_test_bench
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_char_lcd_16x2.v
+    Info (12023): Found entity 1: nios_system_Char_LCD_16x2
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_expansion_jp5.v
+    Info (12023): Found entity 1: nios_system_Expansion_JP5
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_external_clocks.v
+    Info (12023): Found entity 1: nios_system_External_Clocks
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_green_leds.v
+    Info (12023): Found entity 1: nios_system_Green_LEDs
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_hex3_hex0.v
+    Info (12023): Found entity 1: nios_system_HEX3_HEX0
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_hex7_hex4.v
+    Info (12023): Found entity 1: nios_system_HEX7_HEX4
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_interval_timer.v
+    Info (12023): Found entity 1: nios_system_Interval_Timer
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_irda.v
+    Info (12023): Found entity 1: nios_system_IrDA
+Info (12021): Found 5 design units, including 5 entities, in source file db/ip/nios_system/submodules/nios_system_jtag_uart.v
+    Info (12023): Found entity 1: nios_system_JTAG_UART_sim_scfifo_w
+    Info (12023): Found entity 2: nios_system_JTAG_UART_scfifo_w
+    Info (12023): Found entity 3: nios_system_JTAG_UART_sim_scfifo_r
+    Info (12023): Found entity 4: nios_system_JTAG_UART_scfifo_r
+    Info (12023): Found entity 5: nios_system_JTAG_UART
+Warning (10275): Verilog HDL Module Instantiation warning at nios_system_PS2_Port.v(258): ignored dangling comma in List of Port Connections
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_ps2_port.v
+    Info (12023): Found entity 1: nios_system_PS2_Port
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_pushbuttons.v
+    Info (12023): Found entity 1: nios_system_Pushbuttons
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_red_leds.v
+    Info (12023): Found entity 1: nios_system_Red_LEDs
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/nios_system/submodules/nios_system_sdram.v
+    Info (12023): Found entity 1: nios_system_SDRAM_input_efifo_module
+    Info (12023): Found entity 2: nios_system_SDRAM
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_sram.v
+    Info (12023): Found entity 1: nios_system_SRAM
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_serial_port.v
+    Info (12023): Found entity 1: nios_system_Serial_Port
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_slider_switches.v
+    Info (12023): Found entity 1: nios_system_Slider_Switches
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_usb.v
+    Info (12023): Found entity 1: nios_system_USB
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_vga_char_buffer.v
+    Info (12023): Found entity 1: nios_system_VGA_Char_Buffer
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_vga_controller.v
+    Info (12023): Found entity 1: nios_system_VGA_Controller
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_vga_dual_clock_fifo.v
+    Info (12023): Found entity 1: nios_system_VGA_Dual_Clock_FIFO
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_vga_pixel_buffer.v
+    Info (12023): Found entity 1: nios_system_VGA_Pixel_Buffer
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_vga_pixel_rgb_resampler.v
+    Info (12023): Found entity 1: nios_system_VGA_Pixel_RGB_Resampler
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_vga_pixel_scaler.v
+    Info (12023): Found entity 1: nios_system_VGA_Pixel_Scaler
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_video_in.v
+    Info (12023): Found entity 1: nios_system_Video_In
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_video_in_csc.v
+    Info (12023): Found entity 1: nios_system_Video_In_CSC
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_video_in_chroma_resampler.v
+    Info (12023): Found entity 1: nios_system_Video_In_Chroma_Resampler
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_video_in_clipper.v
+    Info (12023): Found entity 1: nios_system_Video_In_Clipper
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_video_in_dma_controller.v
+    Info (12023): Found entity 1: nios_system_Video_In_DMA_Controller
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_video_in_rgb_resampler.v
+    Info (12023): Found entity 1: nios_system_Video_In_RGB_Resampler
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_video_in_scaler.v
+    Info (12023): Found entity 1: nios_system_Video_In_Scaler
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/nios_system/submodules/nios_system_addr_router.sv
+    Info (12023): Found entity 1: nios_system_addr_router_default_decode
+    Info (12023): Found entity 2: nios_system_addr_router
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/nios_system/submodules/nios_system_addr_router_001.sv
+    Info (12023): Found entity 1: nios_system_addr_router_001_default_decode
+    Info (12023): Found entity 2: nios_system_addr_router_001
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/nios_system/submodules/nios_system_addr_router_002.sv
+    Info (12023): Found entity 1: nios_system_addr_router_002_default_decode
+    Info (12023): Found entity 2: nios_system_addr_router_002
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_cmd_xbar_demux.sv
+    Info (12023): Found entity 1: nios_system_cmd_xbar_demux
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_cmd_xbar_demux_001.sv
+    Info (12023): Found entity 1: nios_system_cmd_xbar_demux_001
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_cmd_xbar_demux_002.sv
+    Info (12023): Found entity 1: nios_system_cmd_xbar_demux_002
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_cmd_xbar_mux.sv
+    Info (12023): Found entity 1: nios_system_cmd_xbar_mux
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_cmd_xbar_mux_016.sv
+    Info (12023): Found entity 1: nios_system_cmd_xbar_mux_016
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/nios_system/submodules/nios_system_id_router.sv
+    Info (12023): Found entity 1: nios_system_id_router_default_decode
+    Info (12023): Found entity 2: nios_system_id_router
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/nios_system/submodules/nios_system_id_router_003.sv
+    Info (12023): Found entity 1: nios_system_id_router_003_default_decode
+    Info (12023): Found entity 2: nios_system_id_router_003
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/nios_system/submodules/nios_system_id_router_014.sv
+    Info (12023): Found entity 1: nios_system_id_router_014_default_decode
+    Info (12023): Found entity 2: nios_system_id_router_014
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/nios_system/submodules/nios_system_id_router_016.sv
+    Info (12023): Found entity 1: nios_system_id_router_016_default_decode
+    Info (12023): Found entity 2: nios_system_id_router_016
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_irq_mapper.sv
+    Info (12023): Found entity 1: nios_system_irq_mapper
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_rsp_xbar_demux.sv
+    Info (12023): Found entity 1: nios_system_rsp_xbar_demux
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_rsp_xbar_demux_003.sv
+    Info (12023): Found entity 1: nios_system_rsp_xbar_demux_003
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_rsp_xbar_demux_014.sv
+    Info (12023): Found entity 1: nios_system_rsp_xbar_demux_014
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_rsp_xbar_demux_016.sv
+    Info (12023): Found entity 1: nios_system_rsp_xbar_demux_016
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_rsp_xbar_mux.sv
+    Info (12023): Found entity 1: nios_system_rsp_xbar_mux
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_rsp_xbar_mux_001.sv
+    Info (12023): Found entity 1: nios_system_rsp_xbar_mux_001
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/nios_system/submodules/nios_system_sysid.v
+    Info (12023): Found entity 1: nios_system_sysid
+Info (12127): Elaborating entity "DE2_115_Media_Computer" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at de2_115_media_computer.vhd(352): used implicit default value for signal "audio_output_r_s" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at de2_115_media_computer.vhd(352): object "audio_input_l_s" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at de2_115_media_computer.vhd(352): object "audio_input_r_s" assigned a value but never read
+Info (12128): Elaborating entity "clock_generator" for hierarchy "clock_generator:cgen"
+Info (12128): Elaborating entity "altpll" for hierarchy "clock_generator:cgen|altpll:DE_Clock_Generator_Audio"
+Info (12130): Elaborated megafunction instantiation "clock_generator:cgen|altpll:DE_Clock_Generator_Audio"
+Info (12133): Instantiated megafunction "clock_generator:cgen|altpll:DE_Clock_Generator_Audio" with the following parameter:
+    Info (12134): Parameter "clk0_divide_by" = "31"
+    Info (12134): Parameter "clk0_duty_cycle" = "50"
+    Info (12134): Parameter "clk0_multiply_by" = "14"
+    Info (12134): Parameter "clk0_phase_shift" = "0"
+    Info (12134): Parameter "compensate_clock" = "CLK0"
+    Info (12134): Parameter "gate_lock_signal" = "NO"
+    Info (12134): Parameter "inclk0_input_frequency" = "37037"
+    Info (12134): Parameter "intended_device_family" = "Cyclone II"
+    Info (12134): Parameter "invalid_lock_multiplier" = "5"
+    Info (12134): Parameter "lpm_type" = "altpll"
+    Info (12134): Parameter "operation_mode" = "NORMAL"
+    Info (12134): Parameter "pll_type" = "FAST"
+    Info (12134): Parameter "port_activeclock" = "PORT_UNUSED"
+    Info (12134): Parameter "port_areset" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkbad0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkbad1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkloss" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkswitch" = "PORT_UNUSED"
+    Info (12134): Parameter "port_fbin" = "PORT_UNUSED"
+    Info (12134): Parameter "port_inclk0" = "PORT_USED"
+    Info (12134): Parameter "port_inclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_locked" = "PORT_USED"
+    Info (12134): Parameter "port_pfdena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_pllena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanaclr" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanclk" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandata" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandataout" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandone" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanread" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanwrite" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk0" = "PORT_USED"
+    Info (12134): Parameter "port_clk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk4" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena4" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_enable0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_enable1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclkena0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclkena1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclkena2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclkena3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_sclkout0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_sclkout1" = "PORT_UNUSED"
+    Info (12134): Parameter "valid_lock_multiplier" = "1"
+Info (12128): Elaborating entity "audio_and_video_config" for hierarchy "audio_and_video_config:avIntf"
+Info (12128): Elaborating entity "Altera_UP_Slow_Clock_Generator" for hierarchy "audio_and_video_config:avIntf|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz"
+Info (12128): Elaborating entity "Altera_UP_I2C_AV_Auto_Initialize" for hierarchy "audio_and_video_config:avIntf|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize"
+Info (12128): Elaborating entity "Altera_UP_I2C" for hierarchy "audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller"
+Info (12128): Elaborating entity "audio_codec" for hierarchy "audio_codec:audio"
+Info (12128): Elaborating entity "Altera_UP_Clock_Edge" for hierarchy "audio_codec:audio|Altera_UP_Clock_Edge:Bit_Clock_Edges"
+Info (12128): Elaborating entity "Altera_UP_Audio_In_Deserializer" for hierarchy "audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer"
+Info (12128): Elaborating entity "Altera_UP_Audio_Bit_Counter" for hierarchy "audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter"
+Info (12128): Elaborating entity "Altera_UP_SYNC_FIFO" for hierarchy "audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO"
+Info (12128): Elaborating entity "scfifo" for hierarchy "audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO"
+Info (12130): Elaborated megafunction instantiation "audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO"
+Info (12133): Instantiated megafunction "audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" with the following parameter:
+    Info (12134): Parameter "add_ram_output_register" = "OFF"
+    Info (12134): Parameter "intended_device_family" = "Cyclone II"
+    Info (12134): Parameter "lpm_numwords" = "128"
+    Info (12134): Parameter "lpm_showahead" = "ON"
+    Info (12134): Parameter "lpm_type" = "scfifo"
+    Info (12134): Parameter "lpm_width" = "24"
+    Info (12134): Parameter "lpm_widthu" = "7"
+    Info (12134): Parameter "overflow_checking" = "OFF"
+    Info (12134): Parameter "underflow_checking" = "OFF"
+    Info (12134): Parameter "use_eab" = "ON"
+Info (12021): Found 1 design units, including 1 entities, in source file db/scfifo_o441.tdf
+    Info (12023): Found entity 1: scfifo_o441
+Info (12128): Elaborating entity "scfifo_o441" for hierarchy "audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/a_dpfifo_bs31.tdf
+    Info (12023): Found entity 1: a_dpfifo_bs31
+Info (12128): Elaborating entity "a_dpfifo_bs31" for hierarchy "audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_fh81.tdf
+    Info (12023): Found entity 1: altsyncram_fh81
+Info (12128): Elaborating entity "altsyncram_fh81" for hierarchy "audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_fh81:FIFOram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_ks8.tdf
+    Info (12023): Found entity 1: cmpr_ks8
+Info (12128): Elaborating entity "cmpr_ks8" for hierarchy "audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cmpr_ks8:almost_full_comparer"
+Info (12128): Elaborating entity "cmpr_ks8" for hierarchy "audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cmpr_ks8:three_comparison"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_v9b.tdf
+    Info (12023): Found entity 1: cntr_v9b
+Info (12128): Elaborating entity "cntr_v9b" for hierarchy "audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_v9b:rd_ptr_msb"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_ca7.tdf
+    Info (12023): Found entity 1: cntr_ca7
+Info (12128): Elaborating entity "cntr_ca7" for hierarchy "audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_ca7:usedw_counter"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_0ab.tdf
+    Info (12023): Found entity 1: cntr_0ab
+Info (12128): Elaborating entity "cntr_0ab" for hierarchy "audio_codec:audio|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_0ab:wr_ptr"
+Info (12128): Elaborating entity "Altera_UP_Audio_Out_Serializer" for hierarchy "audio_codec:audio|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer"
+Info (12128): Elaborating entity "copy_module" for hierarchy "copy_module:processing"
+Warning (10541): VHDL Signal Declaration warning at copy_module.vhd(26): used implicit default value for signal "read_s" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at copy_module.vhd(37): used implicit default value for signal "readIn" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10631): VHDL Process Statement warning at copy_module.vhd(45): inferring latch(es) for signal or variable "writeout", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "writeout" at copy_module.vhd(45)
+Info (12128): Elaborating entity "reg" for hierarchy "copy_module:processing|reg:inputbufferL"
+Info (12128): Elaborating entity "sine_wave" for hierarchy "sine_wave:synth"
+Info (12128): Elaborating entity "RythmController" for hierarchy "RythmController:rythmCtl"
+Error (12179): Instance "nios_system:NiosII" is ambiguous File: C:/Sciebo/THK/DTS/Drum_maschine/DE2-115_Media_Computer/vhdl/de2_115_media_computer.vhd Line: 406
+    Error (12180): Instance could be entity "nios_system" in file nios_system/synthesis/nios_system.vhd compiled in library nios_system File: C:/Sciebo/THK/DTS/Drum_maschine/DE2-115_Media_Computer/vhdl/nios_system/synthesis/nios_system.vhd Line: 9
+    Error (12180): Instance could be entity "nios_system" in file C:/Sciebo/THK/DTS/Drum_maschine/DE2-115_Media_Computer/vhdl/db/ip/nios_system/nios_system.v compiled in library altera_reserved_qsys_nios_system File: C:/Sciebo/THK/DTS/Drum_maschine/DE2-115_Media_Computer/vhdl/db/ip/nios_system/nios_system.v Line: 6
+Info (12128): Elaborating entity "nios_system" for hierarchy "nios_system:NiosII"
+Error (12152): Can't elaborate user hierarchy "nios_system:NiosII" File: C:/Sciebo/THK/DTS/Drum_maschine/DE2-115_Media_Computer/vhdl/de2_115_media_computer.vhd Line: 406
+Info (144001): Generated suppressed messages file C:/Sciebo/THK/DTS/Drum_maschine/DE2-115_Media_Computer/vhdl/DE2_115_Media_Computer.map.smsg
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 4 errors, 57 warnings
+    Error: Peak virtual memory: 4817 megabytes
+    Error: Processing ended: Wed Jan 22 12:45:58 2020
+    Error: Elapsed time: 00:00:42
+    Error: Total CPU time (on all processors): 00:00:38
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Sciebo/THK/DTS/Drum_maschine/DE2-115_Media_Computer/vhdl/DE2_115_Media_Computer.map.smsg.
+
+

@@ -45,13 +45,15 @@ BEGIN
 
 	--this process divides each synth signal by the amount of active synths after casting them to uint, then adds them and casts them to std logic vector
 	mixSignals : PROCESS (synth1_out, synth2_out, synth3_out, synth4_out) IS
-		variable synth1_out_int, synth2_out_int, synth3_out_int, synth4_out_int, aud_out_int :integer;
+		variable synth1_out_int, synth2_out_int, synth3_out_int, synth4_out_int, aud_out_int, shiftIndex :integer;
 	BEGIN
-		--synth1_out_int := unsigned(synth1_out)/active_synths;
-		--synth2_out_int := unsigned(synth2_out)/active_synths;
-		--synth3_out_int := unsigned(synth3_out)/active_synths;
-		--synth4_out_int := unsigned(synth4_out)/active_synths;
-		--aud_out <= std_logic_vector(synth1_out_int + synth2_out_int + synth3_out_int + synth4_out_int);
+		--shiftIndex := integer(real(active_synths)*0.5);
+		--shiftIndex := 2;
+		synth1_out_int := shift_right(integer(synth1_out),2);
+		synth2_out_int := unsigned(synth2_out);
+		synth3_out_int := unsigned(synth3_out);
+		synth4_out_int := unsigned(synth4_out);
+		aud_out <= std_logic_vector(synth1_out_int + synth2_out_int + synth3_out_int + synth4_out_int);
 	END PROCESS;
 		
 
