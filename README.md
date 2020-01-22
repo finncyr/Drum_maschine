@@ -1,6 +1,6 @@
  # User Manual
  
- (Picture of working IO)[https://raw.githubusercontent.com/finncyr/Drum_maschine/master/image.jpeg]
+ ![picture of working IO](https://raw.githubusercontent.com/finncyr/Drum_maschine/master/image.jpeg)
 
 ```
  +------+     +-------------+
