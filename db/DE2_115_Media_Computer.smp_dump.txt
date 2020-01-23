@@ -165,13 +165,6 @@ i_state.011 0 0 1 0 0 1
 i_state.101 0 1 0 0 0 1 
 i_state.111 1 0 0 0 0 1 
 
-State Machine - |DE2_115_Media_Computer|sine_wave:synth|state
-Name state.change_up state.counting_down state.change_down state.counting_up 
-state.counting_up 0 0 0 0 
-state.change_down 0 0 1 1 
-state.counting_down 0 1 0 1 
-state.change_up 1 0 0 1 
-
 State Machine - |DE2_115_Media_Computer|audio_and_video_config:avIntf|Altera_UP_I2C:I2C_Controller|s_i2c_transceiver
 Name s_i2c_transceiver.I2C_STATE_6_COMPLETE s_i2c_transceiver.I2C_STATE_5_STOP_BIT s_i2c_transceiver.I2C_STATE_4_TRANSFER_ACK s_i2c_transceiver.I2C_STATE_3_TRANSFER_BYTE s_i2c_transceiver.I2C_STATE_2_START_BIT s_i2c_transceiver.I2C_STATE_1_PRE_START s_i2c_transceiver.I2C_STATE_0_IDLE 
 s_i2c_transceiver.I2C_STATE_0_IDLE 0 0 0 0 0 0 0 

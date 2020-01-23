@@ -1,5 +1,5 @@
 Flow report for DE2_115_Media_Computer
-Thu Jan 23 11:02:51 2020
+Thu Jan 23 12:50:22 2020
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Thu Jan 23 11:02:32 2020           ;
+; Flow Status                        ; Successful - Thu Jan 23 12:49:57 2020           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; DE2_115_Media_Computer                          ;
 ; Top-level Entity Name              ; DE2_115_Media_Computer                          ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE115F29C8                                   ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 14,986 / 114,480 ( 13 % )                       ;
-;     Total combinational functions  ; 13,202 / 114,480 ( 12 % )                       ;
-;     Dedicated logic registers      ; 9,611 / 114,480 ( 8 % )                         ;
-; Total registers                    ; 10041                                           ;
+; Total logic elements               ; 32,325 / 114,480 ( 28 % )                       ;
+;     Total combinational functions  ; 30,373 / 114,480 ( 27 % )                       ;
+;     Dedicated logic registers      ; 9,463 / 114,480 ( 8 % )                         ;
+; Total registers                    ; 9893                                            ;
 ; Total pins                         ; 332 / 529 ( 63 % )                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 66,361 / 3,981,312 ( 2 % )                      ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+------------------------+
 ; Option            ; Setting                ;
 +-------------------+------------------------+
-; Start date & time ; 01/23/2020 10:59:18    ;
+; Start date & time ; 01/23/2020 12:40:12    ;
 ; Main task         ; Compilation            ;
 ; Revision Name     ; DE2_115_Media_Computer ;
 +-------------------+------------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------------------------------------+---------------+----------------------------------------------------------+----------------+
 ; Assignment Name                     ; Value                                                               ; Default Value ; Entity Name                                              ; Section Id     ;
 +-------------------------------------+---------------------------------------------------------------------+---------------+----------------------------------------------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 93328258817948.157977355812292                                      ; --            ; --                                                       ; --             ;
+; COMPILER_SIGNATURE_ID               ; 93328258817948.157977961209780                                      ; --            ; --                                                       ; --             ;
 ; IP_TOOL_ENV                         ; Qsys                                                                ; --            ; altera_avalon_sc_fifo                                    ; --             ;
 ; IP_TOOL_ENV                         ; Qsys                                                                ; --            ; altera_avalon_st_handshake_clock_crosser                 ; --             ;
 ; IP_TOOL_ENV                         ; Qsys                                                                ; --            ; altera_customins_master_translator                       ; --             ;
@@ -211,11 +211,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:01:21     ; 1.0                     ; 5111 MB             ; 00:01:19                           ;
-; Fitter                    ; 00:01:34     ; 1.0                     ; 5267 MB             ; 00:01:34                           ;
-; Assembler                 ; 00:00:05     ; 1.0                     ; 4656 MB             ; 00:00:06                           ;
-; TimeQuest Timing Analyzer ; 00:00:18     ; 1.0                     ; 4945 MB             ; 00:00:16                           ;
-; Total                     ; 00:03:18     ; --                      ; --                  ; 00:03:15                           ;
+; Analysis & Synthesis      ; 00:06:26     ; 1.0                     ; 5172 MB             ; 00:06:23                           ;
+; Fitter                    ; 00:02:52     ; 1.0                     ; 5585 MB             ; 00:02:52                           ;
+; Assembler                 ; 00:00:07     ; 1.0                     ; 4696 MB             ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:24     ; 1.0                     ; 5299 MB             ; 00:00:23                           ;
+; Total                     ; 00:09:49     ; --                      ; --                  ; 00:09:44                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
