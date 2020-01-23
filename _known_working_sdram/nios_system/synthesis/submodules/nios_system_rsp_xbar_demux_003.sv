@@ -29,7 +29,7 @@
 // Generation parameters:
 //   output_name:         nios_system_rsp_xbar_demux_003
 //   ST_DATA_W:           106
-//   ST_CHANNEL_W:        20
+//   ST_CHANNEL_W:        23
 //   NUM_OUTPUTS:         1
 //   VALID_WIDTH:         1
 // ------------------------------------------
@@ -47,7 +47,7 @@ module nios_system_rsp_xbar_demux_003
     // -------------------
     input  [1-1      : 0]   sink_valid,
     input  [106-1    : 0]   sink_data, // ST_DATA_W=106
-    input  [20-1 : 0]   sink_channel, // ST_CHANNEL_W=20
+    input  [23-1 : 0]   sink_channel, // ST_CHANNEL_W=23
     input                         sink_startofpacket,
     input                         sink_endofpacket,
     output                        sink_ready,
@@ -57,7 +57,7 @@ module nios_system_rsp_xbar_demux_003
     // -------------------
     output reg                      src0_valid,
     output reg [106-1    : 0] src0_data, // ST_DATA_W=106
-    output reg [20-1 : 0] src0_channel, // ST_CHANNEL_W=20
+    output reg [23-1 : 0] src0_channel, // ST_CHANNEL_W=23
     output reg                      src0_startofpacket,
     output reg                      src0_endofpacket,
     input                           src0_ready,
@@ -94,7 +94,7 @@ module nios_system_rsp_xbar_demux_003
     // -------------------
     assign ready_vector[0] = src0_ready;
 
-    assign sink_ready = |(sink_channel & {{19{1'b0}},{ready_vector[NUM_OUTPUTS - 1 : 0]}});
+    assign sink_ready = |(sink_channel & {{22{1'b0}},{ready_vector[NUM_OUTPUTS - 1 : 0]}});
 
 endmodule
 

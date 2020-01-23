@@ -17,7 +17,7 @@ ENTITY RythmController IS
 	GENERIC(BPM_stepsize: integer :=10; BPM_min: integer :=60; BPM_max: integer:=240; Pattern_size: integer:=16);
 	
 	PORT(BPM, sample1_pattern : IN std_logic_vector(15 downto 0);
-		  reset,CLOCK_50 :IN std_logic;
+		  reset,CLOCK_50, playPause :IN std_logic;
 		  sample1_en :OUT std_logic
 	);
 	
@@ -57,7 +57,7 @@ BEGIN
 				pattern_index := 0;
 			end if;
 			if sample1_pattern(pattern_index)= '1' then
-				sample1_en <= '1';
+				sample1_en <= '1' AND playPause;
 			else 
 				sample1_en <= '0';
 			end if;

@@ -230,9 +230,50 @@ architecture DE2_115_Media_Computer_rtl of DE2_115_Media_Computer is
 					  signal usb_CS_N : OUT STD_LOGIC;
 					  signal usb_RD_N : OUT STD_LOGIC;
 					  signal usb_RST_N : OUT STD_LOGIC;
-					  signal usb_WR_N : OUT STD_LOGIC
+					  signal usb_WR_N : OUT STD_LOGIC;
+					  
+					--pio
+					  pio1_out_in_port                       : in    std_logic_vector(15 downto 0) := (others => 'X'); -- in_port
+					  pio1_out_out_port                      : out   std_logic_vector(15 downto 0);                     -- out_port
+					  pio2_out_in_port                       : in    std_logic_vector(15 downto 0) := (others => 'X'); -- in_port
+					  pio2_out_out_port                      : out   std_logic_vector(15 downto 0);                    -- out_port
+					  pio3_out_in_port                       : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- in_port
+					  pio3_out_out_port                      : out   std_logic_vector(7 downto 0)                      -- out_port
 			  );
 	end component;
+	
+	COMPONENT READRAM IS
+		port(
+        CLK                 : in    std_logic;                           -- clock
+        RESET               : in    std_logic;                           -- reset
+        ADRESS_S            : out   std_logic_vector(31 downto 0);       -- x
+        READ_S              : out   std_logic;                           -- x
+        READING_BPM_S       : out   std_logic;                           -- x
+        READING_PATTERN_S   : out   std_logic;                           -- x
+        READING_PLAYPAUSE_S : out   std_logic                            -- x
+		);
+	END COMPONENT;
+	
+	COMPONENT sramController IS
+		port (
+			clk           : in    std_logic                     := '0';             --        clock_reset.clk
+			reset         : in    std_logic                     := '0';             --  clock_reset_reset.reset
+			SRAM_DQ       : inout std_logic_vector(15 downto 0) := (others => '0'); -- external_interface.export
+			SRAM_ADDR     : out   std_logic_vector(19 downto 0);                    --                   .export
+			SRAM_LB_N     : out   std_logic;                                        --                   .export
+			SRAM_UB_N     : out   std_logic;                                        --                   .export
+			SRAM_CE_N     : out   std_logic;                                        --                   .export
+			SRAM_OE_N     : out   std_logic;                                        --                   .export
+			SRAM_WE_N     : out   std_logic;                                        --                   .export
+			address       : in    std_logic_vector(19 downto 0) := (others => '0'); --  avalon_sram_slave.address
+			byteenable    : in    std_logic_vector(1 downto 0)  := (others => '0'); --                   .byteenable
+			read          : in    std_logic                     := '0';             --                   .read
+			write         : in    std_logic                     := '0';             --                   .write
+			writedata     : in    std_logic_vector(15 downto 0) := (others => '0'); --                   .writedata
+			readdata      : out   std_logic_vector(15 downto 0);                    --                   .readdata
+			readdatavalid : out   std_logic                                         --                   .readdatavalid
+		);
+	END COMPONENT;
 	
 	COMPONENT clock_generator
 		PORT(
@@ -278,7 +319,7 @@ architecture DE2_115_Media_Computer_rtl of DE2_115_Media_Computer is
 	COMPONENT rythmcontroller IS
 		PORT(
 					BPM, sample1_pattern : IN std_logic_vector(15 downto 0);
-					reset, CLOCK_50 :IN std_logic;
+					reset, CLOCK_50, playPause :IN std_logic;
 					sample1_en :OUT std_logic);
 	END COMPONENT;
 	
@@ -290,10 +331,12 @@ architecture DE2_115_Media_Computer_rtl of DE2_115_Media_Computer is
 --				 Internal Wires and Registers Declarations				 --
 -------------------------------------------------------------------------------
 -- Internal Wires
-signal read_s, write_s, read_ready, write_ready, sample1_en_s: std_LOGIC;
+signal read_s, write_s, read_ready, write_ready, sample1_en_s, reading_BPM_s, reading_pattern_s,reading_playpause_s, playPause_s: std_LOGIC;
 signal writedata_left, writedata_right, readdata_left, readdata_right, audio_output_l_s, audio_output_r_s, audio_input_l_s, audio_input_r_s: STD_LOGIC_VECTOR(23 DOWNTO 0); --audio_output_r_s und audio_output_l_s sind die Signale die mit Samples zum ausgegeben gefüttert werden müssen
 signal reset: std_logic;
 signal sample1_pattern_s, BPM_s: std_LOGIC_VECTOR(15 downto 0);
+signal pio_in_s, pio_out_s, pio2_in_s, pio2_out_s : std_LOGIC_VECTOR(15 downto 0);
+signal pio3_in_s, pio3_out_s : std_LOGIC_VECTOR(7 downto 0);
 -- Internal Registers
 
 -- State Machine Registers
@@ -307,17 +350,36 @@ begin
 -------------------------------------------------------------------------------
 --							 Sequential Logic							  --
 -------------------------------------------------------------------------------
+--assignFromRam : PROCESS(CLOCK_50) IS
+--BEGIN
+--	if rising_edge(CLOCK_50) then
+--		if reading_BPM_s = '1' then
+--			BPM_s <= pio_out_s;
+--		end if;
+--		if reading_pattern_s = '1' then
+--			sample1_pattern_s <= pio_out_s;
+--		end if;
+--		if reading_playpause_s = '1' then
+--			playPause_s <= pio_out_s(0);
+--		end if;
+--	end if;
 	
+--END PROCESS;
+
 -------------------------------------------------------------------------------
 --							Combinational Logic							--
 -------------------------------------------------------------------------------
 reset <= not key(0);
-sample1_pattern_s <= "1000100010001000";
-BPM_s <= "0000000000111100";
+sample1_pattern_s <= pio_out_s;
+BPM_s <= pio2_out_s;
+playPause_s <= pio3_out_s(0);
 
 -------------------------------------------------------------------------------
 --							  Internal Modules							 --
 -------------------------------------------------------------------------------
+--ramCTL: READRAM
+-- port map(CLOCK_50, reset, address_s, readSram_s, reading_BPM_s, reading_pattern_s, reading_playpause_s );
+
 cgen: clock_generator port map (cloCK2_50, reset, AUD_XCK);
 
 avIntf: audio_and_video_config PORT map(CLOCK_50,reset ,I2C_SDAT, I2C_SCLK);
@@ -342,8 +404,8 @@ synth: sine_wave
 	port map(clock_50, reset, sample1_en_s, audio_output_l_s);
 			  
 rythmCtl: rythmcontroller
-	port map ( BPM_s, sample1_pattern_s,reset, CLOCK_50,sample1_en_s);
-
+	port map ( BPM_s, sample1_pattern_s,reset, CLOCK_50,playPause_s, sample1_en_s);
+	
 
 NiosII : nios_system
 	port map(
@@ -443,7 +505,15 @@ NiosII : nios_system
 		usb_CS_N                         => OTG_CS_N,
 		usb_RD_N                         => OTG_OE_N,
 		usb_WR_N                         => OTG_WE_N,
-		usb_INT0                         => OTG_INT(0)
+		usb_INT0                         => OTG_INT(0),
+		
+		-- PIO
+		pio1_out_in_port                 => pio_in_s,                       --                           pio1_out.in_port
+      pio1_out_out_port                => pio_out_s,                       --                                   .out_port
+		pio2_out_in_port                 => pio2_in_s,                       --                           pio2_out.in_port
+      pio2_out_out_port                => pio2_out_s,                      --                                   .out_port
+      pio3_out_in_port                 => pio3_in_s,                       --                           pio3_out.in_port
+      pio3_out_out_port                => pio3_out_s                       --                                   .out_port
 	);
 	
 end DE2_115_Media_Computer_rtl;

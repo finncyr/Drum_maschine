@@ -50,9 +50,9 @@ module nios_system_addr_router_default_decode
                DEFAULT_DESTID = 13 
    )
   (output [95 - 91 : 0] default_destination_id,
-   output [20-1 : 0] default_wr_channel,
-   output [20-1 : 0] default_rd_channel,
-   output [20-1 : 0] default_src_channel
+   output [23-1 : 0] default_wr_channel,
+   output [23-1 : 0] default_rd_channel,
+   output [23-1 : 0] default_src_channel
   );
 
   assign default_destination_id = 
@@ -63,7 +63,7 @@ module nios_system_addr_router_default_decode
       assign default_src_channel = '0;
     end
     else begin
-      assign default_src_channel = 20'b1 << DEFAULT_CHANNEL;
+      assign default_src_channel = 23'b1 << DEFAULT_CHANNEL;
     end
   end
   endgenerate
@@ -74,8 +74,8 @@ module nios_system_addr_router_default_decode
       assign default_rd_channel = '0;
     end
     else begin
-      assign default_wr_channel = 20'b1 << DEFAULT_WR_CHANNEL;
-      assign default_rd_channel = 20'b1 << DEFAULT_RD_CHANNEL;
+      assign default_wr_channel = 23'b1 << DEFAULT_WR_CHANNEL;
+      assign default_rd_channel = 23'b1 << DEFAULT_RD_CHANNEL;
     end
   end
   endgenerate
@@ -105,7 +105,7 @@ module nios_system_addr_router
     // -------------------
     output                          src_valid,
     output reg [106-1    : 0] src_data,
-    output reg [20-1 : 0] src_channel,
+    output reg [23-1 : 0] src_channel,
     output                          src_startofpacket,
     output                          src_endofpacket,
     input                           src_ready
@@ -121,7 +121,7 @@ module nios_system_addr_router
     localparam PKT_PROTECTION_H = 99;
     localparam PKT_PROTECTION_L = 97;
     localparam ST_DATA_W = 106;
-    localparam ST_CHANNEL_W = 20;
+    localparam ST_CHANNEL_W = 23;
     localparam DECODER_TYPE = 0;
 
     localparam PKT_TRANS_WRITE = 67;
@@ -164,7 +164,7 @@ module nios_system_addr_router
     assign src_endofpacket   = sink_endofpacket;
 
     wire [PKT_DEST_ID_W-1:0] default_destid;
-    wire [20-1 : 0] default_src_channel;
+    wire [23-1 : 0] default_src_channel;
 
 
 
@@ -189,19 +189,19 @@ module nios_system_addr_router
 
     // ( 0x0 .. 0x8000000 )
     if ( {address[RG:PAD0],{PAD0{1'b0}}} == 28'h0   ) begin
-            src_channel = 20'b010;
+            src_channel = 23'b010;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 13;
     end
 
     // ( 0xa000000 .. 0xa000800 )
     if ( {address[RG:PAD1],{PAD1{1'b0}}} == 28'ha000000   ) begin
-            src_channel = 20'b001;
+            src_channel = 23'b001;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 0;
     end
 
     // ( 0xc000000 .. 0xc800000 )
     if ( {address[RG:PAD2],{PAD2{1'b0}}} == 28'hc000000   ) begin
-            src_channel = 20'b100;
+            src_channel = 23'b100;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 3;
     end
 

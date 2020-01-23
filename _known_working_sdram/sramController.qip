@@ -1,0 +1,8 @@
+set_global_assignment -entity "sramController" -library "sramController" -name IP_TOOL_NAME "altera_up_avalon_sram"
+set_global_assignment -entity "sramController" -library "sramController" -name IP_TOOL_VERSION "13.0sp1"
+set_global_assignment -entity "sramController" -library "sramController" -name IP_TOOL_ENV "mwpim"
+set_global_assignment -library "sramController" -name MISC_FILE [file join $::quartus(qip_path) "sramController.cmp"]
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+
+set_global_assignment -library "sramController" -name VHDL_FILE [file join $::quartus(qip_path) "sramController.vhd"]
+set_global_assignment -library "sramController" -name VERILOG_FILE [file join $::quartus(qip_path) "sramController/sramController_0002.v"]

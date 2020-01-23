@@ -62,7 +62,13 @@
 			usb_CS_N                               : out   std_logic;                                        -- CS_N
 			usb_RD_N                               : out   std_logic;                                        -- RD_N
 			usb_WR_N                               : out   std_logic;                                        -- WR_N
-			usb_INT0                               : in    std_logic                     := 'X'              -- INT0
+			usb_INT0                               : in    std_logic                     := 'X';             -- INT0
+			pio1_out_in_port                       : in    std_logic_vector(15 downto 0) := (others => 'X'); -- in_port
+			pio1_out_out_port                      : out   std_logic_vector(15 downto 0);                    -- out_port
+			pio2_out_in_port                       : in    std_logic_vector(15 downto 0) := (others => 'X'); -- in_port
+			pio2_out_out_port                      : out   std_logic_vector(15 downto 0);                    -- out_port
+			pio3_out_in_port                       : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- in_port
+			pio3_out_out_port                      : out   std_logic_vector(7 downto 0)                      -- out_port
 		);
 	end component nios_system;
 
