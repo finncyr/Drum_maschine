@@ -1,35 +1,75 @@
-# Drum Maschine
-Drum Maschine implemented for an FPGA in VHDL and C. Students Project for the DTS Course of WS 19/20
+ # User Manual
+ 
+ ![picture of working IO](https://raw.githubusercontent.com/finncyr/Drum_maschine/master/image.jpeg)
 
-## wichtige Links
+```
+ +------+     +-------------+
+ | Disp |     |   Display   |
+ |  1   |     |      2      |
+ +------+     +-------------+  
+                                        Pushbuttons
+ +-----------------------------+     +---+---+---+---+
+ |        Sliders 1-18         |     + 1 | 2 | 3 | 4 +
+ +-----------------------------+     +---+---+---+---+
 
-- [ILIAS-Gruppe](https://ilias.th-koeln.de/goto.php?target=grp_1384088&client_id=ILIAS_FH_Koeln)
-- [Etherpad "Besprechungen"](https://ilias.th-koeln.de/goto.php?target=xpdl_1411113&client_id=ILIAS_FH_Koeln)
+ ```
 
-## Organisation
+ ### Classification of Components
 
-Im Reiter *Projects* findet Ihr die einzelnen Projekte zu Hardware, Software und der Schnittstelle. Dort könnt ihr Dinge auf die ToDo-Liste setzen, Sachen als "in Bearbeitung durch euch" markieren und euren Fortschritt für alle Sichtbar machen. 
+ Display 1: shows current Bank (Values 0-3)
+ Display 2: shows current BPM  (Values 60-240)
 
-Bei der zweiten Beprechung sollten wir diese ToDo-Listen grob gefüllt haben. Zur Bearbeitung macht euch innerhalb der Repo gerne eigene Ordner und probiert Sachen aus. **WICHTIG:** Niemals in die master-Branch pushen. Eventuell überschreibt ihr funktionierenden Code und zerstört etwas. Erstellt lieber eine eigene Branch mit dem Namen des Changes den Ihr gemacht habt und macht einen Pull Request für die master-Branch. Dann wird da zumindest von einem von uns noch einmal drübergeschaut.
+ Sliders 1-16: Setting the current Pattern
+ Slider 18: BPM Change direction 
 
-## Namesgebung der Branches
+ Pushbutton 1: Play/Pause
+ Pushbutton 2: change BPM
+ Pushbutton 3: change Bank and save current Pattern to current Bank
+ Pushbutton 4: Reset
 
-Bitte benennt alle Projektrelevanten Branches mit einem jeweilig passenden Präfix, die ich hier aufliste:
+ ### Example Workflow
 
-- Hardware: hw_*
-- Software: sw_*
-- Schnittstelle: ss_*
+1. Reset (Pattern should be clear, Bank 0, BPM 120)
+2. Input a pattern with *Switches 1-16* (up=on; down=off)
+3. Save Pattern to Bank with *Pushbutton 3*
+4. clear Sliders (all to down position)
+5. press *Pushbutton 3* **3** more times (should be Bank 0 again)
+6. validate your Pattern with the Red Leds
+7. change your disired BPM with *Slider 18* and *Pushbutton 2* (Slider up = BPM goes up, Slider down = BPM goes down)
+8. Play your Pattern with the Play/Pause Button (validated by green LEDs)
 
-Bsp: hw_Step_Counter wäre ein gültiger Name für einen in der Hardware implementierten Step Counter usw.
 
-## Beispiel zum "Idealen" Workflow mit Git und Projects
+--------------------
 
-1. Aus ToDo Liste einen Punkt (bspw. Step Counter) in "in Progress" verschieben
-2. Branch "hw_Step_Counter" anlegen
-3. Eine Lösung innerhalb dieser Branch programmieren und *committen*
-4. Die Lösung grob auf Fehler testen
-5. Die Branch "hw_Step_Counter" in GitHub *pushen*
-6. Einen *Pull Request* von "hw_Step_Counter" nach "master" erstellen
-  - Wenn alles gut aussieht wird der Pull Request *gemerged* - heißt die Änderung ist nun im Hauptprogramm. Jetzt zu Schritt 8.
-  - Wenn ein Fehler zu sehen ist geht der Pull Request zurück mit weiteren Informationen. Zurück zu Schritt 3.
-8. Im Project die Karte nun auf "Done" verschieben. Fertig!
+## System Description
+
+The FPGA Drum Maschine is an stand-alone FPGA-based drum computer which can operate at a BPM Range between 60 and 240 BPM. The smallest sample size is 1/16 of a Bar. The System should, once flashed, work as a stand-alone solution with configurable UI elements through the sliders and pushbuttons on the FPGA. The computer should feature 4 Banks which can individually programmed to play different samples. 
+
+## Hardware / Software partition reasons
+
+We parted the Hardware (HW) and Software (SW) parts because of the processing order of our Solution. The 4 different Banks need to oparate at a parallel data structure, so we decided to let them be computed by HW. The IO and User Configuration needs to be not as fast as the Audio Processing so we decided to let the SW handle these kind of actions. With this speration, we can assure a maximized performance of our board. 
+
+## Experiences whilst designing the Hardware
+
+One of the main challenges whilst designing the hardware was finding documentation for the required tools. Since we had to use an outdated Version of Quartus II that still supported the cyclone 4e most of the documentation did not represent the actual workflow. The Intel FPGA youtube channel (https://www.youtube.com/user/alteracorp) prooved to be a very valuable resource, since most of their old videos form around 2011 covered the workflow of the used Quartus II version. 
+The next step was to figure out how to use the audio CODEC of the DE2 115 board. Luckily its usage was covered in the excerise of our lecture. We modified the copy samples example to support audio IO with other entities. 
+One of the biggest challenges was to find VHDL examlpes to see how the syntax is applied in a practical enviroment. Most engeneers, including altera seem to be using verilog instead. Hence most of the research took a lot of time. Most Documentation was found in the forums of microcontroller.net. 
+Depending on how much knowledge in work with VHDL was already aquired for every team member research in understanding VHDL or sometimes even Verilog was crucial.
+
+
+## Experiences whilst programming the Software
+
+The HAL provided by Altera is easy to work with - once you understood everything. The documentation is very poorly provided and you have to figure out a lot of things by yourself. Once you find the few important functions, the coding is very easy and straight forward. 
+
+We've learned a lot about direct communications from C to Hardware Ports and understood the concept of RAM pretty well. We've also written a Look-Up-Table for the 7 Segment Displays and resolved a lot of problems.
+
+We think the software part of the Drum Maschine works user friendly and intuitive and We are satisfied with our work on the Project. 
+
+## Lessons learned
+
+I learned that you should not overestimate your programming skills based on the Language, but on the environment you are working with. Most of my working time went into researching all of NIOS components and the C libraries attached. The programming part went pretty well, but the lack of documentation did cost a lot of time.
+
+The combination of the both parts was quite challenging, because we first needed to understand the systematic of integrating both project parts into one flashable system. The official Intel FPGA YouTube-Channel was very helpful because the had also used the 13sp1 Version of Quartus.
+
+It became clear that either a system completely in Hardware or in Software is managable to construct in a matter of weeks. The communication between the two systems using a SRAM, which was the main task of this project took a lot of time and was underestimated in the end.
+
