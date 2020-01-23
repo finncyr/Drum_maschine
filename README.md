@@ -1,4 +1,6 @@
- # User Manual
+ # Drum Maschine
+ 
+ ## User Manual
  
  ![picture of working IO](https://raw.githubusercontent.com/finncyr/Drum_maschine/master/image.jpeg)
 
@@ -55,6 +57,8 @@ One of the main challenges whilst designing the hardware was finding documentati
 The next step was to figure out how to use the audio CODEC of the DE2 115 board. Luckily its usage was covered in the excerise of our lecture. We modified the copy samples example to support audio IO with other entities. 
 One of the biggest challenges was to find VHDL examlpes to see how the syntax is applied in a practical enviroment. Most engeneers, including altera seem to be using verilog instead. Hence most of the research took a lot of time. Most Documentation was found in the forums of microcontroller.net. 
 Depending on how much knowledge in work with VHDL was already aquired for every team member research in understanding VHDL or sometimes even Verilog was crucial.
+At first we tried realising the communicaion between the Nios II processor and the hardware using a dual port ram. This would have enabled us to read samples from an sdcard using software and play them through hardware. After extensive research we noticed that althouh the NIOS II processor uses a RAM interface with 32 BIT wordwidth and 32 bit adresses, the board, and hence also the SRAM controller IP only uses 16 bit wordwidth and 20 bit adresses.
+The wordwidth could be worked around byusing the byteenable pins of the SRAM controller. However our time restrictions did not allow for deeper research into the adress translation happening between the NIOS II processor and the RAM module. Therefore we resorted to realize our communication between hard- and software using PIO registers. 
 
 
 ## Experiences whilst programming the Software
