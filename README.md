@@ -1,4 +1,6 @@
- # Drum Maschine
+*since the deadline is met, this project will be discontinued.*
+
+# Drum Maschine
  
  ## User Manual
  
